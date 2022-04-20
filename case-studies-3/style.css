@@ -14,6 +14,10 @@
     --footer-body: #A69CAA;
 }
 
+/* .envato {
+    height: 55px;
+} */
+
 /* ----------------- UPPER HEADER (nav.header-icons) ----------------- */
 
 header {
@@ -29,7 +33,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem 10rem;
+    padding: 2rem 8rem;
     border-bottom: solid 1px rgba(255, 255, 255, 0.1);
 }
 
@@ -132,7 +136,7 @@ header {
     justify-content: space-between;
     align-items: center;
     gap: 2rem;
-    padding: 0 10rem;
+    padding: 0 8rem;
 }
 
 .offcanvas-btn-desktop {
@@ -227,6 +231,29 @@ header {
     margin-right: 1rem;
 }
   
+/* -----------------  LOWER HEADER (section.page-title) ----------------- */
+
+.page-title {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 6rem 5rem 5rem;
+}
+
+.page-title h1 {
+    color: white;
+    font-size: 5rem;
+    font-weight: 600;
+}
+
+.page-title h5 {
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 1.52rem;
+    font-weight: 400;
+    line-height: 2.2rem;
+    margin-top: 1rem;
+}
+
 
 
 /* ----------------- OFF CANVAS MOBILE MENU ----------------- */
@@ -320,9 +347,21 @@ img {
         font-size: 10px;
     }
 
-    .header-icons, .header-menu {
+    .header-icons {
         padding-left: 3rem;
         padding-right: 3rem;
+    }
+
+    .header-menu {
+        display: none;
+    }
+
+    .page-title h1 {
+        font-size: 3.25rem;
+    }
+
+    .page-title h5 {
+        font-size: 1.8rem;
     }
 }
 
@@ -343,6 +382,14 @@ img {
 
     .offcanvas-btn-mobile {
         display: block;
+    }
+
+    .page-title h1 {
+        font-size: 2.5rem;
+    }
+
+    .page-title h5 {
+        font-size: 1.5rem;
     }
 }
 
