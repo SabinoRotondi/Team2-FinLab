@@ -1,5 +1,10 @@
 @import "reset.css";
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 .dropdown-menu-mobile {
     display: none;
 }
@@ -12,6 +17,6 @@ input:checked ~ .dropdown-menu-mobile {
     display: block;
 }
 
-input {
+.header-buttons .offcanvas-body input {
     display: none;
 }
