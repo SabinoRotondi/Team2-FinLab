@@ -1,9 +1,24 @@
 @import "reset.css";
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+* {
+    font-family: 'Manrope', sans-serif;
+}
+
+:root {
+    --primary: #023A51;
+    --green: #2CBC63;
+    --body: #5c667d;
+    --accent: #A6BAC2;
+    --footer-body: #A69CAA;
+}
 
 img {
     max-width: 100%;
     height: auto;
 }
+
+
 
 .dropdown-menu-mobile {
     display: none;

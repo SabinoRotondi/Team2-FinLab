@@ -15,8 +15,16 @@ time, mark, audio, video {
 	padding: 0;
 	border: 0;
 	font-size: 100%;
-	font: inherit;
 	vertical-align: baseline;
+}
+
+html {
+    font-size: 12px;
+}
+
+body {
+	line-height: 1.2;
+    font-size: 1.6rem;
 }
 
 ol, ul {
@@ -25,8 +33,4 @@ ol, ul {
 
 a, a:hover {
     text-decoration: none;
-}
-
-body {
-	line-height: 1.2;
 }
