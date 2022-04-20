@@ -1,0 +1,30 @@
+/* ----------------- CATEGORIES FILTER ----------------- */
+
+.filter-categories {
+    padding: 5rem;
+}
+
+.filter-categories ul {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.filter-categories li {
+    display: inline-block;
+}
+
+.filter-categories li a {
+    color: var(--body);
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.filter-categories .active {
+    color: var(--green);
+    transition: color 0.2s ease-in-out;
+}
+
+.filter-categories .active:hover {
+    color: var(--primary);
+}
