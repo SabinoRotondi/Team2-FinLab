@@ -1,0 +1,26 @@
+/* ----------------- TABLET MEDIA QUERIES ----------------- */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    html {
+        font-size: 10px;
+    }
+
+/* ----------------- HEADER ----------------- */
+
+    .header-icons {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+    .header-menu {
+        display: none;
+    }
+
+    .page-title h1 {
+        font-size: 3.25rem;
+    }
+
+    .page-title h5 {
+        font-size: 1.8rem;
+    }
+}

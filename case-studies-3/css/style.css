@@ -1,0 +1,29 @@
+@import "/case-studies-3/css/reset.css"; /* RESET */
+@import "/case-studies-3/css/header.css"; /* HEADER */
+@import "/case-studies-3/css/main.css"; /* MAIN */
+@import "/case-studies-3/css/footer.css"; /* FOOTER */
+@import "/case-studies-3/css/mobile-mq.css"; /* MOBILE MEDIA QUERY */
+@import "/case-studies-3/css/tablet-mq.css"; /* TABLET MEDIA QUERY */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+* {
+    font-family: 'Manrope', sans-serif;
+}
+
+:root {
+    --primary: #023A51;
+    --green: #2CBC63;
+    --body: #5c667d;
+    --body-darker: #59667d;
+    --accent: #A6BAC2;
+    --footer-body: #A69CAA;
+}
+
+/* .envato { height: 55px; } */
+
+
+/* 320px — 480px: Mobile devices.
+481px — 768px: iPads, Tablets.
+769px — 1024px: Small screens, laptops.
+1025px — 1200px: Desktops, large screens.
+1201px and more — Extra large screens, TV. */

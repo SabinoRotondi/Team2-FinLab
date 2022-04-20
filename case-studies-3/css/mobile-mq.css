@@ -1,0 +1,30 @@
+/* ----------------- MOBILE MEDIA QUERIES ----------------- */
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+/* ----------------- HEADER ----------------- */
+
+    .header-social, .header-buttons, .header-menu {
+        display: none;
+    }
+
+    .header-icons {
+        padding: 2rem;
+    }
+
+    .header-mobile-nav {
+        display: block;
+    }
+
+    .offcanvas-btn-mobile {
+        display: block;
+    }
+
+    .page-title h1 {
+        font-size: 2.5rem;
+    }
+
+    .page-title h5 {
+        font-size: 1.5rem;
+    }
+}
