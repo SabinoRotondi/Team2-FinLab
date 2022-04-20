@@ -13,12 +13,128 @@
     --footer-body: #A69CAA;
 }
 
+/* ----------------- HEADER ----------------- */
+
+header {
+    background-color: var(--primary);
+    background-image: url(https://fin.21lab.co/wp-content/uploads/2021/09/bg-ttb.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+
+    padding: 2rem 0 6rem 0;
+}
+
+.header-icons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 2rem;
+    border-bottom: solid 1px rgba(255, 255, 255, 0.1);
+}
+
+.header-logo-social {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.header-logo, .header-social {
+    display: flex;
+    gap: 1.2rem;
+}
+
+.header-logo img {
+    width: 230px;
+    height: auto;
+}
+
+.header-social svg {
+    width: 1.6rem;
+    fill: white;
+}
+
+.header-social a:nth-child(3) svg {
+    width: 1.3rem;
+}
+
+.header-social a {
+    width: 3rem;
+    height: 3rem;
+    line-height: 2.5rem;
+    background-color: transparent;
+    text-align: center;
+    border-radius: 50%;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.header-social a:hover {
+    background-color: var(--body);
+}
+
+.header-buttons {
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.header-buttons svg {
+    width: 1.4rem;
+    fill: var(--body);
+}
+
+.header-buttons a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3.2rem;
+    height: 3.2rem;
+    background-color: white;
+    text-align: center;
+    border-radius: 50%;
+    transition: all 0.2s ease-in-out;
+}
+
+.header-buttons a:hover {
+    /* width: 3.3rem;
+    height: 3.3rem; */
+    transform: scale(1.2, 1.2);
+}
+
+.header-talk-button {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border: none;
+    background-color: var(--green);
+    border-radius: 2rem;
+    padding: 1rem 2.2rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: white;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.header-talk-button:hover {
+    background-color: var(--body);
+}
+
+.header-talk-button svg {
+    fill: white;
+    text-align: center;
+    width: 1.3rem;
+}
+
+.offcanvas-btn-mobile {
+    display: none;
+}
+
+
 img {
     max-width: 100%;
     height: auto;
 }
-
-
 
 .dropdown-menu-mobile {
     display: none;
@@ -34,4 +150,10 @@ input:checked ~ .dropdown-menu-mobile {
 
 .header-buttons .offcanvas-body input {
     display: none;
+}
+
+@media screen and (max-width: 450px) {
+    .offcanvas-btn-mobile {
+        display: block;
+    }
 }
