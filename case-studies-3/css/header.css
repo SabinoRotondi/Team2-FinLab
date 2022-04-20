@@ -158,6 +158,24 @@ header {
     cursor: pointer;
     transition: border 0.2s ease-in-out;
 }
+
+.dropdown-button.caret::after {
+    content: url('data:image/svg+xml; utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><style>.fill{fill: white;};</style><path class="fill" d="M310.6 246.6l-127.1 128C176.4 380.9 168.2 384 160 384s-16.38-3.125-22.63-9.375l-127.1-128C.2244 237.5-2.516 223.7 2.438 211.8S19.07 192 32 192h255.1c12.94 0 24.62 7.781 29.58 19.75S319.8 237.5 310.6 246.6z"/></svg>');
+    display: block;
+    margin-left: 0.8rem;
+    width: 0.6rem;
+    height: auto;
+    transition: all 0.3s ease-in-out;
+}
+
+.dropdown-button.caret:hover::after{
+    content: url('data:image/svg+xml; utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><style>.fill{fill: white;};</style><path class="fill" d="M310.6 246.6l-127.1 128C176.4 380.9 168.2 384 160 384s-16.38-3.125-22.63-9.375l-127.1-128C.2244 237.5-2.516 223.7 2.438 211.8S19.07 192 32 192h255.1c12.94 0 24.62 7.781 29.58 19.75S319.8 237.5 310.6 246.6z"/></svg>');
+    display: block;
+    margin-left: 0.8rem;
+    width: 0.6rem;
+    height: auto;
+    transform: rotate(180deg);
+}
   
 .dropdown-nav:hover .dropdown-button {
     border-top: solid 0.3rem white;
