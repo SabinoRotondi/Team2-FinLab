@@ -9,11 +9,12 @@
     --primary: #023A51;
     --green: #2CBC63;
     --body: #5c667d;
+    --body-darker: #59667d;
     --accent: #A6BAC2;
     --footer-body: #A69CAA;
 }
 
-/* ----------------- HEADER ----------------- */
+/* ----------------- UPPER HEADER (nav.header-icons) ----------------- */
 
 header {
     background-color: var(--primary);
@@ -22,15 +23,13 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: scroll;
-
-    padding: 2rem 0 6rem 0;
 }
 
 .header-icons {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    padding-bottom: 2rem;
+    padding: 2rem 10rem;
     border-bottom: solid 1px rgba(255, 255, 255, 0.1);
 }
 
@@ -126,7 +125,111 @@ header {
     width: 1.3rem;
 }
 
-/* ----------------- MOBILE OFF CANVAS MENU ----------------- */
+/* ----------------- MIDDLE HEADER (nav.header-menu) ----------------- */
+
+.header-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    padding: 0 10rem;
+}
+
+.offcanvas-btn-desktop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.4rem;
+    height: 2.4rem;
+    text-align: center;
+    background-color: white;
+    transition: all 0.2s ease-in-out;
+    border: solid 0.1rem white;
+    border-radius: 50%;
+    padding: 1.4rem;
+    background-image: url(/case-studies-3/images/bars-solid-body-darker.svg);
+    background-repeat: no-repeat;
+    background-size: 1.2rem;
+    background-position: center center;
+}
+
+.dropdown-nav {
+    display: flex;
+    overflow: hidden;
+  }
+  
+.dropdown-button {
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    border: none;
+    height: 6rem;
+  
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+    cursor: pointer;
+    transition: border 0.2s ease-in-out;
+}
+  
+.dropdown-nav:hover .dropdown-button {
+    border-top: solid 0.3rem white;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 25rem;
+    padding: 2rem;
+    margin-top: 6rem;
+    z-index: 1;
+    transition: all 0.3s ease-in-out;
+}
+  
+.dropdown-content a {
+    display: inline-block;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--primary);
+    transition: all 0.2 ease-in-out;
+}
+  
+.dropdown-content a:hover {
+    color: var(--body-darker);
+}
+
+.dropdown-content a:hover ~ ul li::before {
+    font-size: 3rem;
+}
+
+.dropdown-content li {
+    padding: 1.4rem 0;
+    border-top: solid 0.1rem rgb(0, 0, 0, 0.1);
+}
+
+.dropdown-content li:first-child {
+    border: none;
+}
+  
+.dropdown-nav:hover .dropdown-content {
+    display: block;
+}
+
+.header-menu ul li::before {
+    content: "\2022";
+    color: var(--green);
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-right: 1rem;
+}
+  
+
+
+/* ----------------- OFF CANVAS MOBILE MENU ----------------- */
 
 .header-mobile-nav {
     display: none;
@@ -148,7 +251,7 @@ header {
     border: solid 0.1rem white;
     border-radius: 50%;
     padding: 1.4rem;
-    background-image: url(/case-studies-3/images/bars-solid.svg);
+    background-image: url(/case-studies-3/images/bars-solid-white.svg);
     background-repeat: no-repeat;
     background-size: 1.2rem;
     background-position: center center;
@@ -210,16 +313,28 @@ img {
     height: auto;
 }
 
+/* ----------------- TABLET MEDIA QUERIES ----------------- */
 
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1024px) {
     html {
         font-size: 10px;
     }
+
+    .header-icons, .header-menu {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
 }
 
-@media screen and (max-width: 600px) {
-    .header-social, .header-buttons {
+/* ----------------- MOBILE MEDIA QUERIES ----------------- */
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .header-social, .header-buttons, .header-menu {
         display: none;
+    }
+
+    .header-icons {
+        padding: 2rem;
     }
 
     .header-mobile-nav {
@@ -230,3 +345,9 @@ img {
         display: block;
     }
 }
+
+/* 320px — 480px: Mobile devices.
+481px — 768px: iPads, Tablets.
+769px — 1024px: Small screens, laptops.
+1025px — 1200px: Desktops, large screens.
+1201px and more — Extra large screens, TV. */
