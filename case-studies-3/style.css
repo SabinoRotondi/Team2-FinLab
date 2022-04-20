@@ -1,1 +1,17 @@
 @import "reset.css";
+
+.dropdown-menu-mobile {
+    display: none;
+}
+
+input:checked ~ .dropdown-menu-mobile {
+    display: block;
+}
+
+.header-buttons .offcanvas-body label {
+    display: block;
+}
+
+input {
+    display: none;
+}
