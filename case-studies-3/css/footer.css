@@ -75,7 +75,7 @@ footer p {
 /* ----------------- FOOTER MENU ----------------- */
 
 .footer-menu {
-    padding: 0 8rem;
+    padding: 0 8.5rem;
 }
 
 .footer-grid-container {
@@ -115,9 +115,10 @@ footer form {
 
 footer input {
     background-color: transparent;
+    padding: 1rem;
     border: none;
     border-bottom: solid 0.3rem var(--accent);
-    padding: 1rem;
+    transition: all 0.2s ease-in-out;
 }
 
 footer input:focus {
@@ -141,4 +142,26 @@ footer input[type="submit"] {
     margin-top: 1rem;
     position: absolute;
     right: 8rem;
+}
+
+/* ----------------- FOOTER ADDRESS & CREDITS ----------------- */
+
+.footer-address {
+    padding: 3rem 0 5rem 0;
+    border-bottom: solid 0.05rem rgba(255,255,255,0.15)
+}
+
+.footer-credits {
+    text-align: center;
+    padding: 4rem 0;
+}
+
+.footer-address a, .footer-credits a {
+    color: var(--accent);
+    font-weight: 600;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer-address a:hover, .footer-credits a:hover {
+    color: white;
 }

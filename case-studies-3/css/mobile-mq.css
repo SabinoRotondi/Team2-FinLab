@@ -2,6 +2,10 @@
 
 @media (min-width: 320px) and (max-width: 480px) {
 
+    footer p {
+        font-size: 1.15rem;
+    }
+
     /* ----------------- HEADER ----------------- */
 
     .header-social, .header-buttons, .header-menu {
@@ -80,10 +84,6 @@
         font-size: 1.2rem;
     }
 
-    .footer-hero p {
-        font-size: 1.1rem;
-    }
-
     /* ----------------- FOOTER MENU ----------------- */
 
     .footer-menu {
@@ -109,6 +109,12 @@
     }
 
     footer form {
-        margin: 0;
+        margin: 3rem 0;
+    }
+
+    /* ----------------- FOOTER ADDRESS & CREDITS ----------------- */
+
+    .footer-credits p {
+        line-height: 1.5rem;
     }
 }
