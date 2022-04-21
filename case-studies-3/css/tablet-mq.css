@@ -50,4 +50,25 @@
         font-size: 1.4rem;
         line-height: 2.5rem;
     }
+
+    /* ----------------- FOOTER HERO ----------------- */
+
+    .footer-hero h2 {
+        font-size: 6rem;
+        line-height: 7rem;
+    }
+
+    .footer-hero h5 {
+        font-size: 2rem;
+        line-height: 2.8rem;
+
+    }
+
+    .footer-hero button {
+        font-size: 1.5rem;
+    }
+
+    .footer-hero p {
+        font-size: 1.4rem;
+    }
 }

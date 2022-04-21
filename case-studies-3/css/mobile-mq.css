@@ -60,4 +60,27 @@
         font-size: 1rem;
         line-height: 1.8rem;
     }
+
+     /* ----------------- FOOTER HERO ----------------- */
+    .footer-hero-wrapper {
+        width: 85%;
+    }
+
+     .footer-hero h2 {
+        font-size: 2rem;
+        line-height: 2.7rem;
+    }
+
+    .footer-hero h5 {
+        font-size: 1.2rem;
+        line-height: 1.8rem;
+    }
+
+    .footer-hero button {
+        font-size: 1.2rem;
+    }
+
+    .footer-hero p {
+        font-size: 1.1rem;
+    }
 }
