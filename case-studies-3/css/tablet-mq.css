@@ -5,15 +5,19 @@
         font-size: 10px;
     }
 
-/* ----------------- HEADER ----------------- */
+    /* ----------------- HEADER ----------------- */
 
     .header-icons {
         padding-left: 3rem;
         padding-right: 3rem;
     }
 
-    .header-menu {
+    .header-social, .header-menu {
         display: none;
+    }
+
+    .header-mobile-nav {
+        display: block;
     }
 
     .page-title h1 {
@@ -22,5 +26,28 @@
 
     .page-title h5 {
         font-size: 1.8rem;
+    }
+
+    .filter-categories li a {
+        font-size: 1.8rem;
+    }
+
+    /* ----------------- CARD GRID ----------------- */
+
+    .card-container {
+        padding: 0 3.8rem;
+    }
+
+    .card {
+        max-height: 36rem;
+    }
+
+    .card-title {
+        font-size: 2.4rem;
+    }
+
+    .card-category, .card-footer-cm p {
+        font-size: 1.4rem;
+        line-height: 2.5rem;
     }
 }
