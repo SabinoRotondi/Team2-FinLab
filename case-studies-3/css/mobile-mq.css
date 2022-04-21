@@ -44,7 +44,7 @@
 
     .card-container {
         grid-template-columns: 1fr;
-        padding: 0 1.2rem;
+        padding: 0 1.2rem 6.8rem;
     }
 
     .card {
