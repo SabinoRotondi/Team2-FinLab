@@ -71,4 +71,27 @@
     .footer-hero p {
         font-size: 1.4rem;
     }
+
+    /* ----------------- FOOTER MENU ----------------- */
+
+    .footer-grid-container {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 2;
+        grid-template-areas:
+        'col1 col2 col3 col4'
+        'newsletter newsletter newsletter newsletter';
+        row-gap: 5rem;
+    }
+
+    .footer-newsletter {
+        grid-area: newsletter;
+    }
+
+    footer input[type="submit"] {
+        width: 3%;
+    }
+
+    footer form {
+        margin: 0;
+    }
 }

@@ -83,4 +83,32 @@
     .footer-hero p {
         font-size: 1.1rem;
     }
+
+    /* ----------------- FOOTER MENU ----------------- */
+
+    .footer-menu {
+        padding: 0 2rem;
+    }
+
+    .footer-grid-container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 3;
+        grid-template-areas:
+        'col1 col2'
+        'col3 col4'
+        'newsletter newsletter';
+        row-gap: 5rem;
+    }
+
+    .footer-newsletter {
+        grid-area: newsletter;
+    }
+
+    footer input[type="submit"] {
+        right: 2rem;
+    }
+
+    footer form {
+        margin: 0;
+    }
 }
