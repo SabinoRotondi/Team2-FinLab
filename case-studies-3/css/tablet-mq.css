@@ -12,12 +12,13 @@
         padding-right: 3rem;
     }
 
-    .header-social, .header-menu {
-        display: none;
+    .header-menu {
+        padding: 0 2rem;
+        justify-content: center;
     }
 
-    .header-mobile-nav {
-        display: block;
+    .dropdown-button {
+        font-size: 1.2rem;
     }
 
     .page-title h1 {
@@ -31,6 +32,17 @@
     .filter-categories li a {
         font-size: 1.8rem;
     }
+
+    /* Header Alternate Version ----- */
+
+    /* .header-social, .header-menu {
+        display: none;
+    }
+
+    .header-mobile-nav {
+        display: block;
+    } */
+
 
     /* ----------------- CARD GRID ----------------- */
 

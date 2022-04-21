@@ -29,7 +29,7 @@ header {
 }
 
 .header-logo img {
-    max-width: 220px;
+    max-width: 18rem;
     height: auto;
 }
 
@@ -243,7 +243,13 @@ header {
     font-size: 1.5rem;
     font-weight: bold;
     margin-right: 1rem;
+    transition: all 0.3s ease-in-out;
 }
+
+/* .header-menu ul li:hover::before {
+    font-size: 2rem;
+    transform: scale(2);
+} */
 
 .header-menu .offcanvas {
     padding: 3rem;
