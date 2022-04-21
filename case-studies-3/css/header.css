@@ -107,15 +107,16 @@ header {
     fill: white;
     text-align: center;
     width: 1rem;
-    animation: scale-bubble 0.7s ease-in-out 1s infinite alternate;
+    animation: scale-bubble 0.7s ease-in-out 0.5s infinite alternate;
 }
 
 @keyframes scale-bubble {
     from {
-        width: 1rem;
+        transform: scale(1);
     }
     to {
-        width: 1.3rem;
+        transform: scale(1.5);
+        /* box-shadow: 0px 0px 8px white; */
     };
 }
 
