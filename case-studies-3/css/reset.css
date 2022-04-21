@@ -34,3 +34,7 @@ ol, ul {
 a, a:hover {
     text-decoration: none;
 }
+
+textarea:focus, input:focus{
+    outline: none;
+}
