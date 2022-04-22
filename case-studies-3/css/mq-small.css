@@ -1,6 +1,6 @@
-/* ----------------- MOBILE MEDIA QUERIES ----------------- */
+/* ----------------- EXTRASMALL AND SMALL DEVICES ----------------- */
 
-@media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 769px) {
 
     footer p {
         font-size: 1.15rem;
@@ -14,6 +14,7 @@
 
     .header-icons {
         padding: 2rem;
+        width: 100%;
     }
 
     .header-mobile-nav {
@@ -47,41 +48,43 @@
     /* ----------------- CARD GRID ----------------- */
 
     .card-container {
+        width: 100%;
         grid-template-columns: 1fr;
         padding: 0 1.2rem 6.8rem;
     }
 
     .card {
-        max-height: 28rem;
+        max-width: 28rem;
+        max-height: 27rem;
         padding: 3rem 3rem;
+    }
+
+    .card-header-cm {
+        grid-template-columns: 1fr;
+    }
+
+    .card-svg-link {
+        display: none;
     }
 
     .card-title {
         font-size: 2rem;
     }
 
-    .card-category, .card-footer-cm p {
-        font-size: 1rem;
-        line-height: 1.8rem;
-    }
-
      /* ----------------- FOOTER HERO ----------------- */
+
     .footer-hero-wrapper {
-        width: 85%;
+        width: 90%;
     }
 
      .footer-hero h2 {
-        font-size: 2rem;
-        line-height: 2.7rem;
+        font-size: 2.5rem;
+        line-height: 3rem;
+        margin-bottom: 1.8rem;
     }
 
     .footer-hero h5 {
-        font-size: 1.2rem;
-        line-height: 1.8rem;
-    }
-
-    .footer-hero button {
-        font-size: 1.2rem;
+        margin: 0;
     }
 
     /* ----------------- FOOTER MENU ----------------- */
@@ -91,13 +94,14 @@
     }
 
     .footer-grid-container {
+        width: 100%;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 3;
         grid-template-areas:
         'col1 col2'
         'col3 col4'
         'newsletter newsletter';
-        row-gap: 5rem;
+        gap: 3rem 4rem;
     }
 
     .footer-newsletter {
@@ -114,7 +118,11 @@
 
     /* ----------------- FOOTER ADDRESS & CREDITS ----------------- */
 
+    .footer-address, .footer-credits {
+        width: 100%;
+    }
+
     .footer-credits p {
-        line-height: 1.5rem;
+        line-height: 1.6rem;
     }
 }

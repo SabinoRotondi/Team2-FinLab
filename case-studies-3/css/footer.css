@@ -22,7 +22,7 @@ footer p {
     display: flex;
     flex-direction: column;
     text-align: center;
-    width: 52%;
+    width: 45%;
     margin: auto;
     padding: 7.6rem 0;
 }
@@ -41,7 +41,7 @@ footer p {
     font-weight: 400;
     text-shadow: 0.1rem 0.1rem 0.5rem rgba(0, 0, 0, 0.2);
     line-height: 2.4rem;
-    margin-top: 1.7rem;
+    margin: 1.7rem 10rem 0;
 }
 
 .footer-hero button {
@@ -74,13 +74,11 @@ footer p {
 
 /* ----------------- FOOTER MENU ----------------- */
 
-.footer-menu {
-    padding: 0 8.5rem;
-}
-
 .footer-grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 2fr;
+    width: 60%;
+    margin: auto;
 }
 
 .footer-grid-container h5 {
@@ -104,13 +102,9 @@ footer p {
     color: white;
 }
 
-.footer-credits p {
-    font-size: 1.1rem;
-}
-
 footer form {
     display: flex;
-    margin-top: 4rem;
+    margin-top: 3rem;
 }
 
 footer input {
@@ -141,17 +135,21 @@ footer input[type="submit"] {
     background-repeat: no-repeat;
     margin-top: 1rem;
     position: absolute;
-    right: 8rem;
+    right: 25rem;
 }
 
 /* ----------------- FOOTER ADDRESS & CREDITS ----------------- */
 
 .footer-address {
-    padding: 3rem 0 5rem 0;
-    border-bottom: solid 0.05rem rgba(255,255,255,0.15)
+    width: 60%;
+    margin: auto;
+    padding: 4rem 0 5rem 0;
+    border-bottom: solid 0.04rem rgba(255,255,255,0.1);
 }
 
 .footer-credits {
+    width: 60%;
+    margin: auto;
     text-align: center;
     padding: 4rem 0;
 }

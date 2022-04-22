@@ -1,14 +1,14 @@
 /* ----------------- CATEGORIES FILTER ----------------- */
 
 .filter-categories {
-    padding: 5rem 0;
+    padding: 5rem;
 }
 
 .filter-categories ul {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    gap: 3rem;
+    gap: 3.4rem;
 }
 
 .filter-categories li {
@@ -35,7 +35,10 @@
 .card-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    padding: 0 6.8rem 6.8rem;
+    justify-items: center;
+    width: 60%;
+    margin: auto;
+    padding-bottom: 6.8rem;
     gap: 2.5rem;
 }
 
@@ -44,7 +47,8 @@
     justify-content: space-between;
     border-radius: 0;
     border: none;
-    height: 48rem;
+    height: 49rem;
+    width: 48rem;
     padding: 3.4rem 4.6rem;
     cursor: pointer;
 }
