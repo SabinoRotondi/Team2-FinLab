@@ -563,3 +563,7 @@ input[name="casestudies"]:checked ~ .dropdown-casestudies {
     margin: 0;
     z-index: 1;
 }
+
+.modal-dialog-scrollable .modal-content {
+    margin-top: 15vh;
+}
