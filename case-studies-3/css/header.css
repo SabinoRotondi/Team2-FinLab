@@ -251,6 +251,8 @@ header {
     transform: scale(2);
 } */
 
+/* ----------------- OFF CANVAS (header-menu) ----------------- */
+
 .header-menu .offcanvas {
     padding: 3rem;
 }
@@ -294,11 +296,16 @@ header {
     padding: 0.7rem 1.8rem;
     border: solid 0.1rem rgba(0, 0, 0, 0.1);
     font-size: 1.2rem;
+    transition: all 0.2s ease-in-out;
 }
 
 .offcanvas form input::placeholder {
     color: var(--body);
     opacity: 0.7;
+}
+
+.header-menu .offcanvas-body input:focus {
+    border: solid 0.1rem var(--green);
 }
 
 .submit-btn-drop {
