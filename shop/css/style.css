@@ -1,9 +1,9 @@
-@import "/case-studies-3/css/reset.css"; /* RESET */
-@import "/case-studies-3/css/header.css"; /* HEADER */
-@import "/case-studies-3/css/footer.css"; /* FOOTER */
-@import "/case-studies-3/css/mq-small.css"; /* SMALL DEVICES MEDIA QUERY */
-@import "/case-studies-3/css/mq-medium.css"; /* MEDIUM DEVICES MEDIA QUERY */
-@import "/case-studies-3/css/mq-large.css"; /* LARGE DEVICES MEDIA QUERY*/
+@import "/shop/css/reset.css"; /* RESET */
+@import "/shop/css/header.css"; /* HEADER */
+@import "/shop/css/footer.css"; /* FOOTER */
+@import "/shop/css/mq-small.css"; /* SMALL DEVICES MEDIA QUERY */
+@import "/shop/css/mq-medium.css"; /* MEDIUM DEVICES MEDIA QUERY */
+@import "/shop/css/mq-large.css"; /* LARGE DEVICES MEDIA QUERY*/
 
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
 

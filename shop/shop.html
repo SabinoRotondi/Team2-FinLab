@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/shop/css/style.css">
+
+    <title>Shop</title>
+</head>
+<body>
+    <header>
+        <nav class="header-icons">
+            <section class="header-logo-social">
+                <section class="header-logo">
+                    <a href="#"><img src="/shop/images/logo-finlab.png" alt="Logo Finlab.wp Consulting Services"></a>
+                </section>
+
+                <section class="header-social">
+                    <!-- Facebook --> <a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><title>Facebook</title><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg></a>
+                    <!-- Twitter --> <a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><title>Twitter</title><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg></a>
+                    <!-- Envato --> <a href="#"><?xml version="1.0" encoding="utf-8"?><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 107.7 122.9" style="enable-background:new 0 0 107.7 122.9;" xml:space="preserve"><title>Envato</title><path class="st0" d="M91.8,1c-3.6-2-13.9-0.8-26.3,3c-21.7,14.8-40,36.7-41.3,71.8c-0.2,0.8-2.4-0.1-2.8-0.4c-5.9-11.2-8.2-23.1-3.3-40.1c0.9-1.5-2.1-3.4-2.6-2.8c-3.2,3.3-6.1,7-8.5,11C-7.8,69,1.8,101.8,27.6,116.1c25.8,14.4,58.3,5.1,72.7-20.7c0,0,0,0,0,0C116.9,65.7,101.5,6.4,91.8,1z"/></svg></a>
+                    <!-- Messenger --> <a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256.55 8C116.52 8 8 110.34 8 248.57c0 72.3 29.71 134.78 78.07 177.94 8.35 7.51 6.63 11.86 8.05 58.23A19.92 19.92 0 0 0 122 502.31c52.91-23.3 53.59-25.14 62.56-22.7C337.85 521.8 504 423.7 504 248.57 504 110.34 396.59 8 256.55 8zm149.24 185.13l-73 115.57a37.37 37.37 0 0 1-53.91 9.93l-58.08-43.47a15 15 0 0 0-18 0l-78.37 59.44c-10.46 7.93-24.16-4.6-17.11-15.67l73-115.57a37.36 37.36 0 0 1 53.91-9.93l58.06 43.46a15 15 0 0 0 18 0l78.41-59.38c10.44-7.98 24.14 4.54 17.09 15.62z"/></svg></a>
+                </section>
+            </section>  
+
+            <section class="header-buttons">
+                <section class="header-buttons-wrapper">
+                    <button class="header-talk-button" data-toggle="modal" data-target=".bd-example-modal-lg"><?xml version="1.0" encoding="utf-8"?>
+                        <?xml version="1.0" encoding="utf-8"?>
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                            viewBox="0 0 512 450" style="enable-background:new 0 0 512 450;" xml:space="preserve">
+                        <path d="M0,209c0,114.9,113.7,208,255.1,208c38.4,0,74.8-7.1,107.4-19.4C388,417.2,436.9,449,503.1,449c3.2,0,6-1.8,7.3-4.8
+                            c1.4-3,0.8-6.5-1.5-8.7c-0.5-0.5-42.3-45.4-54.8-95.8c35.6-35.7,57-81.1,57-130.7c0-114.9-114.6-208-256-208S0,94.1,0,209z"/>
+                        </svg>
+                        Talk with an Expert
+                    </button>
+
+                    <!------ Start of Modal ------>
+                    <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-scrollable modal-lg">
+                            <div class="modal-content">
+                                <button type="button" class="btn-close text-reset" data-dismiss="modal" aria-label="Close"></button>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="modal-select-row">
+                                            <label for="iam">I'm a/an</label>
+                                            <select name="iam" id="iam">
+                                            <option value="volvo">Freelancer/Own Business</option>
+                                            <option value="other">Other Options</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="modal-select-row">
+                                            <label for="iwant">I want</label>
+                                            <select name="iwant" id="iwant">
+                                            <option value="call">Call me to discuss my questions</option>
+                                            <option value="email">Email me your digital prospectus</option>
+                                            <option value="mail">Mail me your full information pack</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="modal-select-row">
+                                            <label for="interest">I'm interested in</label>
+                                            <select name="interest" id="interest">
+                                            <option value="consultant">Financial Consultant</option>
+                                            <option value="accounting">Accounting Services</option>
+                                            <option value="tax">Tax Services</option>
+                                            <option value="career">Careers</option>
+                                            <option value="info">Request Additional Information</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="modal-input-row">
+                                            <label for="name">Your Name *</label>
+                                            <input type="text" name="name" id="name" placeholder="Eg: John Doe" required>
+                                        </div>
+
+                                        <div class="modal-input-row grid">
+                                            <div>
+                                                <label for="email">Your Email *</label>
+                                                <input type="email" name="email" id="email" placeholder="name@company.com" required>
+                                            </div>
+
+                                            <div>
+                                                <label for="tel">Phone Number</label>
+                                                <input type="tel" name="tel" id="tel" placeholder="Full Number (incl. prefix)">
+                                            </div>
+                                        </div>
+
+                                        <div class="modal-input-row">
+                                            <label for="message">Message</label>
+                                            <textarea placeholder="Enter Message" rows="3"></textarea>
+                                        </div>
+
+                                        <div class="modal-checkbox">
+                                            <input type="checkbox" name="signup" id="signup" required>
+                                            <label for="signup">I agree to receive communications from FinLab.</label>
+                                        </div>
+
+                                        <input type="submit" value="Send Message" class="submit-btn-drop">
+                                    </form>
+                                </div>
+                            </div>              
+                        </div>
+                    </div>
+                    <!------ End of Modal ------>
+
+                    <!-- Cart --><a href="#" class="header-buttons-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><title>Cart</title><path d="M96 0C107.5 0 117.4 8.19 119.6 19.51L121.1 32H541.8C562.1 32 578.3 52.25 572.6 72.66L518.6 264.7C514.7 278.5 502.1 288 487.8 288H170.7L179.9 336H488C501.3 336 512 346.7 512 360C512 373.3 501.3 384 488 384H159.1C148.5 384 138.6 375.8 136.4 364.5L76.14 48H24C10.75 48 0 37.25 0 24C0 10.75 10.75 0 24 0H96zM128 464C128 437.5 149.5 416 176 416C202.5 416 224 437.5 224 464C224 490.5 202.5 512 176 512C149.5 512 128 490.5 128 464zM512 464C512 490.5 490.5 512 464 512C437.5 512 416 490.5 416 464C416 437.5 437.5 416 464 416C490.5 416 512 437.5 512 464z"/></svg></a>
+                
+                    <!-- Search Button --><a href="#" class="header-buttons-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><title>Search</title><path d="M500.3 443.7l-119.7-119.7c27.22-40.41 40.65-90.9 33.46-144.7C401.8 87.79 326.8 13.32 235.2 1.723C99.01-15.51-15.51 99.01 1.724 235.2c11.6 91.64 86.08 166.7 177.6 178.9c53.8 7.189 104.3-6.236 144.7-33.46l119.7 119.7c15.62 15.62 40.95 15.62 56.57 0C515.9 484.7 515.9 459.3 500.3 443.7zM79.1 208c0-70.58 57.42-128 128-128s128 57.42 128 128c0 70.58-57.42 128-128 128S79.1 278.6 79.1 208z"/></svg></a>
+                </section>
+
+                <section class="header-mobile-nav">
+                    <!-- Mobile Hamburger Menu -->
+                    <button class="mobile-menu-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offCanvasMobile" aria-controls="offcanvasWithBothOptions"></button>
+    
+                    <!------ Start of Off Canvas Mobile Menu ----->
+                    <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offCanvasMobile" aria-labelledby="offcanvasWithBothOptionsLabel">
+                        <div class="offcanvas-header">
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <nav class="mobile-menu">
+                                <label for="homepage">Homepage</label><span>
+                                <input type="checkbox" name="homepage" id="homepage">
+                                <div class="dropdown-menu-mobile dropdown-homepage">
+                                    <ul>
+                                        <li><a href="#">Home 1</a></li>
+                                        <li><a href="#">Home 2</a></li>
+                                    </ul>
+                                </div>
+    
+                                <label for="whoweare">Who We Are</label>
+                                <input type="checkbox" name="whoweare" id="whoweare">
+                                <div class="dropdown-menu-mobile dropdown-whoweare">
+                                    <ul>
+                                        <li><a href="#">About Us</a></li>
+                                        <li><a href="#">Our Leadership Team</a></li>
+                                        <li><a href="#">Why Choose Us</a></li>
+                                        <li><a href="#">Our History</a></li>
+                                        <li><a href="#">Careers</a></li>
+                                    </ul>
+                                </div>
+    
+                                <label for="whatwedo">What We Do</label>
+                                <input type="checkbox" name="whatwedo" id="whatwedo">
+                                <div class="dropdown-menu-mobile dropdown-whatwedo">
+                                    <ul>
+                                        <li><a href="#">Accounting Services</a></li>
+                                        <li><a href="#">Audit & Tax </a></li>
+                                        <li><a href="#">Capital Investments</a></li>
+                                        <li><a href="#">Finance & Restructuring</a></li>
+                                        <li><a href="#">Financial Consultant</a></li>
+                                        <li><a href="#">Portfolio Management</a></li>
+                                        <li><a href="#">Technology Advisory</a></li>
+                                        <li><a href="#">All Services Page</a></li>
+                                    </ul>
+                                </div>
+    
+                                <label for="casestudies">Case Studies</label>
+                                <input type="checkbox" name="casestudies" id="casestudies">
+                                <div class="dropdown-menu-mobile dropdown-casestudies">
+                                    <ul>
+                                        <li><a href="#">Cases Grid 1</a></li>
+                                        <li><a href="#">Cases Grid 2</a></li>
+                                        <li><a href="#">Cases Grid 3</a></li>
+                                    </ul>
+                                </div>
+    
+                                <ul>
+                                    <li><a href="#">Blog & Insights</a></li>
+                                    <li><a href="#">Shop</a></li>
+                                    <li><a href="#">Contact Us</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <!------ End of Off Canvas Mobile Menu ----->  
+                </section>
+            </section>
+        </nav>
+
+        <hr class="header-divider">
+
+        <nav class="header-menu">
+            <button class="offcanvas-btn-desktop" type="button" data-bs-toggle="offcanvas" data-bs-target="#offCanvasDesktop" aria-controls="offcanvasWithBothOptions"></button>
+
+            <!------ Start of Off Canvas ----->
+            <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offCanvasDesktop" aria-labelledby="offcanvasWithBothOptionsLabel">
+                <div class="offcanvas-body">
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+
+                    <img src="https://fin.21lab.co/wp-content/uploads/2021/09/c4.jpg" alt="">
+
+                    <p class="offcanvas-description">
+                        Our firm provides the expert support organisations need to thrive in a fast-changing world.
+                    </p>
+
+                    <p>
+                        <strong>Address:</strong> 1270 Beverley Rd Brooklyn, New York 11226 United States.
+                    </p>
+                    <p>   
+                        <strong>Phone:</strong> <a href="#">0712 610 33 181</a>
+                    </p>
+                    <p>
+                        <strong>Mail:</strong> <a href="#">info@example.com</a>
+                    </p>
+
+                    <form>
+                        <legend>Request a callback</legend>
+                        <input type="text" name="name" id="name" placeholder="Your Name *" required>
+                        <input type="tel" name="tel" id="tel" placeholder="Phone Number *" required>
+                        <input type="submit" value="Request a Callback" class="submit-btn-drop">
+                    </form>
+                </div>
+            </div>
+            <!------ End of Off Canvas ----->
+
+            <div class="dropdown-nav"> <!-- Homepage -->
+                <button class="dropdown-button caret">Homepage</button>
+                <div class="dropdown-content">
+                    <ul>
+                        <li><a href="#">Home 1</a></li>
+                        <li><a href="#">Home 2</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="dropdown-nav"> <!-- Who We Are -->
+                <button class="dropdown-button caret">Who We Are</button>
+                <div class="dropdown-content">
+                    <ul>
+                        <li><a href="#">Our Leadership Team</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Why Choose Us</a></li>
+                        <li><a href="#">Our History</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="dropdown-nav"> <!-- What We Do -->
+                <button class="dropdown-button caret">What We Do</button>
+                <div class="dropdown-content">
+                    <ul>
+                        <li><a href="#">Accounting Services</a></li>
+                        <li><a href="#">Audit & Tax Services</a></li>
+                        <li><a href="#">Capital Investments</a></li>
+                        <li><a href="#">Finance & Restructuring</a></li>
+                        <li><a href="#">Financial Consultant</a></li>
+                        <li><a href="#">Portfolio Management</a></li>
+                        <li><a href="#">Technology Advisory</a></li>
+                        <li><a href="#">All Services Page</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="dropdown-nav"> <!-- Case Studies -->
+                <button class="dropdown-button caret active">Case Studies</button>
+                <div class="dropdown-content">
+                    <ul>
+                        <li><a href="#">Cases Grid 1</a></li>
+                        <li><a href="#">Cases Grid 2</a></li>
+                        <li><a href="#">Cases Grid 3</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="dropdown-nav">
+                <button class="dropdown-button">Blog & Insights</button>
+            </div>   
+
+            <div class="dropdown-nav">
+                <button class="dropdown-button">Shop</button>
+            </div>
+
+            <div class="dropdown-nav">
+                <button class="dropdown-button">Contact Us</button>
+            </div>
+        </nav>
+
+        <section class="page-title">
+            <h1>Shop</h1>
+        </section>
+    </header>
+    
+    <main>
+    </main>
+
+    <footer>
+        <section class="footer-hero">
+            <div class="footer-hero-wrapper">
+                <h2>Your Future in Finance Starts Here</h2>
+                <h5>Learn more about our commercial loan broker training program & join our family of over 700 successful entrepreneurs.</h6>
+                <button>Get My Free Proposal</button>
+                <p>Or call us now at <a href="#">0712 610 33 181</a></p>
+            </div>
+        </section>
+    
+        <nav class="footer-menu">
+            <section class="footer-grid-container">
+                <div class="footer-menu-col1">
+                    <h5>Follow Us</h5>
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">LinkedIn</a></li>
+                    </ul>
+                </div>
+    
+                <div class="footer-menu-col2">
+                    <h5>Company</h5>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Our People</a></li>
+                        <li><a href="#">Blog & Insights</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+    
+                <div class="footer-menu-col3">
+                    <h5>Services</h5>
+                    <ul>
+                        <li><a href="#">Accounting</a></li>
+                        <li><a href="#">Financial</a></li>
+                        <li><a href="#">Investments</a></li>
+                        <li><a href="#">Tax & Audit</a></li>
+                    </ul>
+                </div>
+    
+                <div class="footer-menu-col4">
+                    <h5>Industries</h5>
+                    <ul>
+                        <li><a href="#">Automotive</a></li>
+                        <li><a href="#">Banking</a></li>
+                        <li><a href="#">Insurance</a></li>
+                        <li><a href="#">Healthcare</a></li>
+                    </ul>
+                </div>
+            </section>
+    
+            <section class="footer-newsletter">
+                <p>
+                    By providing your e-mail address, you are consenting to receive press releases, presentations and other information concerning FinLab.
+                </p>
+    
+                <form>
+                    <input type="email" name="email" id="email" placeholder="Your email address">
+                    <button></button>
+                </form>
+            </section>
+    
+            <section class="footer-address">
+                <p>
+                    Address: 1270 Beverley Rd Brooklyn, New York 11226 United States.
+                </p>
+                <p>
+                    Phone: <a href="#">0712 610 33 181</a>
+                    <span class="divider">&#124;</span>
+                    Mail: <a href="#">info@example.com</a>
+                </p>
+            </section>
+    
+            <section class="footer-credits">
+                <p>
+                    Copyright &copy; 2022 LineThemes. Designed by <a href="#">LineThemes</a> and Developed by Amalia Cicala.
+                </p>
+            </section>
+        </nav>
+    </footer>
+</body>
+</html>

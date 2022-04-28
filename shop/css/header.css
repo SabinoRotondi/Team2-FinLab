@@ -160,7 +160,7 @@ header {
     border: solid 0.1rem white;
     border-radius: 50%;
     padding: 1.4rem;
-    background-image: url(/case-studies-3/images/bars-solid-body-darker.svg);
+    background-image: url(/shop/images/bars-solid-body-darker.svg);
     background-repeat: no-repeat;
     background-size: 1.2rem;
     background-position: center center;
@@ -404,7 +404,7 @@ header {
     border: solid 0.1rem white;
     border-radius: 50%;
     padding: 1.4rem;
-    background-image: url(/case-studies-3/images/bars-solid-white.svg);
+    background-image: url(/shop/images/bars-solid-white.svg);
     background-repeat: no-repeat;
     background-size: 1.2rem;
     background-position: center center;
