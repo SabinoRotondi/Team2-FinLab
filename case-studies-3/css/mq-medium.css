@@ -12,7 +12,7 @@
     }
 
     .header-mobile-nav {
-        display: block;
+        display: inline-flex;
     }
 
     .header-icons {
@@ -36,11 +36,22 @@
         font-size: 1.8rem;
     }
 
-    .filter-categories li a {
-        font-size: 1.8rem;
+    /* ----------------- OFF CANVAS TABLET MENU ----------------- */
+
+    .header-mobile-nav .offcanvas-end {
+        width: 60%;
+    }
+
+    .header-mobile-nav .offcanvas-end label, .header-mobile-nav .offcanvas-end a {
+        line-height: 3rem;
+        font-size: 1.5rem;
     }
 
     /* ----------------- CARD GRID ----------------- */
+
+    .filter-categories li a {
+        font-size: 1.8rem;
+    }
 
     .card-container {
         width: 100%;

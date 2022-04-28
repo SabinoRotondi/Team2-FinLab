@@ -63,18 +63,18 @@ header {
     background-color: var(--body);
 }
 
-.header-buttons {
+.header-buttons-wrapper {
     display: inline-flex;
     align-items: center;
     gap: 1rem;
 }
 
-.header-buttons svg {
+.header-buttons-wrapper svg {
     width: 1.4rem;
     fill: var(--body);
 }
 
-.header-buttons a {
+.header-buttons-wrapper a {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -86,9 +86,13 @@ header {
     transition: all 0.2s ease-in-out;
 }
 
+.header-buttons {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
 .header-buttons a:hover {
-    /* width: 3.3rem;
-    height: 3.3rem; */
     transform: scale(1.2, 1.2);
 }
 
