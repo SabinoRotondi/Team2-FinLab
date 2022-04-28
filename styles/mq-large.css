@@ -1,0 +1,31 @@
+/* ----------------- LARGE DEVICES ----------------- */
+
+@media only screen and (min-width: 1185px) and (max-width: 1800px) {
+    .header-icons {
+        width: 90%;
+        padding: 2rem 3rem;
+    }
+    
+    .header-menu {
+        width: 90%;
+        padding: 0 3rem;
+    }
+
+    .card-container {
+        width: 90%;
+    }
+
+    .footer-grid-container, .footer-address, .footer-credits {
+        width: 85%;
+    }
+
+    footer input[type="submit"] {
+        right: 16rem;
+    }
+
+    .card {
+        height: 43rem;
+        width: 43rem;
+    }
+    
+}

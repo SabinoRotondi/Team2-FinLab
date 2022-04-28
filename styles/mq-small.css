@@ -1,0 +1,128 @@
+/* ----------------- EXTRASMALL AND SMALL DEVICES ----------------- */
+
+@media (min-width: 320px) and (max-width: 769px) {
+
+    footer p {
+        font-size: 1.15rem;
+    }
+
+    /* ----------------- HEADER ----------------- */
+
+    .header-social, .header-buttons, .header-menu {
+        display: none;
+    }
+
+    .header-icons {
+        padding: 2rem;
+        width: 100%;
+    }
+
+    .header-mobile-nav {
+        display: block;
+    }
+
+    .offcanvas-btn-mobile {
+        display: block;
+    }
+
+    .page-title h1 {
+        font-size: 2.5rem;
+    }
+
+    .page-title h5 {
+        font-size: 1.5rem;
+    }
+
+    /* ----------------- CATEGORIES FILTER ----------------- */
+    
+    .filter-categories ul {
+        gap: 2rem;
+    }
+
+    .filter-categories li a {
+        border: solid 1px rgba(0,0,0,0.1);
+        padding: 0.2rem 1.2rem;
+        font-size: 1.2rem;
+    }
+
+    /* ----------------- CARD GRID ----------------- */
+
+    .card-container {
+        width: 100%;
+        grid-template-columns: 1fr;
+        padding: 0 1.2rem 6.8rem;
+    }
+
+    .card {
+        max-width: 28rem;
+        max-height: 27rem;
+        padding: 3rem 3rem;
+    }
+
+    .card-header-cm {
+        grid-template-columns: 1fr;
+    }
+
+    .card-svg-link {
+        display: none;
+    }
+
+    .card-title {
+        font-size: 2rem;
+    }
+
+     /* ----------------- FOOTER HERO ----------------- */
+
+    .footer-hero-wrapper {
+        width: 90%;
+    }
+
+     .footer-hero h2 {
+        font-size: 2.5rem;
+        line-height: 3rem;
+        margin-bottom: 1.8rem;
+    }
+
+    .footer-hero h5 {
+        margin: 0;
+    }
+
+    /* ----------------- FOOTER MENU ----------------- */
+
+    .footer-menu {
+        padding: 0 2rem;
+    }
+
+    .footer-grid-container {
+        width: 100%;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 3;
+        grid-template-areas:
+        'col1 col2'
+        'col3 col4'
+        'newsletter newsletter';
+        gap: 3rem 4rem;
+    }
+
+    .footer-newsletter {
+        grid-area: newsletter;
+    }
+
+    footer input[type="submit"] {
+        right: 2rem;
+    }
+
+    footer form {
+        margin: 3rem 0;
+    }
+
+    /* ----------------- FOOTER ADDRESS & CREDITS ----------------- */
+
+    .footer-address, .footer-credits {
+        width: 100%;
+    }
+
+    .footer-credits p {
+        line-height: 1.6rem;
+    }
+}

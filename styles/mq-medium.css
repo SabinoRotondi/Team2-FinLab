@@ -1,0 +1,140 @@
+/* ----------------- MEDIUM AND LARGE DEVICES ----------------- */
+
+@media (min-width: 770px) and (max-width: 1185px) {
+    html {
+        font-size: 10px;
+    }
+
+    /* ----------------- HEADER ----------------- */
+
+    .header-social, .header-menu {
+        display: none;
+    }
+
+    .header-mobile-nav {
+        display: block;
+    }
+
+    .header-icons {
+        width: 90%;
+    }
+
+    .header-menu {
+        padding: 0 2rem;
+        justify-content: center;
+    }
+
+    .dropdown-button {
+        font-size: 1.2rem;
+    }
+
+    .page-title h1 {
+        font-size: 3.25rem;
+    }
+
+    .page-title h5 {
+        font-size: 1.8rem;
+    }
+
+    .filter-categories li a {
+        font-size: 1.8rem;
+    }
+
+    /* ----------------- CARD GRID ----------------- */
+
+    .card-container {
+        width: 100%;
+        gap: 3rem 1rem;
+        padding: 0 2rem 6.5rem 2rem;
+    }
+
+    .card {
+        max-height: 35rem;
+        max-width: 36rem;
+    }
+
+    .card-title {
+        font-size: 2.4rem;
+    }
+
+    .card-category, .card-footer-cm p {
+        font-size: 1.4rem;
+        line-height: 2.5rem;
+    }
+
+    /* ----------------- FOOTER HERO ----------------- */
+
+    footer p {
+        font-size: 1.5rem;
+    }
+
+    .footer-hero-wrapper {
+        width: 65%;
+    }
+
+    .footer-hero h2 {
+        font-size: 6rem;
+        line-height: 7rem;
+    }
+
+    .footer-hero h5 {
+        font-size: 1.8rem;
+        line-height: 2.8rem;
+        margin: 1.7rem 5rem;
+    }
+
+    .footer-hero button {
+        font-size: 1.5rem;
+        padding: 2rem 6.2rem;
+    }
+
+    /* ----------------- FOOTER MENU ----------------- */
+
+    .footer-grid-container {
+        width: 100%;
+        justify-items: center;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 2;
+        grid-template-areas:
+        'col1 col2 col3 col4'
+        'newsletter newsletter newsletter newsletter';
+        row-gap: 5rem;
+    }
+
+    .footer-grid-container li a, .footer-grid-container h5 {
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+    }
+
+    .footer-newsletter {
+        grid-area: newsletter;
+        padding: 4rem 4rem 5rem;
+    }
+
+    footer input[type="email"] {
+        margin-top: 2rem;
+        padding: 2rem;
+    }
+
+    footer input[type="email"]::placeholder {
+        font-size: 1.4rem;
+    }    
+
+    footer input[type="submit"] {
+        width: 3%;
+        margin-top: 4rem;
+        right: 4rem;
+    }
+
+    footer form {
+        margin: 0;
+    }
+
+    /* ----------------- FOOTER ADDRESS & CREDITS ----------------- */
+
+    .footer-address, .footer-credits {
+        width: 100%;
+        padding: 4rem 4rem 5rem;
+    }
+
+}
