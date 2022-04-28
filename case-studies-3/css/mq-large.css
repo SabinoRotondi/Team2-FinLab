@@ -2,21 +2,21 @@
 
 @media only screen and (min-width: 1185px) and (max-width: 1800px) {
     .header-icons {
-        width: 90%;
+        width: 80%;
         padding: 2rem 3rem;
     }
     
     .header-menu {
-        width: 90%;
+        width: 80%;
         padding: 0 3rem;
     }
 
     .card-container {
-        width: 90%;
+        width: 80%;
     }
 
     .footer-grid-container {
-        width: 55%;
+        width: 50%;
     }
 
     .footer-newsletter {
@@ -24,7 +24,7 @@
     }
 
     .footer-address, .footer-credits {
-        width: 80%;
+        width: 75%;
     }
 
     footer input[type="submit"] {

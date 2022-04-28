@@ -36,7 +36,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
-    width: 60%;
+    width: 65%;
     margin: auto;
     padding-bottom: 6.8rem;
     gap: 2.5rem;
