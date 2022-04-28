@@ -8,12 +8,12 @@
 
     /* ----------------- HEADER ----------------- */
 
-    .header-social, .header-buttons-wrapper, .header-menu {
+    .header-social, .header-buttons-wrapper, .header-menu, .header-divider {
         display: none;
     }
 
     .header-icons {
-        padding: 2rem;
+        padding: 1.6rem 1.6rem 1.3rem;
         width: 100%;
     }
 
@@ -23,6 +23,10 @@
 
     .offcanvas-btn-mobile {
         display: block;
+    }
+
+    .page-title {
+        padding: 5rem 5rem 5rem;
     }
 
     .page-title h1 {
@@ -35,14 +39,18 @@
 
     /* ----------------- CATEGORIES FILTER ----------------- */
     
+    .filter-categories {
+        padding: 5rem 2rem;
+    }
+
     .filter-categories ul {
-        gap: 2rem;
+        gap: 1.3rem;
     }
 
     .filter-categories li a {
         border: solid 1px rgba(0,0,0,0.1);
-        padding: 0.2rem 1.2rem;
-        font-size: 1.2rem;
+        padding: 0.2rem 1.1rem;
+        font-size: 1.3rem;
     }
 
     /* ----------------- CARD GRID ----------------- */

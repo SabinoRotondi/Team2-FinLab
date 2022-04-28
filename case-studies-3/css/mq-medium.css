@@ -1,9 +1,6 @@
 /* ----------------- MEDIUM AND LARGE DEVICES ----------------- */
 
 @media (min-width: 768px) and (max-width: 1185px) {
-    html {
-        font-size: 10px;
-    }
 
     /* ----------------- HEADER ----------------- */
 
@@ -28,12 +25,12 @@
         font-size: 1.2rem;
     }
 
-    .page-title h1 {
-        font-size: 3.25rem;
+    .page-title {
+        padding: 4rem 5rem 5rem;
     }
 
-    .page-title h5 {
-        font-size: 1.8rem;
+    .page-title h1 {
+        font-size: 2.5rem;
     }
 
     /* ----------------- OFF CANVAS TABLET MENU ----------------- */
@@ -49,10 +46,6 @@
 
     /* ----------------- CARD GRID ----------------- */
 
-    .filter-categories li a {
-        font-size: 1.8rem;
-    }
-
     .card-container {
         width: 100%;
         gap: 3rem 1rem;
@@ -60,43 +53,28 @@
     }
 
     .card {
-        max-height: 35rem;
-        max-width: 36rem;
+        max-height: 30rem;
+        max-width: 30rem;
+        padding: 3.2rem 2.8rem;
+    }
+
+    .card-header-cm {
+        grid-template-columns: 1fr;
     }
 
     .card-title {
-        font-size: 2.4rem;
+        font-size: 2rem;
     }
 
     .card-category, .card-footer-cm p {
-        font-size: 1.4rem;
-        line-height: 2.5rem;
+        font-size: 1.2rem;
+        line-height: 2.3rem;
     }
 
     /* ----------------- FOOTER HERO ----------------- */
 
-    footer p {
-        font-size: 1.5rem;
-    }
-
     .footer-hero-wrapper {
         width: 65%;
-    }
-
-    .footer-hero h2 {
-        font-size: 6rem;
-        line-height: 7rem;
-    }
-
-    .footer-hero h5 {
-        font-size: 1.8rem;
-        line-height: 2.8rem;
-        margin: 1.7rem 5rem;
-    }
-
-    .footer-hero button {
-        font-size: 1.5rem;
-        padding: 2rem 6.2rem;
     }
 
     /* ----------------- FOOTER MENU ----------------- */
@@ -106,11 +84,6 @@
         grid-template-columns: 1fr 1fr 1fr 1fr;
         row-gap: 5rem;
         padding: 0 4rem;
-    }
-
-    .footer-grid-container li a, .footer-grid-container h5 {
-        font-size: 1.5rem;
-        line-height: 2.5rem;
     }
 
     /* ----------------- FOOTER NEWSLETTER ----------------- */

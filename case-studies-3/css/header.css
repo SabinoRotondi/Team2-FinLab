@@ -146,6 +146,7 @@ header {
     width: 65%;
     margin: auto;
     gap: 2rem;
+    padding-bottom: 0.4rem;
 }
 
 .offcanvas-btn-desktop {
@@ -396,8 +397,8 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 2.4rem;
-    height: 2.4rem;
+    width: 3.4rem;
+    height: 3.4rem;
     text-align: center;
     background-color: transparent;
     transition: all 0.2s ease-in-out;
