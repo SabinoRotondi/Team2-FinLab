@@ -96,16 +96,18 @@
     .footer-grid-container {
         width: 100%;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 3;
         grid-template-areas:
         'col1 col2'
-        'col3 col4'
-        'newsletter newsletter';
+        'col3 col4';
         gap: 3rem 4rem;
     }
 
+    /* ----------------- FOOTER NEWSLETTER ----------------- */
+
     .footer-newsletter {
-        grid-area: newsletter;
+        width: 100%;
+        padding: 5rem 0 2rem;
+        order: 2;
     }
 
     footer form {
@@ -114,8 +116,14 @@
 
     /* ----------------- FOOTER ADDRESS & CREDITS ----------------- */
 
-    .footer-address, .footer-credits {
+    .footer-address {
         width: 100%;
+        order: 1;
+    }
+
+    .footer-credits {
+        width: 100%;
+        order: 3;
     }
 
     .footer-credits p {

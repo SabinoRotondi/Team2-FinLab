@@ -15,8 +15,16 @@
         width: 90%;
     }
 
-    .footer-grid-container, .footer-address, .footer-credits {
-        width: 85%;
+    .footer-grid-container {
+        width: 55%;
+    }
+
+    .footer-newsletter {
+        width: 25%;
+    }
+
+    .footer-address, .footer-credits {
+        width: 80%;
     }
 
     footer input[type="submit"] {

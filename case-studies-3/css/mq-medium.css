@@ -92,13 +92,9 @@
 
     .footer-grid-container {
         width: 100%;
-        justify-items: center;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 2;
-        grid-template-areas:
-        'col1 col2 col3 col4'
-        'newsletter newsletter newsletter newsletter';
         row-gap: 5rem;
+        padding: 0 4rem;
     }
 
     .footer-grid-container li a, .footer-grid-container h5 {
@@ -106,9 +102,12 @@
         line-height: 2.5rem;
     }
 
+    /* ----------------- FOOTER NEWSLETTER ----------------- */
+
     .footer-newsletter {
-        grid-area: newsletter;
+        width: 100%;
         padding: 4rem 4rem 5rem;
+        order: 2;
     }
 
     footer input[type="email"] {
@@ -130,9 +129,15 @@
 
     /* ----------------- FOOTER ADDRESS & CREDITS ----------------- */
 
-    .footer-address, .footer-credits {
+    .footer-address {
         width: 100%;
-        padding: 4rem 4rem 5rem;
+        padding: 6rem 4rem 8rem;
+        order: 1;
+    }
+
+    .footer-credits {
+        width: 100%;
+        order: 3;
     }
 
 }

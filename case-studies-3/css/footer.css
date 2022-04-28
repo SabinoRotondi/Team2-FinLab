@@ -74,11 +74,16 @@ footer p {
 
 /* ----------------- FOOTER MENU ----------------- */
 
+.footer-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .footer-grid-container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 2fr;
-    width: 60%;
-    margin: auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 45%;
 }
 
 .footer-grid-container h5 {
@@ -100,6 +105,12 @@ footer p {
 
 .footer-grid-container li a:hover {
     color: white;
+}
+
+/* ----------------- FOOTER NEWSLETTER ----------------- */
+
+.footer-newsletter {
+    width: 20%;
 }
 
 footer form {
@@ -148,17 +159,19 @@ footer form button {
 /* ----------------- FOOTER ADDRESS & CREDITS ----------------- */
 
 .footer-address {
-    width: 60%;
+    display: flex;
+    flex-direction: column;
+    width: 65%;
     margin: auto;
     padding: 4rem 0 5rem 0;
-    border-bottom: solid 0.04rem rgba(255,255,255,0.1);
 }
 
 .footer-credits {
-    width: 60%;
+    width: 65%;
     margin: auto;
     text-align: center;
     padding: 4rem 0;
+    border-top: solid 0.04rem rgba(255,255,255,0.1);
 }
 
 .footer-address a, .footer-credits a {
