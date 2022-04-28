@@ -9,6 +9,11 @@ header {
     background-attachment: scroll;
 }
 
+.blur-container {
+    background-color: rgba(255, 255, 255, .08);
+    backdrop-filter: blur(5px);
+}
+
 .header-icons {
     display: flex;
     justify-content: space-between;
@@ -146,6 +151,7 @@ header {
     width: 60%;
     margin: auto;
     gap: 2rem;
+    padding-bottom: 0.4rem;
 }
 
 .offcanvas-btn-desktop {
