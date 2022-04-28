@@ -1,6 +1,6 @@
 /* ----------------- MEDIUM AND LARGE DEVICES ----------------- */
 
-@media (min-width: 770px) and (max-width: 1185px) {
+@media (min-width: 768px) and (max-width: 1185px) {
     html {
         font-size: 10px;
     }

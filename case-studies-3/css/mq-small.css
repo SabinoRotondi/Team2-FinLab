@@ -1,6 +1,6 @@
 /* ----------------- EXTRASMALL AND SMALL DEVICES ----------------- */
 
-@media (min-width: 320px) and (max-width: 769px) {
+@media (max-width: 767px) {
 
     footer p {
         font-size: 1.15rem;
@@ -8,7 +8,7 @@
 
     /* ----------------- HEADER ----------------- */
 
-    .header-social, .header-buttons, .header-menu {
+    .header-social, .header-buttons-wrapper, .header-menu {
         display: none;
     }
 

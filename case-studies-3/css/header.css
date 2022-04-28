@@ -92,6 +92,12 @@ header {
     transform: scale(1.2, 1.2);
 }
 
+.header-buttons-wrapper {
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+}
+
 .header-talk-button {
     display: flex;
     align-items: center;
