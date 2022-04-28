@@ -1,0 +1,94 @@
+/* ----------------- EXTRASMALL AND SMALL DEVICES ----------------- */
+
+@media (max-width: 767px) {
+
+    footer p {
+        font-size: 1.15rem;
+    }
+
+    /* ----------------- HEADER ----------------- */
+
+    .header-social, .header-buttons-wrapper, .header-menu {
+        display: none;
+    }
+
+    .header-icons {
+        padding: 2rem;
+        width: 100%;
+    }
+
+    .header-mobile-nav {
+        display: block;
+    }
+
+    .offcanvas-btn-mobile {
+        display: block;
+    }
+
+    .page-title h1 {
+        font-size: 2.5rem;
+    }
+
+    .page-title h5 {
+        font-size: 1.5rem;
+    }
+
+     /* ----------------- FOOTER HERO ----------------- */
+
+    .footer-hero-wrapper {
+        width: 90%;
+    }
+
+     .footer-hero h2 {
+        font-size: 2.5rem;
+        line-height: 3rem;
+        margin-bottom: 1.8rem;
+    }
+
+    .footer-hero h5 {
+        margin: 0;
+    }
+
+    /* ----------------- FOOTER MENU ----------------- */
+
+    .footer-menu {
+        padding: 0 2rem;
+    }
+
+    .footer-grid-container {
+        width: 100%;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+        'col1 col2'
+        'col3 col4';
+        gap: 3rem 4rem;
+    }
+
+    /* ----------------- FOOTER NEWSLETTER ----------------- */
+
+    .footer-newsletter {
+        width: 100%;
+        padding: 5rem 0 2rem;
+        order: 2;
+    }
+
+    footer form {
+        margin: 3rem 0;
+    }
+
+    /* ----------------- FOOTER ADDRESS & CREDITS ----------------- */
+
+    .footer-address {
+        width: 100%;
+        order: 1;
+    }
+
+    .footer-credits {
+        width: 100%;
+        order: 3;
+    }
+
+    .footer-credits p {
+        line-height: 1.6rem;
+    }
+}

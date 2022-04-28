@@ -1,0 +1,128 @@
+/* ----------------- MEDIUM AND LARGE DEVICES ----------------- */
+
+@media (min-width: 768px) and (max-width: 1185px) {
+    html {
+        font-size: 10px;
+    }
+
+    /* ----------------- HEADER ----------------- */
+
+    .header-social, .header-menu {
+        display: none;
+    }
+
+    .header-mobile-nav {
+        display: inline-flex;
+    }
+
+    .header-icons {
+        width: 90%;
+    }
+
+    .header-menu {
+        padding: 0 2rem;
+        justify-content: center;
+    }
+
+    .dropdown-button {
+        font-size: 1.2rem;
+    }
+
+    .page-title h1 {
+        font-size: 3.25rem;
+    }
+
+    .page-title h5 {
+        font-size: 1.8rem;
+    }
+
+    /* ----------------- OFF CANVAS TABLET MENU ----------------- */
+
+    .header-mobile-nav .offcanvas-end {
+        width: 60%;
+    }
+
+    .header-mobile-nav .offcanvas-end label, .header-mobile-nav .offcanvas-end a {
+        line-height: 3rem;
+        font-size: 1.5rem;
+    }
+
+    /* ----------------- FOOTER HERO ----------------- */
+
+    footer p {
+        font-size: 1.5rem;
+    }
+
+    .footer-hero-wrapper {
+        width: 65%;
+    }
+
+    .footer-hero h2 {
+        font-size: 6rem;
+        line-height: 7rem;
+    }
+
+    .footer-hero h5 {
+        font-size: 1.8rem;
+        line-height: 2.8rem;
+        margin: 1.7rem 5rem;
+    }
+
+    .footer-hero button {
+        font-size: 1.5rem;
+        padding: 2rem 6.2rem;
+    }
+
+    /* ----------------- FOOTER MENU ----------------- */
+
+    .footer-grid-container {
+        width: 100%;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        row-gap: 5rem;
+        padding: 0 4rem;
+    }
+
+    .footer-grid-container li a, .footer-grid-container h5 {
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+    }
+
+    /* ----------------- FOOTER NEWSLETTER ----------------- */
+
+    .footer-newsletter {
+        width: 100%;
+        padding: 4rem 4rem 5rem;
+        order: 2;
+    }
+
+    footer input[type="email"] {
+        margin-top: 2rem;
+        padding: 2rem;
+    }
+
+    footer input[type="email"]::placeholder {
+        font-size: 1.4rem;
+    }    
+
+    footer form button {
+        top: 5rem;
+    }
+
+    footer form {
+        margin: 0;
+    }
+
+    /* ----------------- FOOTER ADDRESS & CREDITS ----------------- */
+
+    .footer-address {
+        width: 100%;
+        padding: 6rem 4rem 8rem;
+        order: 1;
+    }
+
+    .footer-credits {
+        width: 100%;
+        order: 3;
+    }
+
+}
