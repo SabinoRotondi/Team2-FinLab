@@ -8,12 +8,12 @@
 
     /* ----------------- HEADER ----------------- */
 
-    .header-social, .header-buttons-wrapper, .header-menu {
+    .header-social, .header-buttons-wrapper, .header-menu, .header-divider {
         display: none;
     }
 
     .header-icons {
-        padding: 2rem;
+        padding: 1.6rem 1.6rem 1.3rem;
         width: 100%;
     }
 
@@ -25,12 +25,19 @@
         display: block;
     }
 
-    .page-title h1 {
-        font-size: 2.5rem;
+    .page-title {
+        width: 90%;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 4.6rem 0 4.6rem;
     }
 
-    .page-title h5 {
-        font-size: 1.5rem;
+    .page-title-title {
+        padding-bottom: 5rem;
+    }
+
+    .page-title h1 {
+        font-size: 2.5rem;
     }
 
      /* ----------------- FOOTER HERO ----------------- */
