@@ -108,10 +108,6 @@
         grid-area: newsletter;
     }
 
-    footer input[type="submit"] {
-        right: 2rem;
-    }
-
     footer form {
         margin: 3rem 0;
     }

@@ -120,10 +120,8 @@
         font-size: 1.4rem;
     }    
 
-    footer input[type="submit"] {
-        width: 3%;
-        margin-top: 4rem;
-        right: 4rem;
+    footer form button {
+        top: 5rem;
     }
 
     footer form {
