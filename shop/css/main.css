@@ -1,0 +1,190 @@
+.body-container {
+    display: flex;
+    width: 65%;
+    margin: auto;
+    padding: 5rem 0;
+    gap: 5rem;
+}
+
+/* ----------------- ASIDE ----------------- */
+
+aside {
+    width: 25%;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+aside h4 {
+    color: var(--primary);
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+
+.categories form {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0 3rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--primary);
+}
+
+.radio-wrapper {
+    line-height: 3.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1.3rem;
+}
+
+.color form {
+    padding: 1rem 0 3rem;
+
+}
+
+.checkbox-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    line-height: 3.5rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--body-darker);
+}
+
+.checkbox-wrapper span {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.filter {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0 3rem;
+}
+
+.filter-wrapper {
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+    padding-bottom: 1.5rem;
+}
+
+.filter-wrapper h6 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--body);
+}
+
+.filter form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 0.5rem;
+}
+
+.filter input[type="submit"], .contact button {
+    border: none;
+    margin-bottom: 4rem;
+    background-color: var(--green);
+    color: white;
+    font-weight: 700;
+    box-shadow: 0 2px 2px rgb(2 58 81 / 6%), 0 4px 4px rgb(2 58 81 / 6%), 0 8px 8px rgb(2 58 81 / 6%), 0 16px 16px rgb(2 58 81 / 6%), 0 32px 32px rgb(2 58 81 / 6%);
+    transition: all 0.3s ease-in-out;
+    width: 100%;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    padding: 1.1rem 2rem;
+}
+
+.filter input[type="submit"]:hover, .contact button:hover {
+    background-color: var(--primary);
+    box-shadow: 0 0 0;
+}
+
+.contact {
+    background-color: #e0ecf0;
+    margin-top: 3rem;
+}
+
+.contact-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 2.4rem;
+}
+
+.contact-wrapper h5 {
+    color: var(--green);
+    font-weight: 700;
+    font-size: 1.35rem;
+    margin-bottom: 1rem;
+}
+
+.contact-wrapper h4 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    line-height: 2.5rem;
+}
+
+.contact-wrapper p {
+    font-size: 1.2rem;
+    color: var(--body);
+    line-height: 2rem;
+    margin-bottom: 2rem;
+}
+
+.contact-wrapper button + p {
+    font-size: 1.1rem;
+    text-align: justify;
+    margin: 1rem 0 0 0;
+}
+
+.contact-wrapper p > a {
+    color: var(--primary);
+    font-weight: 600;
+    transition: all 0.2s ease-in-out;
+}
+
+.contact-wrapper p > a:hover {
+    color: var(--green);
+}
+
+input[type="range"] {
+    -webkit-appearance: none;
+    margin-right: 15px;
+    width: 100%;
+    height: 0.5rem;
+    background: var(--primary);
+    border-radius: 5px;
+  }
+  
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 1.3rem;
+    width: 1.3rem;
+    border-radius: 50%;
+    background: var(--body-darker);
+    cursor: ew-resize;
+    transition: background .3s ease-in-out;
+  }
+  
+  input[type=range]::-webkit-slider-runnable-track  {
+    -webkit-appearance: none;
+    box-shadow: none;
+    border: none;
+    background: transparent;
+  }
+  
+
+/* ----------------- MAIN (BOOKS GRID CONTAINER) ----------------- */
+
+
+.books-grid {
+    width: 85%;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}

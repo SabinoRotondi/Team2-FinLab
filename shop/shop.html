@@ -309,43 +309,59 @@
             <section class="categories">
                 <h4>Categories</h4>
                 <form>
-                    <input type="radio" name="business" id="business">
-                    <label for="business">Business</label>
+                    <div class="radio-wrapper">
+                        <input type="radio" name="business" id="business">
+                        <label for="business">Business</label>
+                    </div>
 
-                    <input type="radio" name="finance" id="finance">
-                    <label for="finance">Finance & Law</label>
+                    <div class="radio-wrapper">
+                        <input type="radio" name="finance" id="finance">
+                        <label for="finance">Finance & Law</label>
+                    </div>
 
-                    <input type="radio" name="hr" id="hr">
-                    <label for="hr">Human Resources</label>
+                    <div class="radio-wrapper">
+                        <input type="radio" name="hr" id="hr">
+                        <label for="hr">Human Resources</label>
+                    </div>
 
-                    <input type="radio" name="sales" id="sales">
-                    <label for="sales">Sales Book</label>
+                    <div class="radio-wrapper">
+                        <input type="radio" name="sales" id="sales">
+                        <label for="sales">Sales Book</label>
+                    </div>
 
-                    <input type="radio" name="uncategorize" id="uncategorize">
-                    <label for="uncategorize">Uncategorize</label>
+                    <div class="radio-wrapper">
+                        <input type="radio" name="uncategorize" id="uncategorize">
+                        <label for="uncategorize">Uncategorize</label>
+                    </div>
                 </form>
             </section>
 
             <section class="color">
                 <h4>Color</h4>
                 <form>
-                    <input type="checkbox" name="blue" id="blue">
-                    <label for="blue">Blue</label>
+                    <div class="checkbox-wrapper">
+                        <input type="checkbox" name="blue" id="blue">
+                        <label for="blue">Blue <span>(2)</span></label>
 
-                    <input type="checkbox" name="green" id="green">
-                    <label for="green">Green</label>
+                        <input type="checkbox" name="green" id="green">
+                        <label for="green">Green <span>(2)</span></label>
+                    </div>
 
-                    <input type="checkbox" name="red" id="red">
-                    <label for="red">Red</label>
+                    <div class="checkbox-wrapper">
+                        <input type="checkbox" name="red" id="red">
+                        <label for="red">Red <span>(3)</span></label>
 
-                    <input type="checkbox" name="yellow" id="yellow">
-                    <label for="yellow">Yellow</label>
+                        <input type="checkbox" name="yellow" id="yellow">
+                        <label for="yellow">Yellow <span>(1)</span></label>
+                    </div>
                 </form>
             </section>
 
             <section class="filter">
-                <h4>Filter by price</h4>
-                <h6>Price: $10 - $60</h6>
+                <div class="filter-wrapper">
+                    <h4>Filter by price</h4>
+                    <h6>Price: $10 - $60</h6>
+                </div>
                 <form>
                     <input type="range" id="filter" name="filter" min="10" max="60" step="10">
                     <input type="submit" value="Filter">
@@ -353,15 +369,17 @@
             </section>
 
             <section class="contact">
-                <h5>Are you Ready</h5>
-                <h4>Your Future in Finance Starts Here.</h4>
-                <p>We Know The Importance Of Delivering The Best Customer Experience.</p>
-                <button>Contact Now</button>
-                <p>Or call us now at <a href="#">0712 610 33 181</a></p>
+                <div class="contact-wrapper">
+                    <h5>Are you Ready</h5>
+                    <h4>Your Future in Finance Starts Here.</h4>
+                    <p>We Know The Importance Of Delivering The Best Customer Experience.</p>
+                    <button>Contact Now</button>
+                    <p>Or call us now at <a href="#">0712 610 33 181</a></p>
+                </div>
             </section>
         </aside>
 
-        <main>
+        <main class="books-grid">
             <section class="filter-books">
                 <section class="results">
                     <p>Showing all 9 results</p>

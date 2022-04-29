@@ -72,6 +72,27 @@
         gap: 3rem 4rem;
     }
 
+    /* ----------------- ASIDE ----------------- */
+
+    .body-container {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    aside, .books-grid {
+        width: 100%;
+    }
+
+    aside {
+        order: 2;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr 1fr;
+        padding-bottom: 5rem;
+    }
+
+
     /* ----------------- FOOTER NEWSLETTER ----------------- */
 
     .footer-newsletter {

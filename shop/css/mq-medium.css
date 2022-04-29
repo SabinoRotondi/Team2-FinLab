@@ -50,6 +50,16 @@
         line-height: 3rem;
         font-size: 1.5rem;
     }
+    
+    /* ----------------- ASIDE ----------------- */
+
+    .body-container {
+        width: 90%;
+    }
+
+    aside {
+        width: 50%;
+    }
 
     /* ----------------- FOOTER HERO ----------------- */
 
