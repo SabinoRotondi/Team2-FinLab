@@ -1,0 +1,220 @@
+/* ----------------- CATEGORIES FILTER ----------------- */
+
+.filter-categories {
+    padding: 5rem;
+}
+
+.filter-categories ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 3.4rem;
+}
+
+.filter-categories li {
+    display: inline-block;
+}
+
+.filter-categories li a {
+    color: var(--body);
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.filter-categories .active {
+    color: var(--green);
+    transition: color 0.2s ease-in-out;
+}
+
+.filter-categories .active:hover {
+    color: var(--primary);
+}
+
+/* ----------------- CARD GRID ----------------- */
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    width: 65%;
+    margin: auto;
+    padding-bottom: 6.8rem;
+    gap: 2.5rem;
+}
+
+.card {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 0;
+    border: none;
+    height: 49rem;
+    width: 48rem;
+    padding: 3.4rem 4.6rem;
+    cursor: pointer;
+}
+
+.card hr {
+    opacity: 1;
+    height: 0.15rem;
+    background-color: white;
+    margin-top: 0;
+    margin-bottom: 1.7rem;
+    grid-area: hr;
+}
+
+.card-header-cm {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: 
+    'hr hr'
+    'title arrow';
+}
+
+.card-title {
+    color: white;
+    font-size: 3rem;
+    font-weight: 600;
+    transition: color 0.2s ease-in-out;
+}
+
+.card-title:hover {
+    color: var(--green);
+    grid-area: title;
+}
+
+.card-category {
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 600;
+    transition: color 0.2s ease-in-out;
+}
+
+.card-category:hover {
+    color: var(--green);
+}
+
+.card-header-cm svg {
+    width: 1.8rem;
+    height: auto;
+    grid-area: arrow;
+    justify-self: end;
+}
+
+.card-svg-link {
+    justify-self: end;
+    height: 4.2rem;
+    width: 4.2rem;
+    background-color: transparent;
+    fill: white;
+    border: solid 0.1rem rgba(255,255,255,0.5);
+    border-radius: 50%;
+    padding: 1rem;
+    transition: all 0.3s ease-in-out;
+}
+
+article:hover .card-svg-link {
+    background-color: white;
+    fill: var(--green);
+}
+
+.card-middle {
+    flex: 2;
+    margin-top: 1rem;
+}
+
+.card-footer-cm {
+    display: flex;
+    gap: 3rem;
+    color: white;
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+
+.card-footer-cm img {
+    width: 4rem;
+    height: auto;
+}
+
+article:nth-child(1) {
+    background-image: 
+        linear-gradient(#023b51d4, #023b51d4), 
+        url(/case-studies-3/images/card1-bg.jpg);
+    background-size: cover;
+    transition: background-image 0.3s ease-in-out;
+}
+
+article:nth-child(1):hover {
+    background-image:
+        linear-gradient(#023b51ed, #023b51ed),
+        url(/case-studies-3/images/card1-bg.jpg);
+}
+
+article:nth-child(2) {
+    background-image: 
+        linear-gradient(#023b51d4, #023b51d4), 
+        url(/case-studies-3/images/card2-bg.jpg);
+    background-size: cover;
+    transition: background-image 0.3s ease-in-out;
+}
+
+article:nth-child(2):hover {
+    background-image:
+        linear-gradient(#023b51ed, #023b51ed),
+        url(/case-studies-3/images/card2-bg.jpg);
+}
+
+article:nth-child(3) {
+    background-image: 
+        linear-gradient(#023b51d4, #023b51d4), 
+        url(/case-studies-3/images/card3-bg.jpg);
+    background-size: cover;
+    transition: background-image 0.3s ease-in-out;
+}
+
+article:nth-child(3):hover {
+    background-image:
+        linear-gradient(#023b51ed, #023b51ed),
+        url(/case-studies-3/images/card3-bg.jpg);
+}
+
+article:nth-child(4) {
+    background-image: 
+        linear-gradient(#023b51d4, #023b51d4), 
+        url(/case-studies-3/images/card4-bg.jpg);
+    background-size: cover;
+    transition: background-image 0.3s ease-in-out;
+}
+
+article:nth-child(4):hover {
+    background-image:
+        linear-gradient(#023b51ed, #023b51ed),
+        url(/case-studies-3/images/card4-bg.jpg);
+}
+
+article:nth-child(5) {
+    background-image: 
+        linear-gradient(#023b51d4, #023b51d4), 
+        url(/case-studies-3/images/card5-bg.jpg);
+    background-size: cover;
+    transition: background-image 0.3s ease-in-out;
+}
+
+article:nth-child(5):hover {
+    background-image:
+        linear-gradient(#023b51ed, #023b51ed),
+        url(/case-studies-3/images/card5-bg.jpg);
+}
+
+article:nth-child(6) {
+    background-image: 
+        linear-gradient(#023b51d4, #023b51d4), 
+        url(/case-studies-3/images/card6-bg.jpg);
+    background-size: cover;
+    transition: background-image 0.3s ease-in-out;
+}
+
+article:nth-child(6):hover {
+    background-image:
+        linear-gradient(#023b51ed, #023b51ed),
+        url(/case-studies-3/images/card6-bg.jpg);
+}
