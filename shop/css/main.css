@@ -3,7 +3,7 @@
     width: 65%;
     margin: auto;
     padding: 5rem 0;
-    gap: 5rem;
+    gap: 7rem;
 }
 
 /* ----------------- ASIDE ----------------- */
@@ -184,7 +184,129 @@ input[type="range"] {
     flex-flow: column wrap;
 }
 
+.filter-books {    
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    font-size: 1.1rem;
+    color: var(--body);
+}
+
+.sorting select {
+    border: none;
+    color: var(--primary);
+    font-weight: 700;
+    text-align: end;
+    padding: 0 0.5rem;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: transparent;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='rgba(92,102,125,1)' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 512'><path d='M310.6 246.6l-127.1 128C176.4 380.9 168.2 384 160 384s-16.38-3.125-22.63-9.375l-127.1-128C.2244 237.5-2.516 223.7 2.438 211.8S19.07 192 32 192h255.1c12.94 0 24.62 7.781 29.58 19.75S319.8 237.5 310.6 246.6z'/></svg>");
+    background-size: 7px;
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    background-position-y: 1px;
+    padding-right: 1.2rem;
+}      
+  
 .grid-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    padding: 5rem 0;
+    gap: 5rem 2.5rem;
+}
+
+.book {
+    position: relative;
+}
+
+.book img {
+    max-width:100%;
+    max-height:100%;
+}
+
+.book h3 {
+    margin: 1.5rem 0 1rem;
+    color: var(--primary);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.book p {
+    color: var(--body-darker);
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    transform: translate3d(0, -20%, 0);
+}
+
+.book p::first-letter {
+    font-weight: 400;
+}
+
+.book-price {
+    display: flex;
+    align-items: baseline;
+    gap: 0.5rem;
+}
+
+.book p.stroke {
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-decoration: line-through;
+}
+
+.book a {
+    display: none;
+    font-size: 1.4rem;
+    color: var(--green);
+    font-weight: 700;
+    transform: translate3d(0, 0, 0);
+}
+
+.book:hover a {
+    display: inline-block;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.book:hover p {
+    display: none;
+    animation: fadeOut 0.5s ease-in-out;
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -20%, 0);
+
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.sale {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    background-color: var(--green);
+    padding: 0.5rem 0.8rem;
+}
+
+.sale h6 {
+    color: white;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 800;
+    text-align: center;
 }

@@ -55,10 +55,11 @@
 
     .body-container {
         width: 90%;
+        gap: 6rem;
     }
 
     aside {
-        width: 50%;
+        width: 60%;
     }
 
     /* ----------------- FOOTER HERO ----------------- */
