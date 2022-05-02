@@ -6,20 +6,25 @@
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
     crossorigin="anonymous"
   />
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <link href="homestyle.css" rel="stylesheet" />
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"
+  ></script>
 </head>
 <body>
   <!-- header 1 -->
-  <header class="container-fluid">
-    <picture>
+  <header class="d-flex justify-content-between background align-items-center">
+    <picture class="ms-5">
       <img
         src="https://www.finlab.it/theme/finlab/img/template/header-logo.png"
     /></picture>
-    <button type="button" class="btn btn-success">Buy Now</button>
+    <button type="button" class="btn btn-success h-25 me-4">Buy Now</button>
   </header>
-   <!-- header end -->
+  <!-- header end -->
   <!-- navbar social -->
-  <div>
+  <div class="d-flex justify-content-center background">
     <div
       class="btn-toolbar"
       role="toolbar"
@@ -39,13 +44,66 @@
       <div class="btn-group" role="group" aria-label="Third group"></div>
     </div>
   </div>
-   <!-- navbar social end -->
+  <!-- navbar social end -->
 
   <!-- navbar menu -->
-  <div>   
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        
+  <div class="d-flex bd-highlight background d-flex bd-highlight">
+    <!-- offcanvas-->
+    <div class="background p-2 flex-shrink-1 bd-highlight">
+      <a
+        class="btn btn-primary"
+        data-bs-toggle="offcanvas"
+        href="#offcanvasExample"
+        role="button"
+        aria-controls="offcanvasExample"
+      >
+        Link with href
+      </a>
+      <div
+        class="offcanvas offcanvas-start"
+        tabindex="-1"
+        id="offcanvasExample"
+        aria-labelledby="offcanvasExampleLabel"
+      >
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+          <button
+            type="button"
+            class="btn-close text-reset"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="offcanvas-body">
+          <div>
+            Some text as placeholder. In real life you can have the elements you
+            have chosen. Like, text, images, lists, etc.
+          </div>
+          <div class="dropdown mt-3">
+            <button
+              class="btn btn-secondary dropdown-toggle"
+              type="button"
+              id="dropdownMenuButton"
+              data-bs-toggle="dropdown"
+            >
+              Dropdown button
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--offcanvasend-->
+    <!--Navabar menu-->
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-light background p-2 w-100 bd-highlight fs-4 fw-bolder"
+    >
       <div class="container-fluid">
+        <a class="navbar-brand" href="#"></a>
         <button
           class="navbar-toggler"
           type="button"
@@ -57,58 +115,19 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <div class="collapse navbar-collapse white" id="navbarNavDropdown">
           <ul class="navbar-nav">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              id="navbarDropdownMenuLink"
-              role="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              homepage
-            </a>
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              id="navbarDropdownMenuLink"
-              role="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              who we are
-            </a>
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              id="navbarDropdownMenuLink"
-              role="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              what we do
-            </a>
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              id="navbarDropdownMenuLink"
-              role="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              case studies
-            </a>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">blog</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">shop</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">contact us</a>
-            </li>
             <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle white"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                home
+              </a>
               <ul
                 class="dropdown-menu"
                 aria-labelledby="navbarDropdownMenuLink"
@@ -120,53 +139,453 @@
                 </li>
               </ul>
             </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle white"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                who we are
+              </a>
+              <ul
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle white"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                what we do
+              </a>
+              <ul
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle white"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                case studies
+              </a>
+              <ul
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active white" aria-current="page" href="#"
+                >Blog</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link white" href="#">Shop</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link white" href="#">Contact Us</a>
+            </li>
           </ul>
         </div>
       </div>
     </nav>
   </div>
- <!-- navbar menu end -->
+  <!-- navbar menu end -->
 
   <main>
-      <!-- carosel --> 
-      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="/Team2-FinLab/home/img/La-nascita-di-venere.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>First slide label</h5>
-              <p>Some representative placeholder content for the first slide.</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="/Team2-FinLab/home/img/La-persistenza-della-memoria.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Second slide label</h5>
-              <p>Some representative placeholder content for the second slide.</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="/Team2-FinLab/home/img/La-colazione-sullerba-600x473.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
-              <p>Some representative placeholder content for the third slide.</p>
-            </div>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+    <!--S1-->
+    <!-- carosel -->
+    <div
+      id="carouselExampleCaptions"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
       </div>
-       <!-- carosel end -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="/Team2-FinLab/home/img/slider1.jpeg"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>First slide label</h5>
+            <p>Some representative placeholder content for the first slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="/Team2-FinLab/home/img/slider2.jpeg"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Second slide label</h5>
+            <p>Some representative placeholder content for the second slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="/Team2-FinLab/home/img/slider3.jpeg"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Third slide label</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- carosel end -->
+    <!--S2-->
+    <div
+      class="d-flex justify-content-between background text-primary text-opacity-75 fw-bolder border-top"
+    >
+      <p class="text-success fs-5">• WE HAVE DIRECT IMPACT</p>
+      <p class="text-secondary fs-5">
+        If you want to know more about how we can support your business, give
+        our friendly team a call.
+      </p>
+    </div>
+    <!--S3-->
+    <div class="background d-flex justify-content-around">
+      <div class="card mb-3" style="max-width: 540px">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img
+              src="/Team2-FinLab/home/img/i1.jpeg"
+              class="img-fluid rounded-start"
+              alt="..."
+            />
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+              <p class="card-text">
+                <small class="text-muted">Last updated 3 mins ago</small>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-3" style="max-width: 540px">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img
+              src="/Team2-FinLab/home/img/i2.jpeg"
+              class="img-fluid rounded-start"
+              alt="..."
+            />
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+              <p class="card-text">
+                <small class="text-muted">Last updated 3 mins ago</small>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-3" style="max-width: 540px">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img
+              src="/Team2-FinLab/home/img/i3.jpeg"
+              class="img-fluid rounded-start"
+              alt="..."
+            />
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+              <p class="card-text">
+                <small class="text-muted">Last updated 3 mins ago</small>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--S4-->
+    <div class="text-center">
+      <h1>
+        OUR GOAL IS TO PROTECT YOUR FINANCIAL ASSET AND TO
+        <span class="text-success">MAKE IT GROW.</span>
+      </h1>
+    </div>
+    <!--S5-->
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h5 class="text-success">• SERVICE WE PROVIDE</h5>
+          <h1>Trusted Commercial Finance Broker.</h1>
+        </div>
+        <div class="col d-flex">
+          <div class="card" style="width: 18rem">
+            <div class="card-body">
+              <h1 class="card-title text-success border-bottom">400</h1>
+              <h6 class="card-subtitle mb-2 text-muted">milion</h6>
+              <p class="card-text text-muted">
+                Information on 400+ million companies worldwide.
+              </p>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem">
+            <div class="card-body">
+              <h1 class="card-title text-success border-bottom">100</h1>
+              <h6 class="card-subtitle mb-2 text-muted">percent</h6>
+              <p class="card-text text-muted">
+                Overall client satisfaction Macquarie Bank VAN Survey
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--S6-->
+    <div class="d-flex justify-content-around border-bottom">
+      <div class="card" style="width: 18rem">
+        <img
+          src="/Team2-FinLab/home/img/i1.jpeg"
+          class="card-img-top cardhover"
+          alt="..."
+        />
+        <div class="card-body text-center">
+          <a href="#" class="card-link">ACCOUNTING SERVICE</a>
+        </div>        
+         <p class="text-center"> We’ll match you with an advisor</p>
+      </div>
+      <div class="card" style="width: 18rem">
+        <img
+          src="/Team2-FinLab/home/img/i1.jpeg"
+          class="card-img-top cardhover"
+          alt="..."
+        />
+        <div class="card-body text-center">
+          <a href="#" class="card-link">ACCOUNTING SERVICE</a>
+        </div>
+        <p class="text-center"> We’ll match you with an advisor</p>
+      </div>
+      <div class="card" style="width: 18rem">
+        <img
+          src="/Team2-FinLab/home/img/i1.jpeg"
+          class="card-img-top cardhover"
+          alt="..."
+        />
+        <div class="card-body text-center">
+          <a href="#" class="card-link">ACCOUNTING SERVICE</a>
+        </div>
+        <p class="text-center"> We’ll match you with an advisor</p>
+      </div>
+    </div>
+    <!--S7-->
+    <div>
+      <div class="d-flex justify-content-around p-4">
+      <div class="card cardhover" style="width: 18rem;">
+        <img src="/Team2-FinLab/home/img/piggy-bank.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>
+      <div class="card cardhover" style="width: 18rem;">
+        <img src="/Team2-FinLab/home/img/piggy-bank.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>
+      <div class="card cardhover" style="width: 18rem;">
+        <img src="/Team2-FinLab/home/img/piggy-bank.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>
+      <div class="card cardhover" style="width: 18rem;">
+        <img src="/Team2-FinLab/home/img/piggy-bank.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>
+      <div class="card cardhover" style="width: 18rem;">
+        <img src="/Team2-FinLab/home/img/piggy-bank.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>      
+      </div>
+      <div class="d-flex justify-content-center p-4">
+        <a class="btn btn-primary bottonX m-2" href="#" role="button">+</a>
+        <span class="fs-2">view all service</span>
+      </div>
+    </div>
   </main>
+      <!--footer-->
+      <footer class="background">
+        <section class="footer-hero">
+            <div class="footer-hero-wrapper">
+                <h2>Your Future in Finance Starts Here</h2>
+                <h5>Learn more about our commercial loan broker training program & join our family of over 700 successful entrepreneurs.</h6>
+                <button>Get My Free Proposal</button>
+                <p>Or call us now at <a href="#">0712 610 33 181</a></p>
+            </div>
+        </section>
+    
+        <nav class="footer-menu">
+            <section class="footer-grid-container">
+                <div class="footer-menu-col1">
+                    <h5>Follow Us</h5>
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">LinkedIn</a></li>
+                    </ul>
+                </div>
+    
+                <div class="footer-menu-col2">
+                    <h5>Company</h5>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Our People</a></li>
+                        <li><a href="#">Blog & Insights</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+    
+                <div class="footer-menu-col3">
+                    <h5>Services</h5>
+                    <ul>
+                        <li><a href="#">Accounting</a></li>
+                        <li><a href="#">Financial</a></li>
+                        <li><a href="#">Investments</a></li>
+                        <li><a href="#">Tax & Audit</a></li>
+                    </ul>
+                </div>
+    
+                <div class="footer-menu-col4">
+                    <h5>Industries</h5>
+                    <ul>
+                        <li><a href="#">Automotive</a></li>
+                        <li><a href="#">Banking</a></li>
+                        <li><a href="#">Insurance</a></li>
+                        <li><a href="#">Healthcare</a></li>
+                    </ul>
+                </div>
+            </section>
+    
+            <section class="footer-newsletter">
+                <p>
+                    By providing your e-mail address, you are consenting to receive press releases, presentations and other information concerning FinLab.
+                </p>
+    
+                <form>
+                    <input type="email" name="email" id="email" placeholder="Your email address">
+                    <button></button>
+                </form>
+            </section>
+    
+            <section class="footer-address">
+                <p>
+                    Address: 1270 Beverley Rd Brooklyn, New York 11226 United States.
+                </p>
+                <p>
+                    Phone: <a href="#">0712 610 33 181</a>
+                    <span class="divider">&#124;</span>
+                    Mail: <a href="#">info@example.com</a>
+                </p>
+            </section>
+    
+            <section class="footer-credits">
+                <p>
+                    Copyright &copy; 2022 LineThemes. Designed by <a href="#">LineThemes</a> and Developed by Amalia Cicala.
+                </p>
+            </section>
+        </nav>
+    </footer>
 </body>
