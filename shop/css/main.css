@@ -218,6 +218,7 @@ input[type="range"] {
 
 .book {
     position: relative;
+    cursor: pointer;
 }
 
 .book img {

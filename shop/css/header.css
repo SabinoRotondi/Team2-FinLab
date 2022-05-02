@@ -396,7 +396,6 @@ header {
 
 .page-title-breadcrumbs {
     display: flex;
-    justify-content: space-around;
     gap: 1rem;
 }
 
@@ -412,6 +411,13 @@ header {
 .page-title-breadcrumbs svg {
     width: 0.3rem;
     fill: var(--accent);
+}
+
+.title-divider {
+    display: none;
+    margin: 0 0 1.8rem 0;
+    color: rgba(255,255,255,0.4);
+    height: 1px;
 }
 
 /* ----------------- OFF CANVAS MOBILE MENU ----------------- */
