@@ -225,6 +225,7 @@ input[type="range"] {
 
 .sorting select {
     border: none;
+    outline: none;
     color: var(--primary);
     font-weight: 700;
     text-align: end;
@@ -238,6 +239,7 @@ input[type="range"] {
     background-position-x: 100%;
     background-position-y: 1px;
     padding-right: 1.2rem;
+    cursor: pointer;
 }      
   
 .grid-container {
