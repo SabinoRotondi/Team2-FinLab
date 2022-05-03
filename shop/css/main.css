@@ -36,6 +36,13 @@ aside h4 {
     gap: 1.3rem;
 }
 
+.radio-wrapper label:hover {
+    color: var(--green);
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+
+}
+
 input[type="radio"] {
     width: 1.5rem;
     height: 1.5rem;
@@ -60,7 +67,12 @@ input[type="radio"] {
     font-weight: 500;
 }
 
+.checkbox-wrapper label {
+    cursor: pointer;
+}
+
 input[type="checkbox"] {
+    cursor: pointer;
     color: var(--body);
     width: 1.5rem;
     height: 1.5rem;
