@@ -36,9 +36,13 @@ aside h4 {
     gap: 1.3rem;
 }
 
+input[type="radio"] {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
 .color form {
     padding: 1rem 0 3rem;
-
 }
 
 .checkbox-wrapper {
@@ -56,6 +60,33 @@ aside h4 {
     font-weight: 500;
 }
 
+input[type="checkbox"] {
+    color: var(--body);
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 0.1rem solid rgba(0,0,0,0.2);
+    transform: translateY(-0.075em);
+    display: grid;
+    place-content: center;
+}
+  
+input[type="checkbox"]::before {
+    content: '';
+    width: 0.65em;
+    height: 0.65em;
+    clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+    transform: scale(0);
+    transform-origin: bottom left;
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em var(--form-control-color);
+    /* Windows High Contrast Mode */
+    background-color: CanvasText;
+}
+
+input[type="checkbox"]:checked::before {
+    transform: scale(1);
+}
+  
 .filter {
     display: flex;
     flex-direction: column;
