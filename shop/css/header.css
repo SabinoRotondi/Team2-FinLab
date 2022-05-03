@@ -523,6 +523,7 @@ input[name="casestudies"]:checked ~ .dropdown-casestudies {
     color: var(--primary);
     padding: 0.3rem;
     cursor: pointer;
+    outline: none;
 }
 
 .modal-select-row label {
