@@ -1,10 +1,6 @@
-@import "/styles/reset.css";
-/* RESET */
-@import "/styles/header.css";
+@import "/Styles/header.css";
 /* HEADER */
-@import "/styles/main.css";
-/* MAIN */
-@import "/styles/footer.css";
+@import "/Styles/footer.css";
 /* FOOTER */
 @import "/styles/mq-small.css";
 /* SMALL DEVICES MEDIA QUERY */

@@ -87,13 +87,16 @@ footer p {
 
 .footer-grid-container li {
     margin-top: 1rem;
+    list-style: none;
+    margin-right: 1rem;
 }
 
 .footer-grid-container li a {
     color: var(--accent);
-    font-size: 1.25rem;
+    font-size: 1rem;
     font-weight: 600;
     transition: color 0.3s ease-in-out;
+    text-decoration: none;
 }
 
 .footer-grid-container li a:hover {
@@ -163,3 +166,5 @@ footer input[type="submit"] {
 .footer-credits a:hover {
     color: white;
 }
+
+/* media query */
