@@ -428,7 +428,7 @@ header {
     display: none;
 }
 
-.header-mobile-nav input {
+.header-mobile-nav input[type="checkbox"] {
     display: none;
 }
 
