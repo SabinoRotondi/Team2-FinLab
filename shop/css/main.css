@@ -79,7 +79,6 @@ input[type="checkbox"] {
     display: grid;
     place-content: center;
 }
-  
 
 input[type="checkbox"]::before {
     font-family: "Font Awesome 5 Free";
