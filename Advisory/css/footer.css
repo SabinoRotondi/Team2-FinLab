@@ -1,3 +1,5 @@
+/* ----------------- FOOTER HERO ----------------- */
+
 footer {
     background-color: var(--primary);
 }
@@ -9,7 +11,7 @@ footer p {
 }
 
 .footer-hero {
-    background-image: url(/assets/footer-bg.png);
+    background-image: url(/Advisory/images/footer-bg.png);
     background-position: 50% 15px;
     background-repeat: no-repeat;
     background-size: 700px auto;
@@ -20,7 +22,7 @@ footer p {
     display: flex;
     flex-direction: column;
     text-align: center;
-    width: 45%;
+    width: 42%;
     margin: auto;
     padding: 7.6rem 0;
 }
@@ -72,11 +74,16 @@ footer p {
 
 /* ----------------- FOOTER MENU ----------------- */
 
+.footer-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .footer-grid-container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 2fr;
-    width: 60%;
-    margin: auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 45%;
 }
 
 .footer-grid-container h5 {
@@ -87,41 +94,42 @@ footer p {
 
 .footer-grid-container li {
     margin-top: 1rem;
-    list-style: none;
-    margin-right: 1rem;
 }
 
 .footer-grid-container li a {
     color: var(--accent);
-    font-size: 1rem;
+    font-size: 1.25rem;
     font-weight: 600;
     transition: color 0.3s ease-in-out;
-    text-decoration: none;
 }
 
 .footer-grid-container li a:hover {
     color: white;
 }
 
+/* ----------------- FOOTER NEWSLETTER ----------------- */
+
+.footer-newsletter {
+    width: 20%;
+}
+
 footer form {
     display: flex;
+    flex-direction: row;
     margin-top: 3rem;
-}
 
-footer input {
-    background-color: transparent;
-    padding: 1rem;
-    border: none;
-    border-bottom: solid 0.3rem var(--accent);
-    transition: all 0.2s ease-in-out;
-}
-
-footer input:focus {
-    border-bottom: solid 0.3rem var(--green);
+    position: relative;
+    width: 100%;
 }
 
 footer input[type="email"] {
-    width: 100%;
+    flex-grow: 2;
+    background-color: transparent;
+    line-height: 2;
+    padding-bottom: 1rem;
+    border: none;
+    border-bottom: solid 0.3rem var(--accent);
+    transition: all 0.2s ease-in-out;
 }
 
 footer input[type="email"]::placeholder {
@@ -130,41 +138,48 @@ footer input[type="email"]::placeholder {
     opacity: 0.5;
 }
 
-footer input[type="submit"] {
-    border: none;
-    background: url('data:image/svg+xml, <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="rgba(255,255,255,0.5)" class="bi bi-arrow-right-circle" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/></svg>');
-    background-repeat: no-repeat;
-    margin-top: 1rem;
-    position: absolute;
-    right: 25rem;
+footer input:focus {
+    border-bottom: solid 0.3rem var(--green);
 }
+
+footer form button {
+    position: absolute;
+    border: none;
+    background: url('data:image/svg+xml, <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="rgba(166,157,170,1)" class="bi bi-arrow-right-circle" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/></svg>');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 2rem;
+    right: 0.3rem;
+    top: 1.2rem;
+    bottom: 0.3rem;
+    padding: 0 1rem;
+    z-index: 2;
+} 
 
 /* ----------------- FOOTER ADDRESS & CREDITS ----------------- */
 
 .footer-address {
-    width: 60%;
+    display: flex;
+    flex-direction: column;
+    width: 65%;
     margin: auto;
     padding: 4rem 0 5rem 0;
-    border-bottom: solid 0.04rem rgba(255, 255, 255, 0.1);
 }
 
 .footer-credits {
-    width: 60%;
+    width: 65%;
     margin: auto;
     text-align: center;
     padding: 4rem 0;
+    border-top: solid 0.04rem rgba(255,255,255,0.1);
 }
 
-.footer-address a,
-.footer-credits a {
+.footer-address a, .footer-credits a {
     color: var(--accent);
     font-weight: 600;
     transition: color 0.3s ease-in-out;
 }
 
-.footer-address a:hover,
-.footer-credits a:hover {
+.footer-address a:hover, .footer-credits a:hover {
     color: white;
 }
-
-/* media query */

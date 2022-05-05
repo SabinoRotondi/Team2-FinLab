@@ -1,0 +1,23 @@
+header {
+    display: flex;
+    justify-content: center;
+    background-color:#023A51;
+    width: 100%;
+}
+
+header img {
+    width :229px;
+    height: 40px;
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+    gap: 18%;
+    
+}
+
+.col-6{
+    display: flex;
+    gap: 40px;
+}
