@@ -390,7 +390,7 @@ header {
     display: none;
 }
 
-.header-mobile-nav input {
+.header-mobile-nav input[type="checkbox"] {
     display: none;
 }
 
@@ -426,11 +426,40 @@ header {
 
 .header-mobile-nav .offcanvas-body label, .header-mobile-nav .offcanvas-body a {
     display: block;
-    font-size: 1.1rem;
+    font-size: 1.4rem;
     font-weight: 600;
     color: var(--body);
-    padding: 0.8rem;
-    border-top: solid 1px rgb(0, 0, 0, 0.1);
+    padding-bottom: 1.1rem;
+    padding-top: 1.1rem;
+}
+
+.header-mobile-nav .offcanvas-body a {
+    border-bottom: solid 1px rgb(0, 0, 0, 0.1);
+}
+
+.label-caret {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: solid 1px rgb(0, 0, 0, 0.1);
+}
+
+.label-caret .dropdown-label {
+    border-right: solid 1px rgb(0, 0, 0, 0.1);
+    width: 16.3rem;
+}
+
+.label-caret .dropdown-caret::after {
+    font-family: "Font Awesome 5 Free";
+    content: "\f0da";
+    color: var(--body);
+    font-weight: 900;
+    font-size: 1rem;
+    margin-left: -2rem;
+}
+
+.dropdown-caret:hover::after {
+    content: "\f0d7";
 }
 
 .header-mobile-nav .offcanvas-body label[for="homepage"] {
