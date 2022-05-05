@@ -38,3 +38,10 @@ a, a:hover {
 textarea:focus, input:focus{
     outline: none;
 }
+
+input[type="checkbox"] {
+	-webkit-appearance: none;
+	appearance: none;
+	background-color: #fff;
+	margin: 0;
+}

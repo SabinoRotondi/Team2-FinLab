@@ -548,9 +548,25 @@ input[name="casestudies"]:checked ~ .dropdown-casestudies {
     margin: 0.3rem 0;
 }
 
-.modal-body input[type="checkbox"] {
-    display: inline;
-    border: solid 0.1rem rgba(0,0,0,0.15);
+input[type="checkbox"] {
+    cursor: pointer;
+    width: 1.8rem;
+    height: 1.8rem;
+    border: 0.1rem solid rgba(0,0,0,0.2);
+    display: grid;
+    place-content: center;
+}
+
+input[type="checkbox"]::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f00c";
+    font-weight: 900;
+    font-size: 0.9rem;
+    visibility: hidden;
+}
+
+input[type="checkbox"]:checked::before {
+    visibility: visible;
 }
 
 .modal-body input[type="submit"] {
