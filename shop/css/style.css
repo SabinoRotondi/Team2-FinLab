@@ -5,6 +5,8 @@
 @import "/shop/css/mq-small.css"; /* SMALL DEVICES MEDIA QUERY */
 @import "/shop/css/mq-medium.css"; /* MEDIUM DEVICES MEDIA QUERY */
 @import "/shop/css/mq-large.css"; /* LARGE DEVICES MEDIA QUERY*/
+@import "https://use.fontawesome.com/releases/v5.0.1/css/all.css"; /* FONT AWESOME FONT-FAMILY */
+
 
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
 
