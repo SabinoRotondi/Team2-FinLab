@@ -12,6 +12,7 @@ aside {
     width: 25%;
     display: flex;
     flex-flow: column wrap;
+    gap: 5rem;
 }
 
 aside h4 {
@@ -23,7 +24,7 @@ aside h4 {
 .categories form {
     display: flex;
     flex-direction: column;
-    padding: 1rem 0 3rem;
+    padding-top: 1rem;
     font-size: 1.3rem;
     font-weight: 600;
     color: var(--primary);
@@ -46,16 +47,31 @@ aside h4 {
 input[type="radio"] {
     width: 1.5rem;
     height: 1.5rem;
+    border: 0.1rem solid rgba(0,0,0,0.2);
+    border-radius: 50%;
 }
 
+input[type="radio"]:before {
+    content: '';
+    display: block;
+    width: 60%;
+    height: 60%;
+    margin: 20% auto;    
+    border-radius: 50%;  
+    transition: all 0.3s ease-in-out;
+}
+
+input[type="radio"]:checked:before, input[type="radio"]:hover:before {
+    background-color: var(--green);
+}
+  
 .color form {
-    padding: 1rem 0 3rem;
+    padding-top: 1rem;
 }
 
 .checkbox-wrapper {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     line-height: 3.5rem;
     font-size: 1.3rem;
     font-weight: 600;
@@ -69,6 +85,12 @@ input[type="radio"] {
 
 .checkbox-wrapper label {
     cursor: pointer;
+}
+
+.checkbox-grid {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 }
 
 input[type="checkbox"] {
@@ -85,17 +107,18 @@ input[type="checkbox"]::before {
     content: "\f00c";
     font-weight: 900;
     font-size: 0.9rem;
-    visibility: hidden;
+    color: transparent;
+    transition: color 0.3s ease-in-out;
 }
 
-input[type="checkbox"]:checked::before {
-    visibility: visible;
+input[type="checkbox"]:checked::before, input[type="checkbox"]:hover::before {
+    color: var(--body-darker);
 }
   
 .filter {
     display: flex;
     flex-direction: column;
-    padding: 1rem 0 3rem;
+    /* padding: 1rem 0 3rem; */
 }
 
 .filter-wrapper {
@@ -139,7 +162,6 @@ input[type="checkbox"]:checked::before {
 
 .contact {
     background-color: #e0ecf0;
-    margin-top: 3rem;
 }
 
 .contact-wrapper {
@@ -189,7 +211,7 @@ input[type="range"] {
     margin-right: 15px;
     width: 100%;
     height: 0.5rem;
-    background: var(--primary);
+    background: #e0ecf0;
     border-radius: 5px;
   }
   
