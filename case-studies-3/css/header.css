@@ -67,6 +67,7 @@ header {
     display: inline-flex;
     align-items: center;
     gap: 1rem;
+    position: relative;
 }
 
 .header-buttons-wrapper svg {
@@ -84,6 +85,63 @@ header {
     text-align: center;
     border-radius: 50%;
     transition: all 0.2s ease-in-out;
+}
+
+.cart-bubble {
+    display: none;
+    position: absolute;
+    margin-top: 17rem;
+    margin-left: -4rem;
+    background-color: white;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 2rem;
+    width: 26rem;
+    height: 11rem;
+    z-index: 99;
+
+    animation: fadeInFromBottom 0.3s ease-in-out 0s 1 normal forwards;
+    transform: translateY(0.5rem);
+    opacity: 0;
+}
+
+.cart-bubble:before {
+    content: "";
+    width: 0.8rem;
+    height: 0.8rem;
+    background-color: white;
+    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+    position: absolute;
+    bottom: 100%;
+    right: 0;
+}
+
+.cart-bubble svg {
+    width: 5rem;
+    fill: rgba(0, 0, 0, 0.1);
+}
+
+.cart-bubble p {
+    font-size: 1.1rem;
+    color: var(--body);
+}
+
+.header-buttons-link:hover ~ .cart-bubble {
+    display: flex;
+}
+
+
+@keyframes fadeInFromBottom {
+    0% {
+    opacity: 0;
+    transform: translateY(0.5rem);
+    }
+
+    100% {
+    opacity: 1;
+    transform: translateY(0px);
+    }
 }
 
 .header-buttons {
