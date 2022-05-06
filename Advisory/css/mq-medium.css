@@ -11,6 +11,13 @@
         display: none;
     }
 
+    /* -------------------- MAIN ------------------------ */
+
+    #section1{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
     /* ----------------- OFF CANVAS TABLET MENU ----------------- */
 
     .header-mobile-nav .offcanvas-end {

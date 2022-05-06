@@ -1,0 +1,31 @@
+
+main{
+    background-color: #023A51;
+}
+
+/* section1 */
+
+#section1{
+    color: white;
+    padding-top:2%
+}
+
+.col ul li{
+    color:#2CBC63;
+    list-style:inside;
+    font-size: medium;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.col h1{
+    font-size:54px ;
+}
+
+.col p{
+    color:#FFFFFF99;
+}
+
+.col hr{
+    margin-bottom: 3%;
+}
