@@ -1,23 +1,133 @@
 header {
     display: flex;
-    justify-content: center;
     background-color:#023A51;
     width: 100%;
+    padding-top: 1%;
 }
 
-header img {
+.dropdown-menu{
+    border-radius: 0%;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.dropdown-item{
+    color: #023A51;
+    padding: 10px;
+}
+
+.dropdown-item:hover{
+    font-size: 20px;
+    transition: .2s;
+}
+
+.nav-link{
+    color: #5c667d;
+    margin-right: 20px;
+}
+
+.nav-link:hover{
+    color: white;
+}
+
+#logo{
     width :229px;
     height: 40px;
 }
 
-.row{
+#modale{
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    background-color: #2CBC63;
+    border: 0ch;
+}
+
+#modale img{
+    margin-top:4px;
+}
+
+#modale:hover{
+    background-color: #5c667d;
+    transition: 0.2s;
+}
+
+#offcanvas{
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+}
+
+.nav-link{
+    font-size: medium;
+}
+
+#menu{
+    gap: 10px
+}
+
+.header-container{
     display: flex;
-    justify-content: center;
-    gap: 18%;
+    width: 100%;
+    padding-left: 18%;
+    gap:10%;
+}
+
+.offcanvas-body{
+    display: flex;
+    flex-direction: column;
+    
+    gap:20px;
+}
+
+.offcanvas-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:30px;
     
 }
 
-.col-6{
+form{
     display: flex;
-    gap: 40px;
+    flex-direction: column;
+    align-items: center;
+}
+
+form span{
+    margin-right: 50%;
+    margin-top: 10%;
+    color: #5c667d;
+    font-size: medium;
+}
+
+.mb-3{
+    width: 90%;
+}
+
+#submit-off{
+    width: 90%;
+    border-radius: 0%;
+    height: 45px;
+    background-color: #2CBC63;
+    border: 0ch;
+}
+
+.form-control{
+    border-radius: 0%;
+    height: 45px;
+}
+
+#offcanvas{
+    background-color:white ;
+    border: 0ch;
+}
+
+#offcanvas img{
+    margin-top: 4px;
+}
+
+.offcanvas-header{
+    margin-left:90%;
 }

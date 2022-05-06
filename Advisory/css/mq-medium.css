@@ -4,40 +4,8 @@
 
     /* ----------------- HEADER ----------------- */
 
-    .header-social, .header-menu, .header-divider {
-        display: none;
-    }
-
-    .header-mobile-nav {
-        display: inline-flex;
-    }
-
-    .header-icons {
+    header{
         width: 100%;
-        overflow: hidden;
-        padding: 2rem 3rem;
-    }
-
-    .header-menu {
-        padding: 0 2rem;
-        justify-content: center;
-    }
-
-    .dropdown-button {
-        font-size: 1.2rem;
-    }
-
-    .page-title {
-        width: 90%;
-        padding: 4rem 0 4.4rem;
-    }
-
-    .page-title h1 {
-        font-size: 3rem;
-    }
-
-    .page-title h5 {
-        font-size: 1.8rem;
     }
 
     /* ----------------- OFF CANVAS TABLET MENU ----------------- */

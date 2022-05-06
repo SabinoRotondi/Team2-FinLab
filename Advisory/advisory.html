@@ -31,41 +31,79 @@
 
 <body>
     <header>
-        <div class="row">
-            <div class="col-3">
-                <img src="images/logo-finlab.png" alt="...">
-            </div>
-            <div class="col-6 d-flex">
+        <div class="header-container">
+            
+                <a href="#"><img id="logo" src="images/logo-finlab.png" alt="..."></a>
+            
+            <div class="col-7 d-flex" id="menu">
+
+
+
                 <nav class="navbar navbar-expand-lg">
-                    <div class="container-fluid">
-                        <a class="navbar-brand" href="#">Homepage</a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                            aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarNav">
-                            <ul class="navbar-nav">
-                                <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Features</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Pricing</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link disabled">Disabled</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+                    <ul class="navbar-nav" id="main-menu">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Homepage
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Home 1</a></li>
+                                <hr>
+                                <li><a class="dropdown-item" href="#">Home 2</a></li>
+                              </ul>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Who We Are
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">About Us</a></li>
+                                <hr>
+                                <li><a class="dropdown-item" href="#">Our Leadership Team</a></li>
+                                <hr>
+                                <li><a class="dropdown-item" href="#">Why Choose Us</a></li>
+                                <hr>
+                                <li><a class="dropdown-item" href="#">Our Story</a></li>
+                                <hr>
+                                <li><a class="dropdown-item" href="#">Careers</a></li>
+                              </ul>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                What We Do
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Accounting Service</a></li>
+                                <hr>
+                                <li><a class="dropdown-item" href="#">Audit & Tax Service</a></li>
+                                <hr>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                              </ul>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Case Studies
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                              </ul>
+                              <li class="nav-item">
+                                <a class="nav-link" href="#">Blog & Insights</a>
+                              </li>
+                    </ul>
                 </nav>
 
+                <button class="btn btn-primary" id="offcanvas" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                    <img src="/Advisory/images/menu_button.png" alt="" width="20px" height="20px">
+                </button>
+
                 <!-- Button trigger modal -->
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                    Launch static backdrop modal
+                <button type="button" id="modale" class="btn btn-primary" data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop">
+                    <img src="/Advisory/images/message_icon.png" alt=""  width="20px" height="20px">
                 </button>
 
                 <!-- Modal -->
@@ -88,33 +126,39 @@
                         </div>
                     </div>
                 </div>
-                <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
-                    Button with data-bs-target
-                </button>
-
+                
+                <!-- offcanvas -->
                 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
                     aria-labelledby="offcanvasExampleLabel">
                     <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
                         <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
-                            aria-label="Close"></button>
+                            aria-label="Close">
+                        </button>
                     </div>
                     <div class="offcanvas-body">
-                        <div>
-                            Some text as placeholder. In real life you can have the elements you have chosen. Like,
-                            text, images, lists, etc.
+                        <div class="offcanvas-text">
+                            <img src="/Advisory/images/Palazzo offcanvas.jpg" alt="palazzo" height="155px" width="310px">
+                            <p>Our firm provides the expert support organisations need to thrive in a fast-changing world.</p>
+                            <p>Address: 1270 Beverley Rd Brooklyn, New York 11226 United States.</p>
+                            <div>
+                                <span>Phone:</span><a href="#">0712 610 33 181</a>
+                                <span>Mail:</span><a href="#">info@example.com</a>
+                            </div>
                         </div>
-                        <div class="dropdown mt-3">
-                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
-                                data-bs-toggle="dropdown">
-                                Dropdown button
-                            </button>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
+                        <div class="form-offcanvas">
+                            <form>
+                                <span>Request a Callback</span>
+                                <div class="mb-3">
+                                  <label for="name" class="form-label"></label>
+                                  <input type="name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Your Name*">
+                                </div>
+                                <div class="mb-3">
+                                  <label for="number" class="form-label"></label>
+                                  <input type="number" class="form-control" id="exampleInputPassword1" placeholder="Phone Number*">
+                                </div>
+                                <button type="submit" id="submit-off" class="btn btn-primary">Request a Callback</button>
+                              </form>
+
                         </div>
                     </div>
                 </div>

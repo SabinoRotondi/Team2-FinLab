@@ -4,20 +4,10 @@
 
     /* ----------------- HEADER ----------------- */
 
-    .header-icons {
+    header{
         width: 100%;
-        padding: 2rem 8rem;
     }
     
-    .header-menu {
-        padding: 0 8rem 0.4rem;
-        width: 100%;
-        overflow: hidden;
-    }
-
-    .page-title {
-        width: 85%;
-    }
 
     /* ----------------- FOOTER ----------------- */
 
