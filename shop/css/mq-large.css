@@ -1,0 +1,46 @@
+/* ----------------- LARGE DEVICES ----------------- */
+
+@media only screen and (min-width: 1185px) and (max-width: 1800px) {
+
+    /* ----------------- HEADER ----------------- */
+
+    .header-icons {
+        width: 100%;
+        padding: 2rem 8rem;
+    }
+    
+    .header-menu {
+        padding: 0 8rem 0.4rem;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .page-title {
+        width: 85%;
+    }
+
+    /* ----------------- FOOTER ----------------- */
+
+    .body-container {
+        width: 85%;
+    }
+
+    /* ----------------- FOOTER ----------------- */
+
+    .footer-grid-container {
+        width: 58%;
+    }
+
+    .footer-newsletter {
+        width: 28%;
+    }
+
+    .footer-address, .footer-credits {
+        width: 86%;
+    }
+
+    footer input[type="submit"] {
+        right: 16rem;
+    }
+    
+}

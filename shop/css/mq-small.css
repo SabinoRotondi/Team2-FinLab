@@ -1,0 +1,132 @@
+/* ----------------- EXTRASMALL AND SMALL DEVICES ----------------- */
+
+@media (max-width: 767px) {
+
+    footer p {
+        font-size: 1.15rem;
+    }
+
+    /* ----------------- HEADER ----------------- */
+
+    .header-social, .header-buttons-wrapper, .header-menu, .header-divider {
+        display: none;
+    }
+
+    .header-icons {
+        padding: 1.6rem 1.6rem 1.3rem;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .header-mobile-nav {
+        display: block;
+    }
+
+    .offcanvas-btn-mobile {
+        display: block;
+    }
+
+    .page-title {
+        display: block;
+        width: 90%;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 5rem 0 4.6rem;
+    }
+
+    .page-title-title {
+        padding-bottom: 3.5rem;
+    }
+
+    .page-title h1 {
+        font-size: 2.5rem;
+    }
+
+    .title-divider {
+        display: block;
+    }
+    
+     /* ----------------- FOOTER HERO ----------------- */
+
+    .footer-hero-wrapper {
+        width: 90%;
+    }
+
+     .footer-hero h2 {
+        font-size: 2.5rem;
+        line-height: 3rem;
+        margin-bottom: 1.8rem;
+    }
+
+    .footer-hero h5 {
+        margin: 0;
+    }
+
+    /* ----------------- BODY ----------------- */
+
+    .body-container {
+        flex-direction: column;
+        width: 90%;
+        padding: 0;
+    }
+
+    aside, .books-grid {
+        width: 100%;
+    }
+
+    aside {
+        order: 2;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr 1fr;
+        padding-bottom: 5rem;
+    }
+
+    .filter-books {
+        display: none;
+    }
+
+    /* ----------------- FOOTER MENU ----------------- */
+
+    .footer-menu {
+        padding: 0 2rem;
+    }
+
+    .footer-grid-container {
+        width: 100%;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+        'col1 col2'
+        'col3 col4';
+        gap: 3rem 4rem;
+    }    
+
+    /* ----------------- FOOTER NEWSLETTER ----------------- */
+
+    .footer-newsletter {
+        width: 100%;
+        padding: 5rem 0 2rem;
+        order: 2;
+    }
+
+    footer form {
+        margin: 3rem 0;
+    }
+
+    /* ----------------- FOOTER ADDRESS & CREDITS ----------------- */
+
+    .footer-address {
+        width: 100%;
+        order: 1;
+    }
+
+    .footer-credits {
+        width: 100%;
+        order: 3;
+    }
+
+    .footer-credits p {
+        line-height: 1.6rem;
+    }
+}
