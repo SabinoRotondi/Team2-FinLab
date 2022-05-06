@@ -3,7 +3,6 @@ header {
     justify-content: center;
     background-color:#023A51;
     padding-top: 1%;
-    gap: 20px;
     width: 100%;
 }
 
@@ -11,12 +10,13 @@ header {
     border-radius: 0%;
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
+    width:200px;
 }
 
-#main-menu:last-child li a{
-    width: 130px;
+.navbar-expand-lg{
+    flex-wrap: wrap;
+    justify-content: center;
 }
-
 
 .dropdown-item{
     color: #023A51;
@@ -30,7 +30,10 @@ header {
 
 .nav-link{
     color: #5c667d;
-    margin-left: 30px;
+}
+
+.nav-link a{
+    width:6rem;
 }
 
 .nav-link:hover{
@@ -40,7 +43,6 @@ header {
 #logo{
     width :229px;
     height: 40px;
-    margin-right: 250px;
 }
 
 #modale{
@@ -77,6 +79,8 @@ header {
 .header_container{
     display: flex;
     justify-content: center;
+    padding-right: 5%;
+    gap:20%;
 }
 
 .offcanvas-body{

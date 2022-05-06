@@ -8,7 +8,29 @@
 
     /* ----------------- HEADER ----------------- */
 
-   
+    .header_container{
+        width: 100%;
+    }
+
+    #offcanvas{
+        display: none;
+    }
+
+    .header_container{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+        margin-left:60px;
+        margin-right: 25px;
+    }
+
+    #modale{
+        display:none;
+    }
+    
+
+    
      /* ----------------- FOOTER HERO ----------------- */
 
     .footer-hero-wrapper {

@@ -2,11 +2,14 @@
 @media (min-width: 768px) and (max-width: 1185px) {
 
     /* ----------------- HEADER ----------------- */
-
-
-
     
+    #modale{
+        margin-right: 20px;
+    }
 
+    #offcanvas{
+        display: none;
+    }
 
     /* ----------------- OFF CANVAS TABLET MENU ----------------- */
 
