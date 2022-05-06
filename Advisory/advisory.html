@@ -31,13 +31,11 @@
 
 <body>
     <header>
-        <div class="header-container">
-            
-                <a href="#"><img id="logo" src="images/logo-finlab.png" alt="..."></a>
-            
+        <div class="header_container">
+
+            <a href="#"><img id="logo" src="images/logo-finlab.png" alt="..."></a>
+
             <div class="col-7 d-flex" id="menu">
-
-
 
                 <nav class="navbar navbar-expand-lg">
                     <ul class="navbar-nav" id="main-menu">
@@ -50,7 +48,7 @@
                                 <li><a class="dropdown-item" href="#">Home 1</a></li>
                                 <hr>
                                 <li><a class="dropdown-item" href="#">Home 2</a></li>
-                              </ul>
+                            </ul>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
@@ -66,7 +64,7 @@
                                 <li><a class="dropdown-item" href="#">Our Story</a></li>
                                 <hr>
                                 <li><a class="dropdown-item" href="#">Careers</a></li>
-                              </ul>
+                            </ul>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
@@ -78,7 +76,7 @@
                                 <li><a class="dropdown-item" href="#">Audit & Tax Service</a></li>
                                 <hr>
                                 <li><a class="dropdown-item" href="#">Something else here</a></li>
-                              </ul>
+                            </ul>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
@@ -88,12 +86,14 @@
                                 <li><a class="dropdown-item" href="#">Action</a></li>
                                 <li><a class="dropdown-item" href="#">Another action</a></li>
                                 <li><a class="dropdown-item" href="#">Something else here</a></li>
-                              </ul>
-                              <li class="nav-item">
-                                <a class="nav-link" href="#">Blog & Insights</a>
-                              </li>
+                            </ul>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Blog & Insights</a>
+                        </li>
                     </ul>
                 </nav>
+
+
 
                 <button class="btn btn-primary" id="offcanvas" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
@@ -103,7 +103,7 @@
                 <!-- Button trigger modal -->
                 <button type="button" id="modale" class="btn btn-primary" data-bs-toggle="modal"
                     data-bs-target="#staticBackdrop">
-                    <img src="/Advisory/images/message_icon.png" alt=""  width="20px" height="20px">
+                    <img src="/Advisory/images/message_icon.png" alt="" width="20px" height="20px">
                 </button>
 
                 <!-- Modal -->
@@ -126,19 +126,21 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- offcanvas -->
                 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
                     aria-labelledby="offcanvasExampleLabel">
                     <div class="offcanvas-header">
-                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                        <button type="button" id="close-btn" class="btn-close text-reset" data-bs-dismiss="offcanvas"
                             aria-label="Close">
                         </button>
                     </div>
                     <div class="offcanvas-body">
                         <div class="offcanvas-text">
-                            <img src="/Advisory/images/Palazzo offcanvas.jpg" alt="palazzo" height="155px" width="310px">
-                            <p>Our firm provides the expert support organisations need to thrive in a fast-changing world.</p>
+                            <img src="/Advisory/images/Palazzo offcanvas.jpg" alt="palazzo" height="155px"
+                                width="310px">
+                            <p>Our firm provides the expert support organisations need to thrive in a fast-changing
+                                world.</p>
                             <p>Address: 1270 Beverley Rd Brooklyn, New York 11226 United States.</p>
                             <div>
                                 <span>Phone:</span><a href="#">0712 610 33 181</a>
@@ -149,15 +151,18 @@
                             <form>
                                 <span>Request a Callback</span>
                                 <div class="mb-3">
-                                  <label for="name" class="form-label"></label>
-                                  <input type="name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Your Name*">
+                                    <label for="name" class="form-label"></label>
+                                    <input type="name" class="form-control" id="exampleInputEmail1"
+                                        aria-describedby="emailHelp" placeholder="Your Name*">
                                 </div>
                                 <div class="mb-3">
-                                  <label for="number" class="form-label"></label>
-                                  <input type="number" class="form-control" id="exampleInputPassword1" placeholder="Phone Number*">
+                                    <label for="number" class="form-label"></label>
+                                    <input type="number" class="form-control" id="exampleInputPassword1"
+                                        placeholder="Phone Number*">
                                 </div>
-                                <button type="submit" id="submit-off" class="btn btn-primary">Request a Callback</button>
-                              </form>
+                                <button type="submit" id="submit-off" class="btn btn-primary">Request a
+                                    Callback</button>
+                            </form>
 
                         </div>
                     </div>

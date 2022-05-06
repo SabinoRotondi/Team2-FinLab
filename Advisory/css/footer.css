@@ -22,7 +22,7 @@ footer p {
     display: flex;
     flex-direction: column;
     text-align: center;
-    width: 42%;
+    width: 100%;
     margin: auto;
     padding: 7.6rem 0;
 }

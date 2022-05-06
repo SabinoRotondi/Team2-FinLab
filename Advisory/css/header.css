@@ -1,14 +1,20 @@
 header {
     display: flex;
+    justify-content: center;
     background-color:#023A51;
-    width: 100%;
     padding-top: 1%;
+    gap: 20px;
+    width: 100%;
 }
 
 .dropdown-menu{
     border-radius: 0%;
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+#main-menu:last-child li a{
+    width: 130px;
 }
 
 
@@ -24,7 +30,7 @@ header {
 
 .nav-link{
     color: #5c667d;
-    margin-right: 20px;
+    margin-left: 30px;
 }
 
 .nav-link:hover{
@@ -34,6 +40,7 @@ header {
 #logo{
     width :229px;
     height: 40px;
+    margin-right: 250px;
 }
 
 #modale{
@@ -64,20 +71,17 @@ header {
 }
 
 #menu{
-    gap: 10px
+    gap: 2%;
 }
 
-.header-container{
+.header_container{
     display: flex;
-    width: 100%;
-    padding-left: 18%;
-    gap:10%;
+    justify-content: center;
 }
 
 .offcanvas-body{
     display: flex;
     flex-direction: column;
-    
     gap:20px;
 }
 
