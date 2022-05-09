@@ -1,5 +1,5 @@
 
-main{
+section{
     background-color: #023A51;
 }
 
@@ -7,10 +7,14 @@ main{
 
 #section1{
     color: white;
-    padding-top:2%
+    padding-top:2%;
+    font-size: large;
+    display: flex;
+    padding-bottom: 2%;
 }
 
-.col ul li{
+
+.advisory{
     color:#2CBC63;
     list-style:inside;
     font-size: medium;
@@ -19,7 +23,7 @@ main{
 }
 
 .col h1{
-    font-size:54px ;
+    font-size:50px ;
 }
 
 .col p{
@@ -28,4 +32,144 @@ main{
 
 .col hr{
     margin-bottom: 3%;
+}
+
+/* section 2 */
+
+#section2{
+    padding-bottom:2%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.img-s2{
+    display: flex;
+    width: 24rem;
+    height: 22px;
+    position: absolute;
+    margin-left: 37rem;
+    margin-top : 5rem;
+    
+}
+
+.list{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-top: 5px solid;
+    border-color: #2CBC63;
+    box-shadow:0 2px 2px rgb(2 58 81 / 6%), 0 4px 4px rgb(2 58 81 / 6%), 0 8px 8px rgb(2 58 81 / 6%), 0 16px 16px rgb(2 58 81 / 6%), 0 32px 32px rgb(2 58 81 / 6%);
+    padding: 25px 35px 35px 35px;
+    width: 371px;
+    height: 347px;
+}
+
+.list button{
+    margin-top:50px;
+}
+
+/* Section 3 */
+
+#section3{
+    margin-top:40px;
+}
+
+#section3 .col{
+    font-size: 54px;
+    font-weight: 400;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #023A51;
+}
+
+#section3 p{
+    color: grey;
+    font-size:18px;
+    margin-top:25px;
+}
+
+/* section 4 */
+
+#section4{
+    background-color: white;
+}
+
+#section4 p{
+    color:grey;
+}
+
+#section4 .col{
+    gap:20px;
+}
+
+#section4 .col img{
+    margin-top: 15px;
+}
+
+#section4 .col h4{
+    margin-bottom:25px;
+    margin-top:25px;
+}
+
+/* section 5 */
+
+#section5{
+    background-color: aliceblue;
+}
+
+#section5 .col{
+    font-size: 32px;
+}
+
+#section5 .rounded{
+    padding-top:80px;
+}
+
+#section5 .container{
+    height: fit-content;
+}
+
+ #section5 .person{
+    width: fit-content;
+}
+
+
+
+
+#jon{
+    font-size: 13px; 
+    background-color:#b8c5c9;
+    border-radius: 1rem;
+    padding:7px;
+    margin-top:30px;
+    margin-bottom:30px;
+    display: inline-block;
+}
+
+/* section 6 */
+
+#section6{
+    padding-top:150px;
+    background-color: aliceblue;
+    padding-left: 370px;
+}
+.industries_green {
+    color: #2CBC63;
+    list-style: inside;
+    font-size: medium;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+#section6 .col h2{
+    font-size: 54px;
+    color: #023A51;
+    font-weight: 600;
+}
+
+.list-group-item{
+    background-color:aliceblue;
+    border:0ch;
+    list-style: circle;
 }

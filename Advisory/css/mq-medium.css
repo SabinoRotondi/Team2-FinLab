@@ -18,6 +18,19 @@
         flex-wrap: wrap;
     }
 
+    #section2 .img-s2{
+        margin-left:0px;
+        margin-top:0px;
+    }
+
+    #section2 .list{
+        display:none;
+    }
+
+    #section5 .container .row .col .person img{
+        display: none;
+    }
+
     /* ----------------- OFF CANVAS TABLET MENU ----------------- */
 
     .header-mobile-nav .offcanvas-end {

@@ -113,16 +113,76 @@
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal"
                                     aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
-                                ...
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary">Understood</button>
+                                <form>
+                                    <div class="modal-select-row">
+                                        <label for="iam">I'm a/an</label>
+                                        <select name="iam" id="iam">
+                                            <option value="volvo">Freelancer/Own Business</option>
+                                            <option value="other">Other Options</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="modal-select-row">
+                                        <label for="iwant">I want</label>
+                                        <select name="iwant" id="iwant">
+                                            <option value="call">Call me to discuss my questions
+                                            </option>
+                                            <option value="email">Email me your digital prospectus
+                                            </option>
+                                            <option value="mail">Mail me your full information pack
+                                            </option>
+                                        </select>
+                                    </div>
+
+                                    <div class="modal-select-row">
+                                        <label for="interest">I'm interested in</label>
+                                        <select name="interest" id="interest">
+                                            <option value="consultant">Financial Consultant</option>
+                                            <option value="accounting">Accounting Services</option>
+                                            <option value="tax">Tax Services</option>
+                                            <option value="career">Careers</option>
+                                            <option value="info">Request Additional Information</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="modal-input-row">
+                                        <label for="name">Your Name *</label>
+                                        <input type="text" name="name" id="name" placeholder="Eg: John Doe"
+                                            required="required">
+                                    </div>
+
+                                    <div class="modal-input-row grid">
+                                        <div>
+                                            <label for="email">Your Email *</label>
+                                            <input type="email" name="email" id="email" placeholder="name@company.com"
+                                                required="required">
+                                        </div>
+
+                                        <div>
+                                            <label for="tel">Phone Number</label>
+                                            <input type="tel" name="tel" id="tel"
+                                                placeholder="Full Number (incl. prefix)">
+                                        </div>
+                                    </div>
+
+                                    <div class="modal-input-row">
+                                        <label for="message">Message</label>
+                                        <textarea placeholder="Enter Message" rows="3"></textarea>
+                                    </div>
+
+                                    <div class="modal-checkbox">
+                                        <input type="checkbox" name="signup" id="signup" required="required">
+                                        <label for="signup">I agree to receive communications from
+                                            FinLab.</label>
+                                    </div>
+
+                                    <input type="submit" value="Send Message" class="submit-btn-drop">
+                                </form>
+
                             </div>
                         </div>
                     </div>
@@ -172,27 +232,171 @@
             </div>
         </div>
     </header>
-    
 
-    <main>
-    <div class="container" id="section1">
-        <div class="row">
-          <div class="col">
-              <ul>
-                  <li>TECHNOLOGY ADVISORY</li>
-              </ul>
-                <h1>Technology Advisory Services</h1>
-          </div>
-          <div class="col">
-              <hr>
-            <p>Technology Advisory is a client-driven approach with a suite of IT support services, including professional advice backed by world-class expertise and in line with the changing technology trends. Our Advisers are available to help you make strategic decisions whenever you come to a crossroads.</p>
-          </div>
+
+    <section>
+        <div class="container" id="section1">
+            <div class="row">
+                <div class="col">
+                    <ul>
+                        <li class="advisory">TECHNOLOGY ADVISORY</li>
+                    </ul>
+                    <h1>Technology Advisory Services</h1>
+                </div>
+                <div class="col">
+                    <hr>
+                    <p>Technology Advisory is a client-driven approach with a suite of IT support services, including
+                        professional advice backed by world-class expertise and in line with the changing technology
+                        trends. Our Advisers are available to help you make strategic decisions whenever you come to a
+                        crossroads.</p>
+                </div>
+            </div>
+    </section>
+
+    <section id="section2">
+        <img src="/Advisory/images/section2.jpg" class="img-fluid" alt="...">
+        <div class="img-s2">
+            <div class="list">
+                <h4>Quicklink For More Information</h4>
+                <hr>
+                <div class="d-flex">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Accounting</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Investments</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Consultant</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">Technology</a>
+                        </li>
+                    </ul>
+
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Active</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled">Disabled</a>
+                        </li>
+                    </ul>
+                </div>
+                <button type="button" class="btn btn-success">Success</button>
+            </div>
         </div>
-    </main>    
+    </section>
+
+    <div class="container d-flex justify-content-center" id="section3">
+        <div class="row">
+            <div class="col d-flex justify-content-center">
+                A Full List of Services we<br>Include are Below:
+            </div>
+            <p class="d-flex justify-content-center">We Know The Importance Of Delivering The Best Customer Experience.
+            </p>
+        </div>
+    </div>
+
+    <section id="section4">
+        <div class="container">
+            <div class="row">
+                <div class="col d-flex">
+                    <div><img src="/Advisory/images/green_glob.png" alt="" width="40px" height="40px"></div>
+                    <div>
+                        <h4>IT sourcing and procurement</h4>
+                        <p>Our tax experts can help you to develop a thorough and <br>
+                            up-to-date tax plan that protects your cash flow and <br>
+                            optimises your position for the future.</p>
+                    </div>
+                </div>
+                <div class="col d-flex">
+                    <div><img src="" alt="" width="40px" height="40px"></div>
+                    <div>
+                        <h4>Cloud Computing</h4>
+                        <p>Our advisers can help you to land on the best possible <br>
+                            structure for your business, protect wealth, reduce risk <br>
+                            with full compliance.</p>
+                    </div>
+                </div>
+
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col d-flex">
+                            <div><img src="" alt="" width="40px" height="40px"></div>
+                            <div>
+                                <h4>IT operating model design</h4>
+                                <p>You have enough to worry about without the <br>
+                                    administrative burden caused by indirect taxes like GST, <br>
+                                    stamp duty, land tax and payroll tax.</p>
+                            </div>
+                        </div>
+                        <div class="col d-flex">
+                            <div><img src="" alt="" width="40px" height="40px"></div>
+                            <div>
+                                <h4>IT programme delivery</h4>
+                                <p>If your company qualifies as an Early Stage Innovation <br>
+                                    Company (ESIC) according to ATO guidelines, your <br>
+                                    investors may be entitled to tax incentives.</p>
+                            </div>
+                        </div>
+
+    </section>
 
 
 
 
+
+
+    <section id="section5">
+        <img src="/Advisory/images/virgole_green.png" class="rounded mx-auto d-block" alt="...">
+        <div class="container d-flex justify-content-center" id="section3">
+            <div class="row d-flex justify-content-center">
+                <div class="col">
+                    <div>"Your company has provided consistent, high quality, <br>
+                    accounting support during the exponential growth we have <br>
+                    experienced over the past two years"</div>
+                    <div id="jon">JOHN DOE, GROUP HEAD OF DIGITAL COMMUNICATIONS</div>
+                    <div class="person "><img src="/Advisory/images/icone_persone-removebg-preview.png" alt=""></div>
+                </div>
+            </div> 
+        </div>
+    </section>
+
+
+    <section id="section6">
+        <div class="container">
+            <div class="row">
+              <div class="col">
+                <li class="industries_green">INDUSTRIES WE SERVE</li>
+                <h2>Broad Knowledge <br> Base. Deep <br> Insights.</h2>
+              </div>
+              <div class="col d-flex">
+                <ul class="list-group">
+                    <li class="list-group-item"><a href="#">Automote / Aviation</a></li>
+                    <li class="list-group-item"><a>Manufacturing & Industrial</a></li>
+                    <li class="list-group-item"><a>Real Estate</a></li>
+                    <li class="list-group-item"><a></a></li>
+                    <li class="list-group-item"><a></a></li>
+                  </ul>
+                  <ul class="list-group">
+                    <li class="list-group-item"><a></a></li>
+                    <li class="list-group-item"><a></a></li>
+                    <li class="list-group-item"><a></a></li>
+                    <li class="list-group-item"><a></a></li>
+                    <li class="list-group-item"><a></a></li>
+                  </ul>
+              </div>
+            </div>
+    </section>
 
 
 
