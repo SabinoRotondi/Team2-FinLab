@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="55px" height="60px" viewBox="0 0 55 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>symbbol</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-351.000000, -164.000000)">
+            <g id="symbol" transform="translate(64.000000, 0.000000)">
+                <g id="symbbol" transform="translate(287.000000, 164.000000)">
+                    <polygon id="Rectangle--Rectangle--Rectangle" fill="#2CBC63" points="27.2980856 18.6423667 27.2980856 29.4763582 0 10.8339915 0 0 27.2980856 18.6423667"></polygon>
+                    <path d="M9.09936188,8.97055393 L9.09936188,33.3759412 C9.09936188,43.178649 17.247208,51.1253137 27.2980856,51.1253137 C37.3489632,51.1253137 45.4968094,43.178649 45.4968094,33.3759412 L45.4968094,8.97055393 L54.5961713,8.97055393 L54.5961713,33.3759412 C54.5961713,48.0800028 42.374402,60 27.2980856,60 C12.2217692,60 0,48.0800028 0,33.3759412 L0,8.97055393 L9.09936188,8.97055393 Z" id="Rectangle--Rectangle--Rectangle" fill="#2CBC63"></path>
+                    <polygon id="Rectangle--Rectangle--Rectangle-Copy" fill="#FFFFFF" transform="translate(40.947128, 14.834047) scale(1, -1) translate(-40.947128, -14.834047) " points="54.5961713 18.7382343 54.5961713 29.5722258 27.2980856 10.9298591 27.2980856 0.0958676519 54.5961713 18.7382343"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
