@@ -1,13 +1,14 @@
 /* ----------------- MEDIUM AND LARGE DEVICES ----------------- */
 
-@media (min-width: 770px) and (max-width: 1185px) {
+@media (min-width: 768px) and (max-width: 1185px) {
     html {
         font-size: 10px;
     }
 
     /* ----------------- HEADER ----------------- */
 
-    .header-social, .header-menu {
+    .header-social,
+    .header-menu {
         display: none;
     }
 
@@ -42,25 +43,6 @@
 
     /* ----------------- CARD GRID ----------------- */
 
-    .card-container {
-        width: 100%;
-        gap: 3rem 1rem;
-        padding: 0 2rem 6.5rem 2rem;
-    }
-
-    .card {
-        max-height: 35rem;
-        max-width: 36rem;
-    }
-
-    .card-title {
-        font-size: 2.4rem;
-    }
-
-    .card-category, .card-footer-cm p {
-        font-size: 1.4rem;
-        line-height: 2.5rem;
-    }
 
     /* ----------------- FOOTER HERO ----------------- */
 
@@ -96,12 +78,13 @@
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: 2;
         grid-template-areas:
-        'col1 col2 col3 col4'
-        'newsletter newsletter newsletter newsletter';
+            'col1 col2 col3 col4'
+            'newsletter newsletter newsletter newsletter';
         row-gap: 5rem;
     }
 
-    .footer-grid-container li a, .footer-grid-container h5 {
+    .footer-grid-container li a,
+    .footer-grid-container h5 {
         font-size: 1.5rem;
         line-height: 2.5rem;
     }
@@ -118,7 +101,7 @@
 
     footer input[type="email"]::placeholder {
         font-size: 1.4rem;
-    }    
+    }
 
     footer input[type="submit"] {
         width: 3%;
@@ -132,9 +115,77 @@
 
     /* ----------------- FOOTER ADDRESS & CREDITS ----------------- */
 
-    .footer-address, .footer-credits {
+    .footer-address,
+    .footer-credits {
         width: 100%;
         padding: 4rem 4rem 5rem;
     }
 
+    .questions h1 {
+        width: 100%;
+        margin-left: 0%;
+        padding-left: 5%;
+        font-size: 32px;
+    }
+
+    .form {
+        display: flex;
+        justify-content: center;
+        padding: 0%;
+        margin: 0;
+    }
+
+    .form form {
+        background-color: rgba(239, 245, 247, 0.5);
+        padding: 0%;
+        margin: 0;
+    }
+
+    .questions h6 {
+        margin-left: 0%;
+        padding-left: 5%;
+    }
+
+    .form {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 5% 10%;
+    }
+
+    .form form {
+        background-color: rgba(239, 245, 247, 0.5);
+        padding: 5%;
+    }
+
+    .form img {
+        display: none;
+    }
+
+    .addresses {
+        display: flex;
+        margin-left: 5%;
+        justify-content: space-evenly;
+        width: 50%;
+    }
+
+    .questions h1 {
+        padding-top: 0;
+        font-family: Manrope;
+        margin-left: 5%;
+        font-size: 28px;
+        font-weight: 700;
+        letter-spacing: 0px;
+        text-decoration: none solid rgb(255, 255, 255);
+        word-spacing: 0;
+        color: white;
+        width: 80%;
+        padding-left: 0%;
+        padding-bottom: 0px;
+
+    }
+
+    .goform-button {
+        margin: 5%;
+    }
 }

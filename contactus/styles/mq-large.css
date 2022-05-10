@@ -1,0 +1,59 @@
+/* ----------------- LARGE DEVICES ----------------- */
+
+@media only screen and (min-width: 1185px) and (max-width: 1800px) {
+    .header-icons {
+        width: 90%;
+        padding: 2rem 3rem;
+    }
+
+    .header-menu {
+        width: 90%;
+        padding: 0 3rem;
+    }
+
+
+    .footer-grid-container,
+    .footer-address,
+    .footer-credits {
+        width: 85%;
+    }
+
+    footer input[type="submit"] {
+        right: 16rem;
+    }
+
+    .questions h1 {
+        width: 80%;
+    }
+
+    .form {
+        display: flex;
+        justify-content: center;
+        padding: 0%;
+        margin: 0;
+    }
+
+    .form form {
+        background-color: rgba(239, 245, 247, 0.5);
+        padding: 0%;
+        margin: 0;
+    }
+
+    .form {
+        justify-content: center;
+        width: 100%;
+        padding: 0%;
+        margin: 0%;
+    }
+
+    .form form {
+        width: 100%;
+        padding: 0%;
+        margin: 0%;
+    }
+
+    .form img {
+        display: block;
+    }
+
+}
