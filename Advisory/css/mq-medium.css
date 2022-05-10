@@ -31,6 +31,29 @@
         display: none;
     }
 
+    #section6{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #section6 .col h2{
+        font-size:medium;
+    }
+
+    #checklist{
+        display: flex;
+        flex-wrap: wrap;
+        gap:40px;
+    }
+
+    #section7{
+        padding-left:0px;
+    }
+
+    #roadline{
+        display: none;
+    }
+
     /* ----------------- OFF CANVAS TABLET MENU ----------------- */
 
     .header-mobile-nav .offcanvas-end {
@@ -42,16 +65,6 @@
         font-size: 1.5rem;
     }
     
-    /* ----------------- ASIDE ----------------- */
-
-    .body-container {
-        width: 90%;
-        gap: 6rem;
-    }
-
-    aside {
-        width: 60%;
-    }
 
     /* ----------------- FOOTER HERO ----------------- */
 

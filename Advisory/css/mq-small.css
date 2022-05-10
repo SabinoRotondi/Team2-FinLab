@@ -66,6 +66,25 @@
         display: none;
     }
 
+    #section6 .col h2{
+        font-size:5vh;
+    }
+
+    #checklist{
+        display: flex;
+        flex-wrap: wrap;
+        gap:40px;
+    }
+
+    #section7{
+        padding-left:0px;    
+    }
+    
+    #roadline{
+        display: none;
+    }
+    
+
     
   
     /* ----------------- FOOTER MENU ----------------- */

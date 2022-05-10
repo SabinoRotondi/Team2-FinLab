@@ -152,7 +152,6 @@ section{
 #section6{
     padding-top:150px;
     background-color: aliceblue;
-    padding-left: 370px;
 }
 .industries_green {
     color: #2CBC63;
@@ -168,8 +167,123 @@ section{
     font-weight: 600;
 }
 
-.list-group-item{
-    background-color:aliceblue;
-    border:0ch;
-    list-style: circle;
+.checklist{
+    list-style-type: disc;
+    color: #2CBC63;
+    margin-left:40px;
+}
+
+.checklist li{
+    font-size: 25px;
+    padding:7px;
+}
+
+.checklist a{
+    color: grey;
+    
+}
+
+.checklist a:hover{
+    color: #2CBC63;
+    transition: 0.2s;
+}
+
+/* section 7 */
+
+#section7{
+    padding-top: 60px;
+    background-color: aliceblue;
+    padding-left: 250PX;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:40px;
+    padding-bottom: 40px;
+}
+
+#Maria p{
+    color:grey;
+    font-size: small;
+    
+}
+
+#Matt p{
+    color:grey;
+    font-size: small;
+}
+
+#Larry p{
+    color:grey;
+    font-size: small;
+}
+
+#Maria{
+    background-color: white;
+    box-shadow: 0 2px 2px rgb(2 58 81 / 6%), 0 4px 4px rgb(2 58 81 / 6%), 0 8px 8px rgb(2 58 81 / 6%), 0 16px 16px rgb(2 58 81 / 6%), 0 32px 32px rgb(2 58 81 / 6%);
+}
+
+#Matt{
+    background-color: white;
+    box-shadow: 0 2px 2px rgb(2 58 81 / 6%), 0 4px 4px rgb(2 58 81 / 6%), 0 8px 8px rgb(2 58 81 / 6%), 0 16px 16px rgb(2 58 81 / 6%), 0 32px 32px rgb(2 58 81 / 6%);
+}
+
+#Larry{
+    background-color: white;
+    box-shadow: 0 2px 2px rgb(2 58 81 / 6%), 0 4px 4px rgb(2 58 81 / 6%), 0 8px 8px rgb(2 58 81 / 6%), 0 16px 16px rgb(2 58 81 / 6%), 0 32px 32px rgb(2 58 81 / 6%);
+}
+
+#section7 a{
+    color:#023A51;
+    
+}
+
+#Larry:hover{
+    background-color: #2CBC63;
+    transition: 0.2s;
+}
+
+#Matt:hover{
+    background-color: #2CBC63;
+    transition: 0.2s;
+}
+
+#Maria:hover{
+    background-color: #2CBC63;
+    transition: 0.2s;
+}
+
+#row7{
+    display:flex ;
+    justify-content: center;
+    gap:17px;
+}
+
+.help-you{
+    padding-right:235px;
+    color: #023A51;
+    font-weight: 600;
+}
+
+/* section 8 */
+
+#section8{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:30px;
+    padding-top: 30px;
+    text-align: center;
+    padding-bottom:40px;
+}
+
+#form{
+    display: flex;
+    justify-content: center;
+    background-color: azure;
+    padding:0px;
+}
+
+#letter{
+    padding: 40px 55px 45px 55px;
 }
