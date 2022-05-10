@@ -75,18 +75,23 @@
         flex-wrap: wrap;
         gap:40px;
     }
-
-    #section7{
-        padding-left:0px;    
-    }
     
     #roadline{
         display: none;
     }
-    
+
+    #letter{
+        padding:0px;
+    }
+
+    #help-you{
+        width:100%
+    }
+    #letter{
+        width:100%;
+    }
 
     
-  
     /* ----------------- FOOTER MENU ----------------- */
 
     .footer-menu {

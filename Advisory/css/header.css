@@ -29,7 +29,7 @@ header {
 }
 
 .nav-link{
-    color: #5c667d;
+    color: #888787;
 }
 
 .nav-link a{
@@ -38,7 +38,10 @@ header {
 
 .nav-link:hover{
     color: white;
+    text-decoration: overline;
+    transition: 0.3s;
 }
+
 
 #logo{
     width :17rem;

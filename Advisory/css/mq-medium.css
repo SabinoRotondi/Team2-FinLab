@@ -46,25 +46,17 @@
         gap:40px;
     }
 
-    #section7{
-        padding-left:0px;
-    }
-
     #roadline{
         display: none;
     }
 
-    /* ----------------- OFF CANVAS TABLET MENU ----------------- */
-
-    .header-mobile-nav .offcanvas-end {
-        width: 60%;
+    #section8{
+        padding-left:0px;
     }
 
-    .header-mobile-nav .offcanvas-end label, .header-mobile-nav .offcanvas-end a {
-        line-height: 3rem;
-        font-size: 1.5rem;
+    #letter{
+        width:100%;
     }
-    
 
     /* ----------------- FOOTER HERO ----------------- */
 
