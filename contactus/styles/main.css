@@ -1,0 +1,311 @@
+main {}
+
+.questions {
+    background-color: var(--primary);
+    background-image: url("/assets/globe-bg.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    padding-top: 4%;
+}
+
+.questions h1 {
+    padding-top: 20px;
+    font-family: Manrope;
+    font-size: 54px;
+    font-weight: 700;
+    letter-spacing: 0.128px;
+    line-height: 60.885px;
+    text-decoration: none solid rgb(255, 255, 255);
+    word-spacing: 0;
+    color: white;
+    width: 40%;
+    padding-left: 20%;
+    padding-bottom: 50px;
+
+}
+
+.questions h6 {
+    font-family: Manrope;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 25.6px;
+    text-decoration: none solid rgb(44, 188, 99);
+    text-transform: uppercase;
+    word-spacing: 0;
+    color: #2CBC63;
+    margin-left: 20%;
+}
+
+.divider {
+    margin: 1px;
+    color: rgba(255, 255, 255, 0.4);
+    height: 1px;
+}
+
+.addresses {
+    display: flex;
+    margin-left: 20%;
+    justify-content: space-between;
+    width: 18%;
+
+}
+
+
+.address-1 h4 {
+    font-family: Manrope;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 25.6px;
+    text-decoration: none solid rgb(44, 188, 99);
+    text-transform: uppercase;
+    word-spacing: 0;
+    color: white;
+    padding: 10px 0;
+}
+
+.address-2 h4 {
+    font-family: Manrope;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 25.6px;
+    text-decoration: none solid rgb(44, 188, 99);
+    text-transform: uppercase;
+    word-spacing: 0;
+    color: white;
+    padding: 10px 0;
+}
+
+.address-1 h2 {
+    font-family: Manrope;
+    font-size: 16px;
+    color: rgb(148, 169, 179);
+}
+
+.address-2 h2 {
+    font-family: Manrope;
+    font-size: 16px;
+    color: rgb(148, 169, 179);
+}
+
+
+.divider {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.4);
+    height: 1px;
+}
+
+.goform-button {
+    border: none;
+    background-color: var(--green);
+    border-radius: 2rem;
+    padding: 1rem 2.2rem;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: white;
+    transition: background-color 0.2s ease-in-out;
+    margin: 3% 20%;
+    transition: all 0.3s ease-in-out;
+}
+
+.goform-button:hover {
+    background-color: var(--primary);
+    border: solid 0.1rem rgba(255, 255, 255, 0.3)
+}
+
+
+
+.row g-0:hover {
+    background-color: #2CBC63;
+    border: solid 0.1rem rgba(255, 255, 255, 0.3)
+}
+
+.goform-button a {
+    color: white;
+}
+
+.header-talk-button:hover {
+    background-color: var(--body);
+}
+
+.col-md-6:hover {
+    background-color: #2CBC63;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container img {
+    width: 100%;
+    height: 100%;
+}
+
+.container a {
+    color: black;
+}
+
+.form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 5% 20%;
+}
+
+.form form {
+    background-color: rgba(239, 245, 247, 0.5);
+    padding: 5%;
+}
+
+.form img {
+    display: block;
+}
+
+.form-content {
+    border-radius: 0;
+    border: none;
+}
+
+.form-body {
+    padding: 4rem;
+}
+
+.form-body input,
+.form-body select,
+.form-body textarea {
+    display: block;
+}
+
+.form-body select {
+    border: none;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--primary);
+    padding: 0.3rem;
+    cursor: pointer;
+}
+
+.form-select-row label {
+    font-size: 1.25rem;
+    color: var(--body);
+}
+
+.form-select-row {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: solid 0.05rem rgba(0, 0, 0, 0.15);
+}
+
+.form-input-row {
+    margin-bottom: 2rem;
+}
+
+.form-input-row.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+}
+
+.form-input-row label {
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--body);
+}
+
+.form-input-row input,
+.form-input-row textarea {
+    width: 100%;
+    border: solid 0.1rem rgba(0, 0, 0, 0.15);
+    padding: 1rem 1.8rem;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.03);
+    font-size: 1.2rem;
+}
+
+.form-input-row input:focus,
+.form-input-row textarea:focus {
+    border: solid 0.1rem var(--green);
+}
+
+.form-input-row input::placeholder,
+.form-input-row textarea::placeholder {
+    font-size: 1.2rem;
+    opacity: 0.7;
+}
+
+.form-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.form-body label[for="signup"] {
+    display: inline;
+    font-size: 1.1rem;
+    color: var(--body);
+    margin: 0.3rem 0;
+}
+
+.form-body input[type="checkbox"] {
+    display: inline;
+    border: solid 0.1rem rgba(0, 0, 0, 0.15);
+}
+
+.form-body input[type="submit"] {
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    width: 30%;
+    padding: 1.1rem 2rem;
+}
+
+.form .btn-close.text-reset {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 2.4rem;
+    height: 2.4rem;
+    border-radius: 0;
+    background-color: var(--green);
+    background-image: url('data:image/svg+xml, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><style>.this{fill: white;};</style><path class="this" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>');
+    background-repeat: no-repeat;
+    background-size: 45%;
+    opacity: 1;
+    margin: 0;
+    z-index: 1;
+}
+
+.form-dialog-scrollable .form-content {
+    margin-top: 15vh;
+}
+
+.card-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.finance h1 {
+    padding-top: 20px;
+    font-family: Manrope;
+    font-size: 54px;
+    font-weight: 700;
+    letter-spacing: 0.128px;
+    line-height: 60.885px;
+    text-decoration: none solid rgb(255, 255, 255);
+    word-spacing: 0;
+    color: white;
+    width: 40%;
+    padding-left: 20%;
+    padding-bottom: 50px;
+
+}
