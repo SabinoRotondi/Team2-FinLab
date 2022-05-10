@@ -2,7 +2,7 @@ main {}
 
 .questions {
     background-color: var(--primary);
-    background-image: url("/assets/globe-bg.png");
+    background-image: url("/contactus/assets/globe-bg.png");
     background-repeat: no-repeat;
     background-position: right;
     padding-top: 4%;

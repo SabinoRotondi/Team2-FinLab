@@ -1,16 +1,16 @@
-@import "/styles/reset.css";
+@import "/contactus/styles/reset.css";
 /* RESET */
-@import "/styles/header.css";
+@import "/contactus/styles/header.css";
 /* HEADER */
-@import "/styles/main.css";
+@import "/contactus/styles/main.css";
 /* MAIN */
-@import "/styles/footer.css";
+@import "/contactus/styles/footer.css";
 /* FOOTER */
-@import "/styles/mq-small.css";
+@import "/contactus/styles/mq-small.css";
 /* SMALL DEVICES MEDIA QUERY */
-@import "/styles/mq-medium.css";
+@import "/contactus/styles/mq-medium.css";
 /* MEDIUM DEVICES MEDIA QUERY */
-@import "/styles/mq-large.css";
+@import "/contactus/styles/mq-large.css";
 /* LARGE DEVICES MEDIA QUERY*/
 
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
