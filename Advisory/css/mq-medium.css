@@ -1,0 +1,115 @@
+/* ----------------- MEDIUM AND LARGE DEVICES ----------------- */
+@media (min-width: 768px) and (max-width: 1185px) {
+
+    /* ----------------- HEADER ----------------- */
+    
+    #modale{
+        margin-right: 20px;
+    }
+
+    #offcanvas{
+        display: none;
+    }
+
+    /* -------------------- MAIN ------------------------ */
+
+    #section1{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #section2 .img-s2{
+        margin-left:0px;
+        margin-top:0px;
+    }
+
+    #section2 .list{
+        display:none;
+    }
+
+    #section5 .container .row .col .person img{
+        display: none;
+    }
+
+    #section6{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #section6 .col h2{
+        font-size:medium;
+    }
+
+    #checklist{
+        display: flex;
+        flex-wrap: wrap;
+        gap:40px;
+    }
+
+    #roadline{
+        display: none;
+    }
+
+    #section8{
+        padding-left:0px;
+    }
+
+    #letter{
+        width:100%;
+    }
+
+    /* ----------------- FOOTER HERO ----------------- */
+
+    .footer-hero-wrapper {
+        width: 65%;
+    }
+
+
+    /* ----------------- FOOTER MENU ----------------- */
+
+    .footer-grid-container {
+        width: 100%;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        row-gap: 5rem;
+        padding: 0 4rem;
+    }
+
+    /* ----------------- FOOTER NEWSLETTER ----------------- */
+
+    .footer-newsletter {
+        width: 100%;
+        padding: 4rem 4rem 5rem;
+        order: 2;
+    }
+
+    footer input[type="email"] {
+        margin-top: 2rem;
+        padding: 2rem;
+    }
+
+    footer input[type="email"]::placeholder {
+        font-size: 1.4rem;
+    }    
+
+    footer form button {
+        top: 5rem;
+    }
+
+    footer form {
+        margin: 0;
+    }
+
+    /* ----------------- FOOTER ADDRESS & CREDITS ----------------- */
+
+    .footer-address {
+        width: 100%;
+        padding: 6rem 4rem 8rem;
+        order: 1;
+    }
+
+    .footer-credits {
+        width: 100%;
+        order: 3;
+    }
+
+}

@@ -1,0 +1,21 @@
+@import "/Advisory/css/reset.css"; /* RESET */
+@import "/Advisory/css/footer.css"; /* FOOTER */
+@import "/Advisory/css/mq-small.css"; /* SMALL DEVICES MEDIA QUERY */
+@import "/Advisory/css/mq-medium.css"; /* MEDIUM DEVICES MEDIA QUERY */
+@import "/Advisory/css/mq-large.css"; /* LARGE DEVICES MEDIA QUERY*/
+@import "https://use.fontawesome.com/releases/v5.0.1/css/all.css"; /* FONT AWESOME FONT-FAMILY */
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+* {
+    font-family: 'Manrope', sans-serif;
+}
+
+:root {
+    --primary: #023A51;
+    --green: #2CBC63;
+    --body: #5c667d;
+    --body-darker: #59667d;
+    --accent: #A6BAC2;
+    --footer-body: #A69CAA;
+}

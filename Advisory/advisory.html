@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/Advisory/css/style.css">
+    <link rel="stylesheet" href="/Advisory/css/header.css">
+    <link rel="stylesheet" href="/Advisory/css/main.css">
+
+    <title>Technology Advisory-FinLab</title>
+</head>
+
+<body>
+    <header>
+        <div class="header_container">
+            <a href="#"><img id="logo" src="images/logo-finlab.png" alt="..."></a>
+            <div class="col-7 d-flex" id="menu">
+                <nav class="navbar navbar-expand-lg">
+                    <ul class="navbar-nav" id="main-menu">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Homepage
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Home 1</a></li>
+                                <hr>
+                                <li><a class="dropdown-item" href="#">Home 2</a></li>
+                            </ul>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Who We Are
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">About Us</a></li>
+                                <hr>
+                                <li><a class="dropdown-item" href="#">Our Leadership Team</a></li>
+                                <hr>
+                                <li><a class="dropdown-item" href="#">Why Choose Us</a></li>
+                                <hr>
+                                <li><a class="dropdown-item" href="#">Our Story</a></li>
+                                <hr>
+                                <li><a class="dropdown-item" href="#">Careers</a></li>
+                            </ul>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                What We Do
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Accounting Service</a></li>
+                                <hr>
+                                <li><a class="dropdown-item" href="#">Audit & Tax Service</a></li>
+                                <hr>
+                                <li><a class="dropdown-item" href="#">Capital Investments</a></li>
+                                <hr>
+                                <li><a class="dropdown-item" href="#">Finance & Restructuring</a></li>
+                                <hr>
+                                <li><a class="dropdown-item" href="#">Financial Consultant</a></li>
+                                <hr>
+                                <li><a class="dropdown-item" href="#">Portfolio Management</a></li>
+                                <hr>
+                                <li><a class="dropdown-item" href="#">Technology Advisory</a></li>
+                                <hr>
+                                <li><a class="dropdown-item" href="#">All Service Page</a></li>
+                            </ul>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Case Studies
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Cases Grid 1</a></li>
+                                <hr>
+                                <li><a class="dropdown-item" href="#">Cases Grid 2</a></li>
+                                <hr>
+                                <li><a class="dropdown-item" href="#">Cases Grid 3</a></li>
+                            </ul>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Blog & Insights</a>
+                        </li>
+                    </ul>
+                </nav>
+                <button class="btn btn-primary" id="offcanvas" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                    <img src="/Advisory/images/menu_button.png" alt="" width="20px" height="20px">
+                </button>
+                <!-- Button trigger modal -->
+                <button type="button" id="modale" class="btn btn-primary" data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop">
+                    <img src="/Advisory/images/message_icon.png" alt="" width="20px" height="20px">
+                </button>
+                <!-- Modal -->
+                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                    tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="modal-select-row">
+                                        <label for="iam">I'm a/an</label>
+                                        <select name="iam" id="iam">
+                                            <option value="volvo">Freelancer/Own Business</option>
+                                            <option value="other">Other Options</option>
+                                        </select>
+                                    </div>
+                                    <div class="modal-select-row">
+                                        <label for="iwant">I want</label>
+                                        <select name="iwant" id="iwant">
+                                            <option value="call">Call me to discuss my questions
+                                            </option>
+                                            <option value="email">Email me your digital prospectus
+                                            </option>
+                                            <option value="mail">Mail me your full information pack
+                                            </option>
+                                        </select>
+                                    </div>
+                                    <div class="modal-select-row">
+                                        <label for="interest">I'm interested in</label>
+                                        <select name="interest" id="interest">
+                                            <option value="consultant">Financial Consultant</option>
+                                            <option value="accounting">Accounting Services</option>
+                                            <option value="tax">Tax Services</option>
+                                            <option value="career">Careers</option>
+                                            <option value="info">Request Additional Information</option>
+                                        </select>
+                                    </div>
+                                    <div class="modal-input-row">
+                                        <label for="name">Your Name *</label>
+                                        <input type="text" name="name" id="name" placeholder="Eg: John Doe"
+                                            required="required">
+                                    </div>
+                                    <div class="modal-input-row grid">
+                                        <div>
+                                            <label for="email">Your Email *</label>
+                                            <input type="email" name="email" id="email" placeholder="name@company.com"
+                                                required="required">
+                                        </div>
+                                        <div>
+                                            <label for="tel">Phone Number</label>
+                                            <input type="tel" name="tel" id="tel"
+                                                placeholder="Full Number (incl. prefix)">
+                                        </div>
+                                    </div>
+                                    <div class="modal-input-row">
+                                        <label for="message">Message</label>
+                                        <textarea placeholder="Enter Message" rows="3"></textarea>
+                                    </div>
+
+                                    <div class="modal-checkbox">
+                                        <input type="checkbox" name="signup" id="signup" required="signup">
+                                        <label for="signup">I agree to receive communications from
+                                        FinLab.</label>
+                                    </div>
+                                    <input type="submit" value="Send Message" class="submit-btn-drop" id="modal-submit"> 
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- offcanvas -->
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+                    aria-labelledby="offcanvasExampleLabel">
+                    <div class="offcanvas-header">
+                        <button type="button" id="close-btn" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                            aria-label="Close">
+                        </button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div class="offcanvas-text">
+                            <img src="/Advisory/images/Palazzo offcanvas.jpg" alt="palazzo" height="155px"
+                                width="310px">
+                            <p>Our firm provides the expert support organisations need to thrive in a fast-changing
+                                world.</p>
+                            <p>Address: 1270 Beverley Rd Brooklyn, New York 11226 United States.</p>
+                            <div>
+                                <span>Phone:</span><a href="#">0712 610 33 181</a>
+                                <span>Mail:</span><a href="#">info@example.com</a>
+                            </div>
+                        </div>
+                        <div class="form-offcanvas">
+                            <form>
+                                <span>Request a Callback</span>
+                                <div class="mb-3">
+                                    <label for="name" class="form-label"></label>
+                                    <input type="name" class="form-control" id="exampleInputEmail1"
+                                        aria-describedby="emailHelp" placeholder="Your Name*">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="number" class="form-label"></label>
+                                    <input type="tel" class="form-control" id="exampleInputPassword1"
+                                        placeholder="Phone Number*">
+                                </div>
+                                <button type="submit" id="submit-off" class="btn btn-primary">Request a
+                                    Callback</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="container" id="section1">
+            <div class="row">
+                <div class="col">
+                    <ul>
+                        <li class="advisory">TECHNOLOGY ADVISORY</li>
+                    </ul>
+                    <h1>Technology Advisory Services</h1>
+                </div>
+                <div class="col">
+                    <hr>
+                    <p>Technology Advisory is a client-driven approach with a suite of IT support services, including
+                        professional advice backed by world-class expertise and in line with the changing technology
+                        trends. Our Advisers are available to help you make strategic decisions whenever you come to a
+                        crossroads.</p>
+                </div>
+            </div>
+    </section>
+    <section id="section2">
+        <img src="/Advisory/images/section2.jpg" class="img-fluid" alt="...">
+        <div class="img-s2">
+            <div class="list">
+                <h4>Quicklink For More Information</h4>
+                <hr>
+                <div class="d-flex">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Accounting</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Investments</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Consultant</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" id="green">Technology</a>
+                        </li>
+                    </ul>
+                    <ul class="nav flex-column"> 
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Tax & Audit</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Finance</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Managemant</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">All Service</a>
+                        </li>
+                    </ul>
+                </div>
+                <button type="button" class="btn btn-success">Success</button>
+            </div>
+        </div>
+    </section>
+    <div class="container d-flex justify-content-center" id="section3">
+        <div class="row">
+            <div class="col d-flex justify-content-center">
+                A Full List of Services we<br>Include are Below:
+            </div>
+            <p class="d-flex justify-content-center">We Know The Importance Of Delivering The Best Customer Experience.
+            </p>
+        </div>
+    </div>
+    <section id="section4">
+        <div class="container">
+            <div class="row">
+                <div class="col d-flex">
+                    <div><img src="/Advisory/images/earth-removebg-preview.png" alt="" width="40px" height="40px"></div>
+                    <div>
+                        <h4>IT sourcing and procurement</h4>
+                        <p>Our tax experts can help you to develop a thorough and <br>
+                            up-to-date tax plan that protects your cash flow and <br>
+                            optimises your position for the future.</p>
+                    </div>
+                </div>
+                <div class="col d-flex">
+                    <div><img src="/Advisory/images/mic-removebg-preview.png" alt="" width="40px" height="40px"></div>
+                    <div>
+                        <h4>Cloud Computing</h4>
+                        <p>Our advisers can help you to land on the best possible <br>
+                            structure for your business, protect wealth, reduce risk <br>
+                            with full compliance.</p>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col d-flex">
+                            <div><img src="/Advisory/images/fire-removebg-preview.png" alt="" width="40px" height="40px"></div>
+                            <div>
+                                <h4>IT operating model design</h4>
+                                <p>You have enough to worry about without the <br>
+                                    administrative burden caused by indirect taxes like GST, <br>
+                                    stamp duty, land tax and payroll tax.</p>
+                            </div>
+                        </div>
+                        <div class="col d-flex">
+                            <div><img src="/Advisory/images/diamond-removebg.png" alt="" width="40px" height="40px"></div>
+                            <div>
+                                <h4>IT programme delivery</h4>
+                                <p>If your company qualifies as an Early Stage Innovation <br>
+                                    Company (ESIC) according to ATO guidelines, your <br>
+                                    investors may be entitled to tax incentives.</p>
+                            </div>
+                        </div>
+    </section>
+    <section id="section5">
+        <img src="/Advisory/images/virgole_green.png" class="rounded mx-auto d-block" alt="...">
+        <div class="container d-flex justify-content-center" id="section3">
+            <div class="row d-flex justify-content-center">
+                <div class="col">
+                    <div>"Your company has provided consistent, high quality, <br>
+                        accounting support during the exponential growth we have <br>
+                        experienced over the past two years"</div>
+                    <div id="jon">JOHN DOE, GROUP HEAD OF DIGITAL COMMUNICATIONS</div>
+                    <div class="person "><img src="/Advisory/images/icone_persone-removebg-preview.png" alt=""></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="section6">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <li class="industries_green">INDUSTRIES WE SERVE</li>
+                    <h2>Broad Knowledge <br> Base. Deep <br> Insights.</h2>
+                </div>
+                <div class="col d-flex" id="checklist">
+                    <ul class="checklist">
+                        <li><a href="#">Automote / Aviation</a></li>
+                        <li><a href="#">Manufacturing & Industrial</a></li>
+                        <li><a href="#">Real Estate</a></li>
+                        <li><a href="#">Media & Entertainment</a></li>
+                        <li><a href="#">Social & Public Sector</a></li>
+                    </ul>
+                    <ul class="checklist">
+                        <li><a href="#">Retail & Ecommerce</a></li>
+                        <li><a href="#">Human Resources</a></li>
+                        <li><a href="#">Medical & Healthcare</a></li>
+                        <li><a href="#">Banking / Finance</a></li>
+                        <li><a href="#">Machinery & Equipment</a></li>
+                    </ul>
+                </div>
+            </div>
+    </section>
+    <section id="section7">
+        <p class="help-you">Here Are Industry Experts Who Can Help You</p>
+        <div class="container d-flex" id="contenitore7">
+            <div class="row" id="row7">
+                <div class="col">
+                    <a href="#">
+                        <div class="container-fluid d-flex justify-content-between" id="Larry">
+                            <div>
+                                Larry Swank
+                                <p>Chief Executive Officer</p>
+                            </div>
+                            <div>
+                                <img src="/Advisory/images/Larry.jpg" alt="" width="185px" height="185px">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="#">
+                        <div class="container-fluid d-flex justify-content-between" id="Maria">
+                            <div>
+                                Maria MS
+                                <p>Chief Financial <br> Officer</p>
+                            </div>
+                            <div>
+                                <img src="/Advisory/images/Maria.jpg" alt="" width="185px" height="185px">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="#">
+                        <div class="container-fluid d-flex justify-content-between" id="Matt">
+                            <div>
+                                Matt Millen
+                                <p>Chief Strategy <br> Officer</p>
+                            </div>
+                            <div>
+                                <img src="/Advisory/images/Matt.jpg" alt="" width="185px" height="185px">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="section8">
+        <div class="title">
+            <h1>Need a personalized solution?</h1>
+            <p>We Know The Importance Of Delivering The Best Customer Experience.</p>
+        </div>
+        <div class="container" id="form">
+            <div id="letter">
+                <form>
+                    <div class="modal-select-row">
+                        <label for="iam">I'm a/an</label>
+                        <select name="iam" class="lenght">
+                            <option value="volvo">Freelancer/Own Business</option>
+                            <option value="other">Other Options</option>
+                        </select>
+                    </div>
+                    <div class="modal-select-row">
+                        <label for="iwant">I want</label>
+                        <select name="iwant" class="lenght">
+                            <option value="call">Call me to discuss my questions
+                            </option>
+                            <option value="email">Email me your digital prospectus
+                            </option>
+                            <option value="mail">Mail me your full information pack
+                            </option>
+                        </select>
+                    </div>
+                    <div class="modal-select-row">
+                        <label for="interest">I'm interested in</label>
+                        <select name="interest" id="interest">
+                            <option value="consultant">Financial Consultant</option>
+                            <option value="accounting">Accounting Services</option>
+                            <option value="tax">Tax Services</option>
+                            <option value="career">Careers</option>
+                            <option value="info">Request Additional Information</option>
+                        </select>
+                    </div>
+                    <div class="modal-input-row">
+                        <label for="name" class="lenght">Your Name *</label>
+                        <input type="text" name="name" id="name" placeholder="Eg: John Doe" required="required">
+                    </div>
+                    <div class="modal-input-row grid">
+                        <div>
+                            <label for="email" class="lenght">Your Email *</label>
+                            <input type="email" name="email" id="email" placeholder="name@company.com"
+                                required="required">
+                        </div>
+                        <div>
+                            <label for="tel" class="lenght">Phone Number</label>
+                            <input type="tel" name="tel" id="tel" placeholder="Full Number (incl. prefix)">
+                        </div>
+                    </div>
+                    <div class="modal-input-row">
+                        <label for="message" class="lenght">Message</label>
+                        <textarea placeholder="Enter Message" rows="3"></textarea>
+                    </div>
+                    <div class="modal-checkbox">
+                        <input type="checkbox" name="signup" id="signup" value="required">
+                        <label for="signup">I agree to receive communications from FinLab.</label>
+                            
+                    </div>
+                    <input type="submit" value="Send Message" class="submit-btn-drop">
+                </form>
+            </div>
+            <div id="roadline">
+                <img src="/Advisory/images/road_line.jpg" alt="" height="100%">
+            </div>
+        </div>
+    </section>
+    <footer>
+        <section class="footer-hero">
+            <div class="footer-hero-wrapper">
+                <h2>Your Future in Finance Starts Here</h2>
+                <h5>Learn more about our commercial loan broker training program & join our family of over 700
+                    successful entrepreneurs.</h6>
+                    <button>Get My Free Proposal</button>
+                    <p>Or call us now at <a href="#">0712 610 33 181</a></p>
+            </div>
+        </section>
+        <nav class="footer-menu">
+            <section class="footer-grid-container">
+                <div class="footer-menu-col1">
+                    <h5>Follow Us</h5>
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">LinkedIn</a></li>
+                    </ul>
+                </div>
+                <div class="footer-menu-col2">
+                    <h5>Company</h5>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Our People</a></li>
+                        <li><a href="#">Blog & Insights</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-menu-col3">
+                    <h5>Services</h5>
+                    <ul>
+                        <li><a href="#">Accounting</a></li>
+                        <li><a href="#">Financial</a></li>
+                        <li><a href="#">Investments</a></li>
+                        <li><a href="#">Tax & Audit</a></li>
+                    </ul>
+                </div>
+                <div class="footer-menu-col4">
+                    <h5>Industries</h5>
+                    <ul>
+                        <li><a href="#">Automotive</a></li>
+                        <li><a href="#">Banking</a></li>
+                        <li><a href="#">Insurance</a></li>
+                        <li><a href="#">Healthcare</a></li>
+                    </ul>
+                </div>
+            </section>
+            <section class="footer-newsletter">
+                <p>
+                    By providing your e-mail address, you are consenting to receive press releases, presentations and
+                    other information concerning FinLab.
+                </p>
+                <form>
+                    <input type="email" name="email" id="email" placeholder="Your email address">
+                    <button></button>
+                </form>
+            </section>
+            <section class="footer-address">
+                <p>
+                    Address: 1270 Beverley Rd Brooklyn, New York 11226 United States.
+                </p>
+                <p>
+                    Phone: <a href="#">0712 610 33 181</a>
+                    <span class="divider">&#124;</span>
+                    Mail: <a href="#">info@example.com</a>
+                </p>
+            </section>
+            <section class="footer-credits">
+                <p>
+                    Copyright &copy; 2022 LineThemes. Designed by <a href="#">LineThemes</a> and Developed by Amalia
+                    Cicala.
+                </p>
+            </section>
+        </nav>
+    </footer>
+</body>
+</html>

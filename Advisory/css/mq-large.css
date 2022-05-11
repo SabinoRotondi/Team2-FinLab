@@ -1,0 +1,40 @@
+/* ----------------- LARGE DEVICES ----------------- */
+
+@media only screen and (min-width: 1185px) and (max-width: 1920px) {
+
+    /* ----------------- HEADER ----------------- */
+
+        header{
+            display: flex;
+            flex-wrap: wrap;
+        }
+    /* ----------------- MAIN ----------------- */
+        
+    
+    /* ----------------- FOOTER ----------------- */
+
+    .body-container {
+        width: 85%;
+    }
+
+   
+
+    /* ----------------- FOOTER ----------------- */
+
+    .footer-grid-container {
+        width: 58%;
+    }
+
+    .footer-newsletter {
+        width: 28%;
+    }
+
+    .footer-address, .footer-credits {
+        width: 86%;
+    }
+
+    footer input[type="submit"] {
+        right: 16rem;
+    }
+    
+}

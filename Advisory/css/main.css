@@ -1,0 +1,443 @@
+
+section{
+    background-color: #023A51;
+}
+
+/* section1 */
+
+#section1{
+    color: white;
+    padding-top:2%;
+    font-size: large;
+    display: flex;
+    padding-bottom: 2%;
+}
+
+
+.advisory{
+    color:#2CBC63;
+    list-style:inside;
+    font-size: medium;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.col h1{
+    font-size:50px ;
+}
+
+.col p{
+    color:#FFFFFF99;
+}
+
+.col hr{
+    margin-bottom: 3%;
+}
+
+/* section 2 */
+
+#section2{
+    padding-bottom:2%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.img-s2{
+    display: flex;
+    width: 24rem;
+    height: 22px;
+    position: absolute;
+    margin-left: 37rem;
+    margin-top : 5rem;
+    
+}
+
+.list{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-top: 5px solid;
+    border-color: #2CBC63;
+    box-shadow:0 2px 2px rgb(2 58 81 / 6%), 0 4px 4px rgb(2 58 81 / 6%), 0 8px 8px rgb(2 58 81 / 6%), 0 16px 16px rgb(2 58 81 / 6%), 0 32px 32px rgb(2 58 81 / 6%);
+    padding: 25px 35px 35px 35px;
+    width: 371px;
+    height: 347px;
+}
+#green{
+  color:#2CBC63;  
+}
+
+
+.list a:hover{
+    color: rgb(53, 53, 53);
+    transition: 0.2s;
+    text-decoration: underline;
+}
+
+
+.list button{
+    margin-top:50px;
+}
+
+/* Section 3 */
+
+#section3{
+    margin-top:40px;
+}
+
+#section3 .col{
+    font-size: 54px;
+    font-weight: 400;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #023A51;
+}
+
+#section3 p{
+    color: grey;
+    font-size:18px;
+    margin-top:25px;
+}
+
+/* section 4 */
+
+#section4{
+    background-color: white;
+    padding-bottom:40px;
+}
+
+#section4 p{
+    color:grey;
+}
+
+#section4 .col{
+    gap:20px;
+}
+
+#section4 .col img{
+    margin-top: 15px;
+}
+
+#section4 .col h4{
+    margin-bottom:25px;
+    margin-top:25px;
+}
+
+/* section 5 */
+
+#section5{
+    background-color: aliceblue;
+}
+
+#section5 .col{
+    font-size: 32px;
+}
+
+#section5 .rounded{
+    padding-top:80px;
+}
+
+#section5 .container{
+    height: fit-content;
+}
+
+ #section5 .person{
+    width: fit-content;
+}
+
+
+
+
+#jon{
+    font-size: 13px; 
+    background-color:#b8c5c9;
+    border-radius: 1rem;
+    padding:7px;
+    margin-top:30px;
+    margin-bottom:30px;
+    display: inline-block;
+}
+
+/* section 6 */
+
+#section6{
+    padding-top:150px;
+    background-color: aliceblue;
+}
+.industries_green {
+    color: #2CBC63;
+    list-style: inside;
+    font-size: medium;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+#section6 .col h2{
+    font-size: 54px;
+    color: #023A51;
+    font-weight: 600;
+}
+
+.checklist{
+    list-style-type: disc;
+    color: #2CBC63;
+    margin-left:40px;
+}
+
+.checklist li{
+    font-size: 25px;
+    padding:7px;
+}
+
+.checklist a{
+    color: grey;
+    
+}
+
+.checklist a:hover{
+    color: #2CBC63;
+    transition: 0.2s;
+}
+
+/* section 7 */
+
+#section7{
+    padding-top: 60px;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    gap:40px;
+    padding-bottom: 40px;
+}
+
+#Maria p{
+    color:grey;
+    font-size: small;
+    
+}
+
+#Matt p{
+    color:grey;
+    font-size: small;
+}
+
+#Larry p{
+    color:grey;
+    font-size: small;
+}
+
+#Maria{
+    background-color: white;
+    box-shadow: 0 2px 2px rgb(2 58 81 / 6%), 0 4px 4px rgb(2 58 81 / 6%), 0 8px 8px rgb(2 58 81 / 6%), 0 16px 16px rgb(2 58 81 / 6%), 0 32px 32px rgb(2 58 81 / 6%);
+}
+
+#Matt{
+    background-color: white;
+    box-shadow: 0 2px 2px rgb(2 58 81 / 6%), 0 4px 4px rgb(2 58 81 / 6%), 0 8px 8px rgb(2 58 81 / 6%), 0 16px 16px rgb(2 58 81 / 6%), 0 32px 32px rgb(2 58 81 / 6%);
+}
+
+#Larry{
+    background-color: white;
+    box-shadow: 0 2px 2px rgb(2 58 81 / 6%), 0 4px 4px rgb(2 58 81 / 6%), 0 8px 8px rgb(2 58 81 / 6%), 0 16px 16px rgb(2 58 81 / 6%), 0 32px 32px rgb(2 58 81 / 6%);
+}
+
+#section7 a{
+    color:#023A51;
+    
+}
+
+#Larry:hover{
+    background-color: #2CBC63;
+    transition: 0.2s;
+}
+
+#Matt:hover{
+    background-color: #2CBC63;
+    transition: 0.2s;
+}
+
+#Maria:hover{
+    background-color: #2CBC63;
+    transition: 0.2s;
+}
+
+#row7{
+    display:flex ;
+    justify-content: center;
+    gap:17px;
+}
+
+.help-you{
+    color: #023A51;
+    font-weight: 600;
+    text-align: center;
+}
+
+#section7 .container{
+    width: unset;
+}
+
+/* section 8 */
+
+#section8{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:30px;
+    padding-top: 30px;
+    text-align: center;
+    padding-bottom:40px;
+}
+
+#section8 h1{
+    font-size: 54px;
+    padding-bottom:30px;
+    color: #023A51;
+    font-weight: 700;
+}
+
+#section8 p{
+    color: #023A51;
+    font-size: 18px;
+    padding-bottom: 30px;
+}
+
+#form{
+    display: flex;
+    justify-content: center;
+    background-color: azure;
+    padding:0px;
+}
+
+#letter{
+    padding: 40px 55px 45px 55px;
+}
+
+.lenght{
+    width: 90%;
+}
+
+#interest{
+    width: 100%;
+}
+
+.submit-btn-drop{
+    background-color: #2CBC63;
+    color: white;
+    font-weight: 600;
+    width: 80%;
+    height: 50px;
+    border: 0ch;
+    margin-top: 20px;
+}
+
+.submit-btn-drop:hover{
+    background-color: #023A51;
+    transition: 0.3s;
+}
+
+.modal-checkbox{
+    width:100%;
+}
+
+#section8 .container form input[type="checkbox"] {
+    cursor: pointer;
+    width: 1.8rem;
+    height: 1.8rem;
+    border: 0.1rem solid rgba(0,0,0,0.2);
+    display: grid;
+    place-content: center;
+}
+
+
+
+#section8 .container form {
+    border-radius: 0;
+    border: none;
+}
+
+#section8 .container form {
+    padding: 4rem;
+}
+
+#section8 .container form input,
+#section8 .container form select,
+#section8 .container form textarea {
+    display: block;
+}
+
+#section8 .container form select {
+    border: none;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--primary);
+    padding: 0.3rem;
+    cursor: pointer;
+}
+
+#section8 .container form .modal-select-row label {
+    font-size: 1.25rem;
+    color: var(--body);
+}
+
+#section8 .container form .modal-select-row {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: solid 0.05rem rgba(0, 0, 0, 0.15);
+}
+
+#section8 .container form .modal-input-row {
+    margin-bottom: 2rem;
+}
+
+#section8 .container form .modal-input-row.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+}
+
+#section8 .container form .modal-input-row label {
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--body);
+}
+
+#section8 .container form .modal-input-row input,
+#section8 .container form .modal-input-row textarea {
+    width: 100%;
+    border: solid 0.1rem rgba(0, 0, 0, 0.15);
+    padding: 1rem 1.8rem;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.03);
+    font-size: 1.2rem;
+}
+
+#section8 .container form .modal-input-row input:focus,
+#section8 .container form .modal-input-row textarea:focus {
+    border: solid 0.1rem var(--green);
+}
+
+.modal-input-row input::placeholder,
+.modal-input-row textarea::placeholder {
+    font-size: 1.2rem;
+    opacity: 0.7;
+}
+
+#section8 .container form .modal-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+#section8 .container form .modal-body label[for="signup"] {
+    display: inline;
+    font-size: 1.1rem;
+    color: var(--body);
+    margin: 0.3rem 0;
+}
