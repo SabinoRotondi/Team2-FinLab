@@ -26,6 +26,7 @@
     <link rel="stylesheet" href="/Advisory/css/style.css">
     <link rel="stylesheet" href="/Advisory/css/header.css">
     <link rel="stylesheet" href="/Advisory/css/main.css">
+
     <title>Technology Advisory-FinLab</title>
 </head>
 
@@ -72,7 +73,17 @@
                                 <hr>
                                 <li><a class="dropdown-item" href="#">Audit & Tax Service</a></li>
                                 <hr>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                <li><a class="dropdown-item" href="#">Capital Investments</a></li>
+                                <hr>
+                                <li><a class="dropdown-item" href="#">Finance & Restructuring</a></li>
+                                <hr>
+                                <li><a class="dropdown-item" href="#">Financial Consultant</a></li>
+                                <hr>
+                                <li><a class="dropdown-item" href="#">Portfolio Management</a></li>
+                                <hr>
+                                <li><a class="dropdown-item" href="#">Technology Advisory</a></li>
+                                <hr>
+                                <li><a class="dropdown-item" href="#">All Service Page</a></li>
                             </ul>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -80,9 +91,11 @@
                                 Case Studies
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                <li><a class="dropdown-item" href="#">Cases Grid 1</a></li>
+                                <hr>
+                                <li><a class="dropdown-item" href="#">Cases Grid 2</a></li>
+                                <hr>
+                                <li><a class="dropdown-item" href="#">Cases Grid 3</a></li>
                             </ul>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Blog & Insights</a>
@@ -160,11 +173,11 @@
                                     </div>
 
                                     <div class="modal-checkbox">
-                                        <input type="checkbox" name="signup" id="signup" required="required">
+                                        <input type="checkbox" name="signup" id="signup" required="signup">
                                         <label for="signup">I agree to receive communications from
-                                            FinLab.</label>
+                                        FinLab.</label>
                                     </div>
-                                    <input type="submit" value="Send Message" class="submit-btn-drop">
+                                    <input type="submit" value="Send Message" class="submit-btn-drop" id="modal-submit"> 
                                 </form>
                             </div>
                         </div>
@@ -200,7 +213,7 @@
                                 </div>
                                 <div class="mb-3">
                                     <label for="number" class="form-label"></label>
-                                    <input type="number" class="form-control" id="exampleInputPassword1"
+                                    <input type="tel" class="form-control" id="exampleInputPassword1"
                                         placeholder="Phone Number*">
                                 </div>
                                 <button type="submit" id="submit-off" class="btn btn-primary">Request a
@@ -434,7 +447,7 @@
                         </select>
                     </div>
                     <div class="modal-select-row">
-                        <label for="interest" class="lenght">I'm interested in</label>
+                        <label for="interest">I'm interested in</label>
                         <select name="interest" id="interest">
                             <option value="consultant">Financial Consultant</option>
                             <option value="accounting">Accounting Services</option>
@@ -463,15 +476,15 @@
                         <textarea placeholder="Enter Message" rows="3"></textarea>
                     </div>
                     <div class="modal-checkbox">
-                        <input type="checkbox" name="signup" id="signup" required="required">
-                        <label for="signup">I agree to receive communications from
-                            FinLab.</label>
+                        <input type="checkbox" name="signup" id="signup" value="required">
+                        <label for="signup">I agree to receive communications from FinLab.</label>
+                            
                     </div>
                     <input type="submit" value="Send Message" class="submit-btn-drop">
                 </form>
             </div>
             <div id="roadline">
-                <img src="/Advisory/images/road_line.jpg" alt="">
+                <img src="/Advisory/images/road_line.jpg" alt="" height="100%">
             </div>
         </div>
     </section>
