@@ -1,12 +1,28 @@
-const selectOne = document.getElementById('iam');
-const selectTwo = document.getElementById('want');
-const selectThree = document.getElementById('interest');
-const modalName = document.getElementById('modalName');
-const modalEmail = document.getElementById('email');
-const modalPhone = document.getElementById('modalTel');
-const modalMessage = document.getElementById('message');
+const selectOne = document.querySelector('#iam');
+const selectTwo = document.querySelector('#iwant');
+const selectThree = document.querySelector('#interest');
+const modalName = document.querySelector('#modalName');
+const modalEmail = document.querySelector('#email');
+const modalPhone = document.querySelector('#modalTel');
+const modalMessage = document.querySelector('#message');
+const modalCheck = document.querySelector('#signup');
+
+// const formEntries = {
+//     "I'm a/an": selectOne.value,
+//     "I want": selectTwo.value,
+//     "I'm interested in": selectThree.value,
+//     "Your Name": modalName.value,
+//     "Your Email": modalEmail.value,
+//     "Phone Number": modalPhone.value,
+//     "Message": modalMessage.value,
+//     "Signed up": modalCheck.value,
+// }
+
+const submitForm = document.querySelector('#modal-submit');
 
 function send(){
+    // console.log(formEntries);
+
     console.log(selectOne.value);
     console.log(selectTwo.value);
     console.log(selectThree.value);
@@ -14,18 +30,7 @@ function send(){
     console.log(modalEmail.value);
     console.log(modalPhone.value);
     console.log(modalMessage.value);
+    console.log(modalCheck.value);
 }
 
-// const modalForm = document.getElementById('modal-form');
-// modalForm.addEventListener('submit', send);
-// modalForm.onsubmit = function(){
-//   return send()
-// };
-
-
-// const submitButton = document.getElementById('modal-submit');
-// submitButton.addEventListener('click', send);
-
-
-
-// onsubmit = " return myFunction()"
+submitForm.addEventListener('click', send);
