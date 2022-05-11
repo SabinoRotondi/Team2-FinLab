@@ -17,7 +17,7 @@
 
     <title>Case Studies</title>
 </head>
-<body>
+<body> 
     <header>
         <nav class="header-icons">
             <section class="header-logo-social">
@@ -51,11 +51,11 @@
                             <div class="modal-content">
                                 <button type="button" class="btn-close text-reset" data-dismiss="modal" aria-label="Close"></button>
                                 <div class="modal-body">
-                                    <form>
+                                    <form id="modal-form">
                                         <div class="modal-select-row">
                                             <label for="iam">I'm a/an</label>
                                             <select name="iam" id="iam">
-                                            <option value="volvo">Freelancer/Own Business</option>
+                                            <option value="freelancer">Freelancer/Own Business</option>
                                             <option value="other">Other Options</option>
                                             </select>
                                         </div>
@@ -82,7 +82,7 @@
 
                                         <div class="modal-input-row">
                                             <label for="name">Your Name *</label>
-                                            <input type="text" name="name" id="name" placeholder="Eg: John Doe" required>
+                                            <input type="text" name="name" id="modalName" placeholder="Eg: John Doe" required>
                                         </div>
 
                                         <div class="modal-input-row grid">
@@ -93,13 +93,13 @@
 
                                             <div>
                                                 <label for="tel">Phone Number</label>
-                                                <input type="tel" name="tel" id="tel" placeholder="Full Number (incl. prefix)">
+                                                <input type="tel" name="tel" id="modalTel" placeholder="Full Number (incl. prefix)">
                                             </div>
                                         </div>
 
                                         <div class="modal-input-row">
                                             <label for="message">Message</label>
-                                            <textarea placeholder="Enter Message" rows="3"></textarea>
+                                            <textarea id="message" placeholder="Enter Message" rows="3"></textarea>
                                         </div>
 
                                         <div class="modal-checkbox">
@@ -107,7 +107,7 @@
                                             <label for="signup">I agree to receive communications from FinLab.</label>
                                         </div>
 
-                                        <input type="submit" value="Send Message" class="submit-btn-drop">
+                                        <input type="submit" id="modal-submit" value="Send Message" class="submit-btn-drop">
                                     </form>
                                 </div>
                             </div>              
@@ -235,8 +235,8 @@
 
                     <form>
                         <legend>Request a callback</legend>
-                        <input type="text" name="name" id="name" placeholder="Your Name *" required>
-                        <input type="tel" name="tel" id="tel" placeholder="Phone Number *" required>
+                        <input type="text" name="name" id="offName" placeholder="Your Name *" required>
+                        <input type="tel" name="tel" id="offTel" placeholder="Phone Number *" required>
                         <input type="submit" value="Request a Callback" class="submit-btn-drop">
                     </form>
                 </div>
@@ -530,4 +530,5 @@
         </nav>
     </footer>
 </body>
+<script src="/script.js"></script>
 </html>
