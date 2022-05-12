@@ -11,7 +11,7 @@ const modalCheck = document.querySelector('#signup');
 
 const submitForm = document.querySelector('#modal-submit');
 
-function send(){
+function sendModal(){
 
 
     console.log(selectOne.value);
@@ -24,4 +24,18 @@ function send(){
     console.log(modalCheck.value);
 }
 
-submitForm.addEventListener('click', send);
+submitForm.addEventListener('click', sendModal);
+
+const offName = document.querySelector('#offName');
+const offTel = document.querySelector('#offTel');
+const offSubmit = document.querySelector('#offSubmit');
+
+function sendOffCanvas(){
+
+    console.log(offName.value);
+    console.log(offTel.value);
+
+
+}
+
+offSubmit.addEventListener('click', sendOffCanvas)
