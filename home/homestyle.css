@@ -9,7 +9,7 @@
   font-family: "Manrope", sans-serif;
 }
 
-html {font-size: 16px;}
+html {font-size: 14px;}
 
 :root {
   --primary: #023a51;
@@ -83,6 +83,16 @@ a:hover {
 .div5 {
   grid-area: 1 / 2 / 3 / 3;
   
+}
+
+.dropdown-button a {
+  color: white;
+  text-decoration: none;
+  border-top: none;
+}
+
+.dropdown-button a:hover {
+  color: white;
 }
 
 
