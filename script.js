@@ -7,21 +7,12 @@ const modalPhone = document.querySelector('#modalTel');
 const modalMessage = document.querySelector('#message');
 const modalCheck = document.querySelector('#signup');
 
-// const formEntries = {
-//     "I'm a/an": selectOne.value,
-//     "I want": selectTwo.value,
-//     "I'm interested in": selectThree.value,
-//     "Your Name": modalName.value,
-//     "Your Email": modalEmail.value,
-//     "Phone Number": modalPhone.value,
-//     "Message": modalMessage.value,
-//     "Signed up": modalCheck.value,
-// }
+
 
 const submitForm = document.querySelector('#modal-submit');
 
 function send(){
-    // console.log(formEntries);
+
 
     console.log(selectOne.value);
     console.log(selectTwo.value);

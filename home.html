@@ -1,3 +1,4 @@
+<html>
 <head>
   <meta charset="UTF-8" title="finlabwap" name="nazart" content="homepage" />
   <link
@@ -12,6 +13,7 @@
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"
   ></script>
+
   <!-- Bootstrap -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
@@ -54,64 +56,64 @@
                         <div class="modal-content">
                             <button type="button" class="btn-close text-reset" data-dismiss="modal" aria-label="Close"></button>
                             <div class="modal-body">
-                                <form>
-                                    <div class="modal-select-row">
-                                        <label for="iam">I'm a/an</label>
-                                        <select name="iam" id="iam">
-                                        <option value="volvo">Freelancer/Own Business</option>
-                                        <option value="other">Other Options</option>
-                                        </select>
+                              <form id="modal-form">
+                                <div class="modal-select-row">
+                                    <label for="iam">I'm a/an</label>
+                                    <select name="iam" id="iam">
+                                    <option value="Freelancer/Own Business">Freelancer/Own Business</option>
+                                    <option value="Other Options">Other Options</option>
+                                    </select>
+                                </div>
+                        
+                                <div class="modal-select-row">
+                                    <label for="iwant">I want</label>
+                                    <select name="iwant" id="iwant">
+                                    <option value="Call me to discuss my questions">Call me to discuss my questions</option>
+                                    <option value="Email me your digital prospectus">Email me your digital prospectus</option>
+                                    <option value="Mail me your full information pack">Mail me your full information pack</option>
+                                    </select>
+                                </div>
+                        
+                                <div class="modal-select-row">
+                                    <label for="interest">I'm interested in</label>
+                                    <select name="interest" id="interest">
+                                    <option value="Financial Consultant">Financial Consultant</option>
+                                    <option value="Accounting Services">Accounting Services</option>
+                                    <option value="Tax Services">Tax Services</option>
+                                    <option value="Careers">Careers</option>
+                                    <option value="Request Additional Information">Request Additional Information</option>
+                                    </select>
+                                </div>
+
+                                <div class="modal-input-row">
+                                    <label for="name">Your Name *</label>
+                                    <input type="text" name="name" id="modalName" placeholder="Eg: John Doe" required>
+                                </div>
+
+                                <div class="modal-input-row grid">
+                                    <div>
+                                        <label for="email">Your Email *</label>
+                                        <input type="email" name="email" id="email" placeholder="name@company.com" required>
                                     </div>
 
-                                    <div class="modal-select-row">
-                                        <label for="iwant">I want</label>
-                                        <select name="iwant" id="iwant">
-                                        <option value="call">Call me to discuss my questions</option>
-                                        <option value="email">Email me your digital prospectus</option>
-                                        <option value="mail">Mail me your full information pack</option>
-                                        </select>
+                                    <div>
+                                        <label for="tel">Phone Number</label>
+                                        <input type="tel" name="tel" id="modalTel" placeholder="Full Number (incl. prefix)">
                                     </div>
+                                </div>
 
-                                    <div class="modal-select-row">
-                                        <label for="interest">I'm interested in</label>
-                                        <select name="interest" id="interest">
-                                        <option value="consultant">Financial Consultant</option>
-                                        <option value="accounting">Accounting Services</option>
-                                        <option value="tax">Tax Services</option>
-                                        <option value="career">Careers</option>
-                                        <option value="info">Request Additional Information</option>
-                                        </select>
-                                    </div>
+                                <div class="modal-input-row">
+                                    <label for="message">Message</label>
+                                    <textarea id="message" placeholder="Enter Message" rows="3"></textarea>
+                                </div>
 
-                                    <div class="modal-input-row">
-                                        <label for="name">Your Name *</label>
-                                        <input type="text" name="name" id="name" placeholder="Eg: John Doe" required>
-                                    </div>
+                                <div class="modal-checkbox">
+                                    <input type="checkbox" name="signup" id="signup" required checked>
+                                    <label for="signup">I agree to receive communications from FinLab.</label>
+                                </div>
 
-                                    <div class="modal-input-row grid">
-                                        <div>
-                                            <label for="email">Your Email *</label>
-                                            <input type="email" name="email" id="email" placeholder="name@company.com" required>
-                                        </div>
-
-                                        <div>
-                                            <label for="tel">Phone Number</label>
-                                            <input type="tel" name="tel" id="tel" placeholder="Full Number (incl. prefix)">
-                                        </div>
-                                    </div>
-
-                                    <div class="modal-input-row">
-                                        <label for="message">Message</label>
-                                        <textarea placeholder="Enter Message" rows="3"></textarea>
-                                    </div>
-
-                                    <div class="modal-checkbox">
-                                        <input type="checkbox" name="signup" id="signup" required checked>
-                                        <label for="signup">I agree to receive communications from FinLab.</label>
-                                    </div>
-
-                                    <input type="submit" value="Send Message" class="submit-btn-drop">
-                                </form>
+                                <input type="submit" id="modal-submit" value="Send Message" class="submit-btn-drop">
+                            </form>
                             </div>
                         </div>              
                     </div>
@@ -938,3 +940,5 @@
         </nav>
     </footer>
 </body>
+<script src="/script.js"></script>
+</html>
