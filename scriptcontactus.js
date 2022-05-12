@@ -1,3 +1,5 @@
+// CONTACT US FORM ----------------------
+
 const selectOneCo = document.querySelector('#foIam');
 const selectTwoCo = document.querySelector('#foIwant');
 const selectThreeCo = document.querySelector('#foInterest');

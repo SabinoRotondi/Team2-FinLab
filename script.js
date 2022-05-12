@@ -1,3 +1,5 @@
+// MODAL ----------------------
+
 const selectOne = document.querySelector('#iam');
 const selectTwo = document.querySelector('#iwant');
 const selectThree = document.querySelector('#interest');
@@ -6,8 +8,6 @@ const modalEmail = document.querySelector('#email');
 const modalPhone = document.querySelector('#modalTel');
 const modalMessage = document.querySelector('#message');
 const modalCheck = document.querySelector('#signup');
-
-
 
 const submitForm = document.querySelector('#modal-submit');
 
@@ -23,6 +23,9 @@ function sendModal() {
 }
 
 submitForm.addEventListener('click', sendModal);
+
+
+// OFFCANVAS ----------------------
 
 const offName = document.querySelector('#offName');
 const offTel = document.querySelector('#offTel');
