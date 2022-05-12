@@ -282,6 +282,10 @@ header {
     height: auto;
     transform: rotate(180deg);
 }
+
+.dropdown-button a {
+    color: white;
+}
   
 .dropdown-nav:hover .dropdown-button {
     border-top: solid 0.3rem white;

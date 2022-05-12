@@ -273,6 +273,10 @@ header {
 .dropdown-button.active {
     border-top: solid 0.3rem white;
 }
+
+.dropdown-button a {
+    color: white;
+}
   
 .dropdown-content {
     display: none;
