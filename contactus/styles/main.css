@@ -24,6 +24,10 @@ main {}
 
 }
 
+.dropdown-button a {
+    color: white;
+}
+
 .questions h6 {
     font-family: Manrope;
     font-size: 14px;
