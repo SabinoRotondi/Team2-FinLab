@@ -33,7 +33,7 @@
 <body>
     <header>
         <div class="header_container">
-            <a href="#"><img id="logo" src="images/logo-finlab.png" alt="..."></a>
+            <a href="#"><img id="logo" src="/Advisory/images/logo-finlab.png" alt="..."></a>
             <div class="col-7 d-flex" id="menu">
                 <nav class="navbar navbar-expand-lg">
                     <ul class="navbar-nav" id="main-menu">
@@ -121,63 +121,63 @@
                                     aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
-                                <form>
+                                <form id="modal-form">
                                     <div class="modal-select-row">
                                         <label for="iam">I'm a/an</label>
                                         <select name="iam" id="iam">
-                                            <option value="volvo">Freelancer/Own Business</option>
-                                            <option value="other">Other Options</option>
+                                        <option value="Freelancer/Own Business">Freelancer/Own Business</option>
+                                        <option value="Other Options">Other Options</option>
                                         </select>
                                     </div>
+                            
                                     <div class="modal-select-row">
                                         <label for="iwant">I want</label>
                                         <select name="iwant" id="iwant">
-                                            <option value="call">Call me to discuss my questions
-                                            </option>
-                                            <option value="email">Email me your digital prospectus
-                                            </option>
-                                            <option value="mail">Mail me your full information pack
-                                            </option>
+                                        <option value="Call me to discuss my questions">Call me to discuss my questions</option>
+                                        <option value="Email me your digital prospectus">Email me your digital prospectus</option>
+                                        <option value="Mail me your full information pack">Mail me your full information pack</option>
                                         </select>
                                     </div>
+                            
                                     <div class="modal-select-row">
                                         <label for="interest">I'm interested in</label>
                                         <select name="interest" id="interest">
-                                            <option value="consultant">Financial Consultant</option>
-                                            <option value="accounting">Accounting Services</option>
-                                            <option value="tax">Tax Services</option>
-                                            <option value="career">Careers</option>
-                                            <option value="info">Request Additional Information</option>
+                                        <option value="Financial Consultant">Financial Consultant</option>
+                                        <option value="Accounting Services">Accounting Services</option>
+                                        <option value="Tax Services">Tax Services</option>
+                                        <option value="Careers">Careers</option>
+                                        <option value="Request Additional Information">Request Additional Information</option>
                                         </select>
                                     </div>
+
                                     <div class="modal-input-row">
                                         <label for="name">Your Name *</label>
-                                        <input type="text" name="name" id="name" placeholder="Eg: John Doe"
-                                            required="required">
+                                        <input type="text" name="name" id="modalName" placeholder="Eg: John Doe" required>
                                     </div>
+
                                     <div class="modal-input-row grid">
                                         <div>
                                             <label for="email">Your Email *</label>
-                                            <input type="email" name="email" id="email" placeholder="name@company.com"
-                                                required="required">
+                                            <input type="email" name="email" id="email" placeholder="name@company.com" required>
                                         </div>
+
                                         <div>
                                             <label for="tel">Phone Number</label>
-                                            <input type="tel" name="tel" id="tel"
-                                                placeholder="Full Number (incl. prefix)">
+                                            <input type="tel" name="tel" id="modalTel" placeholder="Full Number (incl. prefix)">
                                         </div>
                                     </div>
+
                                     <div class="modal-input-row">
                                         <label for="message">Message</label>
-                                        <textarea placeholder="Enter Message" rows="3"></textarea>
+                                        <textarea id="message" placeholder="Enter Message" rows="3"></textarea>
                                     </div>
 
                                     <div class="modal-checkbox">
-                                        <input type="checkbox" name="signup" id="signup" required="signup">
-                                        <label for="signup">I agree to receive communications from
-                                        FinLab.</label>
+                                        <input type="checkbox" name="signup" id="signup" required checked>
+                                        <label for="signup">I agree to receive communications from FinLab.</label>
                                     </div>
-                                    <input type="submit" value="Send Message" class="submit-btn-drop" id="modal-submit"> 
+
+                                    <input type="submit" id="modal-submit" value="Send Message" class="submit-btn-drop">
                                 </form>
                             </div>
                         </div>
@@ -208,15 +208,15 @@
                                 <span>Request a Callback</span>
                                 <div class="mb-3">
                                     <label for="name" class="form-label"></label>
-                                    <input type="name" class="form-control" id="exampleInputEmail1"
+                                    <input type="name" class="form-control" id="offName"
                                         aria-describedby="emailHelp" placeholder="Your Name*">
                                 </div>
                                 <div class="mb-3">
                                     <label for="number" class="form-label"></label>
-                                    <input type="tel" class="form-control" id="exampleInputPassword1"
+                                    <input type="tel" class="form-control" id="offTel"
                                         placeholder="Phone Number*">
                                 </div>
-                                <button type="submit" id="submit-off" class="btn btn-primary">Request a
+                                <button type="submit" id="offSubmit" class="btn btn-primary">Request a
                                     Callback</button>
                             </form>
                         </div>
@@ -427,60 +427,63 @@
         </div>
         <div class="container" id="form">
             <div id="letter">
-                <form>
+                <form id="modal-form">
                     <div class="modal-select-row">
                         <label for="iam">I'm a/an</label>
-                        <select name="iam" class="lenght">
-                            <option value="volvo">Freelancer/Own Business</option>
-                            <option value="other">Other Options</option>
+                        <select name="iam" id="ad-iam">
+                        <option value="Freelancer/Own Business">Freelancer/Own Business</option>
+                        <option value="Other Options">Other Options</option>
                         </select>
                     </div>
+            
                     <div class="modal-select-row">
                         <label for="iwant">I want</label>
-                        <select name="iwant" class="lenght">
-                            <option value="call">Call me to discuss my questions
-                            </option>
-                            <option value="email">Email me your digital prospectus
-                            </option>
-                            <option value="mail">Mail me your full information pack
-                            </option>
+                        <select name="iwant" id="ad-iwant">
+                        <option value="Call me to discuss my questions">Call me to discuss my questions</option>
+                        <option value="Email me your digital prospectus">Email me your digital prospectus</option>
+                        <option value="Mail me your full information pack">Mail me your full information pack</option>
                         </select>
                     </div>
+            
                     <div class="modal-select-row">
                         <label for="interest">I'm interested in</label>
-                        <select name="interest" id="interest">
-                            <option value="consultant">Financial Consultant</option>
-                            <option value="accounting">Accounting Services</option>
-                            <option value="tax">Tax Services</option>
-                            <option value="career">Careers</option>
-                            <option value="info">Request Additional Information</option>
+                        <select name="interest" id="ad-interest">
+                        <option value="Financial Consultant">Financial Consultant</option>
+                        <option value="Accounting Services">Accounting Services</option>
+                        <option value="Tax Services">Tax Services</option>
+                        <option value="Careers">Careers</option>
+                        <option value="Request Additional Information">Request Additional Information</option>
                         </select>
                     </div>
+
                     <div class="modal-input-row">
-                        <label for="name" class="lenght">Your Name *</label>
-                        <input type="text" name="name" id="name" placeholder="Eg: John Doe" required="required">
+                        <label for="name">Your Name *</label>
+                        <input type="text" name="name" id="adName" placeholder="Eg: John Doe" required>
                     </div>
+
                     <div class="modal-input-row grid">
                         <div>
-                            <label for="email" class="lenght">Your Email *</label>
-                            <input type="email" name="email" id="email" placeholder="name@company.com"
-                                required="required">
+                            <label for="email">Your Email *</label>
+                            <input type="email" name="email" id="adEmail" placeholder="name@company.com" required>
                         </div>
+
                         <div>
-                            <label for="tel" class="lenght">Phone Number</label>
-                            <input type="tel" name="tel" id="tel" placeholder="Full Number (incl. prefix)">
+                            <label for="tel">Phone Number</label>
+                            <input type="tel" name="tel" id="adTel" placeholder="Full Number (incl. prefix)">
                         </div>
                     </div>
+
                     <div class="modal-input-row">
-                        <label for="message" class="lenght">Message</label>
-                        <textarea placeholder="Enter Message" rows="3"></textarea>
+                        <label for="message">Message</label>
+                        <textarea id="adMessage" placeholder="Enter Message" rows="3"></textarea>
                     </div>
+
                     <div class="modal-checkbox">
-                        <input type="checkbox" name="signup" id="signup" value="required">
+                        <input type="checkbox" name="signup" id="adSignup" required checked>
                         <label for="signup">I agree to receive communications from FinLab.</label>
-                            
                     </div>
-                    <input type="submit" value="Send Message" class="submit-btn-drop">
+
+                    <input type="submit" id="ad-submit" value="Send Message" class="submit-btn-drop">
                 </form>
             </div>
             <div id="roadline">
@@ -566,4 +569,5 @@
         </nav>
     </footer>
 </body>
+<script src="script.js"></script>
 </html>
